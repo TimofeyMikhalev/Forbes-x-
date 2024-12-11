@@ -1,0 +1,22 @@
+@function get-vw($fontSize, $vw-viewport){
+    $vw-context: $vw-viewport * 0.01 * 1px;
+    @return $fontSize / $vw-context * 1vw;
+    @return $fontSize;
+}
+
+
+@mixin reset-link {
+    color: inherit;
+
+    &,
+    &:hover {
+        text-decoration: none;
+    }
+    
+}
+
+@mixin reset-button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
