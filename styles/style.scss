@@ -1,1 +1,16 @@
-@import 'normalize', 'fonts', 'globals', 'media', 'mixins', 'utils', 'variables';
+@import 
+    'normalize',
+    'fonts',
+    'globals', 
+    'media', 
+    'mixins', 
+    'utils', 
+    'variables';
+
+
+@import 
+    'blocks/header',
+    'blocks/section',
+    'blocks/hero',
+    'blocks/test';
+

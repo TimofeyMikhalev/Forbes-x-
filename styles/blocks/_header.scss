@@ -1,0 +1,31 @@
+@import '../globals';
+
+
+@media screen and (min-width:650px){
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: get-vw(27px, 1440);
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__logo {
+            width: get-vw(64px, 1440);
+            height: get-vw(14px, 1440);
+        }
+        &__sber {
+            width: get-vw(162px, 1440);
+            height: get-vw(27px, 1440);
+        }
+    }
+}
