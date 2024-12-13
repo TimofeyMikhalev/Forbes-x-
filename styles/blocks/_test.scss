@@ -1,5 +1,5 @@
 .section__test {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: center;
 
@@ -10,13 +10,11 @@
     bottom: 0;
     z-index: 10;
 
-    background-image: url(/images/test1-bg.svg);
-    background-size: cover;
-
+    background: url(/images/test1-bg.svg) no-repeat center center/cover;
     .container__test {
         width: get-vw(1341px, 1440);
         .test {
-            display: flex;
+            display: none;
             justify-content: space-between;
             align-items: start;
 
@@ -52,8 +50,102 @@
             }
 
             &__answer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                width: get-vw(523px, 1440);
                 cursor: pointer;
+                .num {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: get-vw(59px, 1440);
+                    height: get-vw(59px, 1440);
+
+                    background: var(--color-gray);
+                    border-radius: 50%;
+
+                    color: var(--color-ligth);
+                    font-size: get-vw(30px, 1440);
+                    transition: background-color 0.3s ease, color 0.3s ease;
+                }
+                button {
+                    width: get-vw(459px, 1440);
+                    height: auto;
+                
+                    border: get-vw(2px, 1440) solid var(--color-gray);
+                    border-radius: get-vw(65px, 1440);
+                
+                    padding: get-vw(10px, 1440) get-vw(39px, 1440) get-vw(10px, 1440) get-vw(29px, 1440);
+                    background: inherit;
+                    .text-content {
+                        text-align: start;
+                        font-size: get-vw(10px, 1440);
+                        border-top: get-vw(1px, 1440) solid #fff;
+                        margin-top: get-vw(9px, 1440);
+                        padding-top: get-vw(9px, 1440);
+                        color: #fff;
+                        
+                        opacity: 0; /* Скрыт по умолчанию */
+                        transform: translateY(30px); /* Начальная позиция текста ниже */
+                        transition: opacity 1s ease-out, transform 2s ease-out;
+                    }
+                }
+                /* Когда кнопка активирована */
+                button.active .text-content {
+                    opacity: 1; /* Плавно отображается */
+                    transform: translateY(0); /* Плавно появляется сверху */
+                    color: #fff; /* Белый текст при активации */
+                }
+                button.active {
+                    border-radius: get-vw(30px, 1440);
+               
+                    color: #fff;
+                    border: none;
+                    transition: background-color 0.7s ease-out;/* Плавное изменение фона */
+                }    
+                /* Правильный ответ */
+                .correct {
+                    background-color: var(--color-grean);
+                    color: var(--color-ligth);
+                }
+                
+                .correct .num {
+                    background-color: var(--color-grean); /* Кружок правильного ответа */
+                }
+                
+                /* Неправильный ответ */
+                .incorrect {
+                    background-color: var(--color-malina);
+                    color: var(--color-ligth);
+                }
+                
+                .incorrect .num {
+                    background-color: var(--color-malina); /* Кружок неправильного ответа */
+                }
+                
+                /* Блокировка */
+                .disabled {
+                    pointer-events: none;
+                    opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
+                }
+            }
+            .select{
+                border-radius: get-vw(30px, 1440);
+                color: var(--color-ligth);
             }
         }
+
+
+        .test.show {
+            display: flex;
+        }
+
     }
+}
+
+.show {
+    display: flex;
 }

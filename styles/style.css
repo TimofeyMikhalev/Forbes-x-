@@ -278,16 +278,30 @@ img {
   border-radius: 2.0138888889vw;
 }
 
-.button:hover {
+.btn:hover {
   opacity: 0.8;
 }
 
-.test__answer-grey {
-  width: 31.875vw;
-  height: auto;
-  border: 0.1388888889vw solid var(--color-gray);
-  border-radius: 4.5138888889vw;
-  padding: 0.6944444444vw 2.0138888889vw;
+.text {
+  text-align: start;
+}
+
+.malina {
+  background-color: var(--color-malina);
+}
+
+.green {
+  background-color: var(--color-grean);
+}
+
+/* Скрытие текста */
+.hidden {
+  display: none;
+}
+
+.button.disabled {
+  pointer-events: none; /* Отключает клики на кнопке */
+  opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
 }
 
 :root {
@@ -364,16 +378,30 @@ img {
   border-radius: 2.0138888889vw;
 }
 
-.button:hover {
+.btn:hover {
   opacity: 0.8;
 }
 
-.test__answer-grey {
-  width: 31.875vw;
-  height: auto;
-  border: 0.1388888889vw solid var(--color-gray);
-  border-radius: 4.5138888889vw;
-  padding: 0.6944444444vw 2.0138888889vw;
+.text {
+  text-align: start;
+}
+
+.malina {
+  background-color: var(--color-malina);
+}
+
+.green {
+  background-color: var(--color-grean);
+}
+
+/* Скрытие текста */
+.hidden {
+  display: none;
+}
+
+.button.disabled {
+  pointer-events: none; /* Отключает клики на кнопке */
+  opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
 }
 
 @media screen and (min-width: 650px) {
@@ -403,7 +431,7 @@ img {
   }
 }
 .section__start {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -475,16 +503,30 @@ img {
   border-radius: 2.0138888889vw;
 }
 
-.button:hover {
+.btn:hover {
   opacity: 0.8;
 }
 
-.test__answer-grey {
-  width: 31.875vw;
-  height: auto;
-  border: 0.1388888889vw solid var(--color-gray);
-  border-radius: 4.5138888889vw;
-  padding: 0.6944444444vw 2.0138888889vw;
+.text {
+  text-align: start;
+}
+
+.malina {
+  background-color: var(--color-malina);
+}
+
+.green {
+  background-color: var(--color-grean);
+}
+
+/* Скрытие текста */
+.hidden {
+  display: none;
+}
+
+.button.disabled {
+  pointer-events: none; /* Отключает клики на кнопке */
+  opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
 }
 
 .hero {
@@ -525,7 +567,7 @@ img {
 }
 
 .section__test {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: center;
   position: fixed;
@@ -534,14 +576,13 @@ img {
   right: 0;
   bottom: 0;
   z-index: 10;
-  background-image: url(/images/test1-bg.svg);
-  background-size: cover;
+  background: url(/images/test1-bg.svg) no-repeat center center/cover;
 }
 .section__test .container__test {
   width: 93.125vw;
 }
 .section__test .container__test .test {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: start;
 }
@@ -573,5 +614,84 @@ img {
   row-gap: 0.9027777778vw;
 }
 .section__test .container__test .test__answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 36.3194444444vw;
   cursor: pointer;
+  /* Когда кнопка активирована */
+  /* Правильный ответ */
+  /* Неправильный ответ */
+  /* Блокировка */
+}
+.section__test .container__test .test__answer .num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.0972222222vw;
+  height: 4.0972222222vw;
+  background: var(--color-gray);
+  border-radius: 50%;
+  color: var(--color-ligth);
+  font-size: 2.0833333333vw;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.section__test .container__test .test__answer button {
+  width: 31.875vw;
+  height: auto;
+  border: 0.1388888889vw solid var(--color-gray);
+  border-radius: 4.5138888889vw;
+  padding: 0.6944444444vw 2.7083333333vw 0.6944444444vw 2.0138888889vw;
+  background: inherit;
+}
+.section__test .container__test .test__answer button .text-content {
+  text-align: start;
+  font-size: 0.6944444444vw;
+  border-top: 0.0694444444vw solid #fff;
+  margin-top: 0.625vw;
+  padding-top: 0.625vw;
+  color: #fff;
+  opacity: 0; /* Скрыт по умолчанию */
+  transform: translateY(30px); /* Начальная позиция текста ниже */
+  transition: opacity 1s ease-out, transform 2s ease-out;
+}
+.section__test .container__test .test__answer button.active .text-content {
+  opacity: 1; /* Плавно отображается */
+  transform: translateY(0); /* Плавно появляется сверху */
+  color: #fff; /* Белый текст при активации */
+}
+.section__test .container__test .test__answer button.active {
+  border-radius: 2.0833333333vw;
+  color: #fff;
+  border: none;
+  transition: background-color 0.7s ease-out; /* Плавное изменение фона */
+}
+.section__test .container__test .test__answer .correct {
+  background-color: var(--color-grean);
+  color: var(--color-ligth);
+}
+.section__test .container__test .test__answer .correct .num {
+  background-color: var(--color-grean); /* Кружок правильного ответа */
+}
+.section__test .container__test .test__answer .incorrect {
+  background-color: var(--color-malina);
+  color: var(--color-ligth);
+}
+.section__test .container__test .test__answer .incorrect .num {
+  background-color: var(--color-malina); /* Кружок неправильного ответа */
+}
+.section__test .container__test .test__answer .disabled {
+  pointer-events: none;
+  opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
+}
+.section__test .container__test .test .select {
+  border-radius: 2.0833333333vw;
+  color: var(--color-ligth);
+}
+.section__test .container__test .test.show {
+  display: flex;
+}
+
+.show {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

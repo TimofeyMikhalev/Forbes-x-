@@ -31,6 +31,7 @@ img {
     @return $fontSize;
 }
 
+
 .container {
     width: get-vw(1370px, 1440);
 }
@@ -63,16 +64,29 @@ img {
     border-radius: get-vw(29px, 1440);
 }
 
-.button:hover {
+.btn:hover {
     opacity: .8;
 }
 
-.test__answer-grey {
-    width: get-vw(459px, 1440);
-    height: auto;
-
-    border: get-vw(2px, 1440) solid var(--color-gray);
-    border-radius: get-vw(65px, 1440);
-
-    padding: get-vw(10px, 1440) get-vw(29px, 1440);
+.text {
+    text-align: start;
 }
+
+.malina {
+    background-color: var(--color-malina);
+}
+
+.green {
+    background-color: var(--color-grean);
+}
+
+/* Скрытие текста */
+.hidden {
+    display: none;
+}
+
+.button.disabled {
+    pointer-events: none; /* Отключает клики на кнопке */
+    opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+}
+
