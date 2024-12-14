@@ -1,0 +1,63 @@
+.section__result {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+
+    background: url(/images/result-bg.svg) no-repeat center center/cover;
+    .container__result {
+        width: get-vw(1341px, 1440);
+        .section__body {
+            .result {
+                display: none;
+                justify-content: space-between;
+                align-items: start;
+                &__img {
+                    width: get-vw(710px, 1440);
+                    height: get-vw(713px, 1440);
+                }
+                &__body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    row-gap: get-vw(28px, 1440);
+                    max-width: get-vw(633px, 1440);
+                    padding-top: get-vw(113px, 1440);
+                }
+                &__cicle {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    width: get-vw(554px, 1440);
+                    &-img {
+                        width: get-vw(97px, 1440);
+                        height: get-vw(97px, 1440);
+                    }   
+                }
+                &__title {
+                    font-size: get-vw(48px, 1440);
+                    font-weight: 500;
+                }
+                &__description {
+                    max-width: get-vw(633px, 1440);
+                }
+                &__button {
+                    width: get-vw(210px, 1440);
+                }
+            }
+            .result.show {
+                display: flex;
+            }
+        }
+    }
+}
+
+
+@import '../globals';

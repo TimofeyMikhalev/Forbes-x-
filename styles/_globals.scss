@@ -64,6 +64,34 @@ img {
     border-radius: get-vw(29px, 1440);
 }
 
+.button__result {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-grean);
+    color: var(--color-ligth);
+    border: none;
+    cursor: pointer;
+    min-width: get-vw(210px, 1440);
+    height: get-vw(37px, 1440);
+    transition: var(--transition-duration);
+    border-radius: get-vw(29px, 1440);
+}
+
+.button__return {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: inherit;
+    color: var(--color-grean);
+    border: get-vw(2px, 1440) solid var(--color-grean); 
+    cursor: pointer;
+    min-width: get-vw(313px, 1440);
+    height: get-vw(37px, 1440);
+    transition: var(--transition-duration);
+    border-radius: get-vw(29px, 1440);
+} 
+
 .btn:hover {
     opacity: .8;
 }
@@ -80,13 +108,18 @@ img {
     background-color: var(--color-grean);
 }
 
+.show {
+    display: flex;
+}
 /* Скрытие текста */
 .hidden {
     display: none;
 }
 
+
 .button.disabled {
     pointer-events: none; /* Отключает клики на кнопке */
     opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+    cursor: not-allowed; /* Меняем курсор */
 }
 

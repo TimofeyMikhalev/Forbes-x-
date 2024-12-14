@@ -278,6 +278,34 @@ img {
   border-radius: 2.0138888889vw;
 }
 
+.button__result {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 14.5833333333vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__return {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+  color: var(--color-grean);
+  border: 0.1388888889vw solid var(--color-grean);
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
 .btn:hover {
   opacity: 0.8;
 }
@@ -294,6 +322,10 @@ img {
   background-color: var(--color-grean);
 }
 
+.show {
+  display: flex;
+}
+
 /* Скрытие текста */
 .hidden {
   display: none;
@@ -302,6 +334,7 @@ img {
 .button.disabled {
   pointer-events: none; /* Отключает клики на кнопке */
   opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+  cursor: not-allowed; /* Меняем курсор */
 }
 
 :root {
@@ -378,6 +411,34 @@ img {
   border-radius: 2.0138888889vw;
 }
 
+.button__result {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 14.5833333333vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__return {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+  color: var(--color-grean);
+  border: 0.1388888889vw solid var(--color-grean);
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
 .btn:hover {
   opacity: 0.8;
 }
@@ -394,6 +455,10 @@ img {
   background-color: var(--color-grean);
 }
 
+.show {
+  display: flex;
+}
+
 /* Скрытие текста */
 .hidden {
   display: none;
@@ -402,6 +467,7 @@ img {
 .button.disabled {
   pointer-events: none; /* Отключает клики на кнопке */
   opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+  cursor: not-allowed; /* Меняем курсор */
 }
 
 @media screen and (min-width: 650px) {
@@ -430,20 +496,6 @@ img {
     height: 1.875vw;
   }
 }
-.section__start {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  background-image: url(../images/hero-bg.svg);
-  background-size: cover;
-}
-
 body {
   font-family: var(--font-family-base);
   font-weight: 500;
@@ -503,6 +555,34 @@ img {
   border-radius: 2.0138888889vw;
 }
 
+.button__result {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 14.5833333333vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__return {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+  color: var(--color-grean);
+  border: 0.1388888889vw solid var(--color-grean);
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
 .btn:hover {
   opacity: 0.8;
 }
@@ -519,6 +599,10 @@ img {
   background-color: var(--color-grean);
 }
 
+.show {
+  display: flex;
+}
+
 /* Скрытие текста */
 .hidden {
   display: none;
@@ -527,20 +611,34 @@ img {
 .button.disabled {
   pointer-events: none; /* Отключает клики на кнопке */
   opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+  cursor: not-allowed; /* Меняем курсор */
 }
 
-.hero {
+.section__start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-image: url(../images/hero-bg.svg);
+  background-size: cover;
+}
+.section__start .hero {
   display: flex;
   justify-content: space-between;
   align-items: start;
   -moz-column-gap: 3.125vw;
        column-gap: 3.125vw;
 }
-.hero__img {
+.section__start .hero__img {
   width: 43.6805555556vw;
   height: 44.6527777778vw;
 }
-.hero__body {
+.section__start .hero__body {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -548,7 +646,7 @@ img {
   max-width: 45.4861111111vw;
   padding-top: 6.3888888889vw;
 }
-.hero__test {
+.section__start .hero__test {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -561,7 +659,7 @@ img {
   border: 0.1388888889vw solid var(--color-grean);
   border-radius: 3.9583333333vw;
 }
-.hero__title {
+.section__start .hero__title {
   font-size: 3.3333333333vw;
   font-weight: 500;
 }
@@ -692,6 +790,294 @@ img {
   display: flex;
 }
 
+body {
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 1.1111111111vw;
+  line-height: 1.28;
+  color: var(--color--dark);
+  background-color: var(--color-ligth);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 95.1388888889vw;
+}
+
+.button__grean {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__grey {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-gray);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__result {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 14.5833333333vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__return {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+  color: var(--color-grean);
+  border: 0.1388888889vw solid var(--color-grean);
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.text {
+  text-align: start;
+}
+
+.malina {
+  background-color: var(--color-malina);
+}
+
+.green {
+  background-color: var(--color-grean);
+}
+
 .show {
   display: flex;
+}
+
+/* Скрытие текста */
+.hidden {
+  display: none;
+}
+
+.button.disabled {
+  pointer-events: none; /* Отключает клики на кнопке */
+  opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+  cursor: not-allowed; /* Меняем курсор */
+}
+
+.section__result {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: url(/images/result-bg.svg) no-repeat center center/cover;
+}
+.section__result .container__result {
+  width: 93.125vw;
+}
+.section__result .container__result .section__body .result {
+  display: none;
+  justify-content: space-between;
+  align-items: start;
+}
+.section__result .container__result .section__body .result__img {
+  width: 49.3055555556vw;
+  height: 49.5138888889vw;
+}
+.section__result .container__result .section__body .result__body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 1.9444444444vw;
+  max-width: 43.9583333333vw;
+  padding-top: 7.8472222222vw;
+}
+.section__result .container__result .section__body .result__cicle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 38.4722222222vw;
+}
+.section__result .container__result .section__body .result__cicle-img {
+  width: 6.7361111111vw;
+  height: 6.7361111111vw;
+}
+.section__result .container__result .section__body .result__title {
+  font-size: 3.3333333333vw;
+  font-weight: 500;
+}
+.section__result .container__result .section__body .result__description {
+  max-width: 43.9583333333vw;
+}
+.section__result .container__result .section__body .result__button {
+  width: 14.5833333333vw;
+}
+.section__result .container__result .section__body .result.show {
+  display: flex;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 1.1111111111vw;
+  line-height: 1.28;
+  color: var(--color--dark);
+  background-color: var(--color-ligth);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 95.1388888889vw;
+}
+
+.button__grean {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__grey {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-gray);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__result {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 14.5833333333vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__return {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+  color: var(--color-grean);
+  border: 0.1388888889vw solid var(--color-grean);
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.text {
+  text-align: start;
+}
+
+.malina {
+  background-color: var(--color-malina);
+}
+
+.green {
+  background-color: var(--color-grean);
+}
+
+.show {
+  display: flex;
+}
+
+/* Скрытие текста */
+.hidden {
+  display: none;
+}
+
+.button.disabled {
+  pointer-events: none; /* Отключает клики на кнопке */
+  opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+  cursor: not-allowed; /* Меняем курсор */
 }/*# sourceMappingURL=style.css.map */
