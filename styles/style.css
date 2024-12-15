@@ -323,12 +323,16 @@ img {
 }
 
 .show {
-  display: flex;
+  display: flex !important;
 }
 
 /* Скрытие текста */
 .hidden {
   display: none;
+}
+
+.true__effect {
+  opacity: 0.1;
 }
 
 .button.disabled {
@@ -456,12 +460,16 @@ img {
 }
 
 .show {
-  display: flex;
+  display: flex !important;
 }
 
 /* Скрытие текста */
 .hidden {
   display: none;
+}
+
+.true__effect {
+  opacity: 0.1;
 }
 
 .button.disabled {
@@ -600,12 +608,16 @@ img {
 }
 
 .show {
-  display: flex;
+  display: flex !important;
 }
 
 /* Скрытие текста */
 .hidden {
   display: none;
+}
+
+.true__effect {
+  opacity: 0.1;
 }
 
 .button.disabled {
@@ -695,6 +707,7 @@ img {
 .section__test .container__test .test__img {
   width: 49.1666666667vw;
   height: 49.5138888889vw;
+  position: relative;
 }
 .section__test .container__test .test__number {
   color: var(--color-gray);
@@ -781,6 +794,27 @@ img {
 .section__test .container__test .test__answer .disabled {
   pointer-events: none;
   opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
+}
+.section__test .container__test .test .test__img-animation {
+  display: none;
+  width: 30.7638888889vw;
+  height: 33.0555555556vw;
+  position: absolute;
+  top: 6.9444444444vw;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.section__test .container__test .test .test__img-confity {
+  display: none;
+  width: 45.5555555556vw;
+  height: 43.4722222222vw;
+  position: absolute;
+  top: 6.9444444444vw;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 .section__test .container__test .test .select {
   border-radius: 2.0833333333vw;
@@ -894,12 +928,16 @@ img {
 }
 
 .show {
-  display: flex;
+  display: flex !important;
 }
 
 /* Скрытие текста */
 .hidden {
   display: none;
+}
+
+.true__effect {
+  opacity: 0.1;
 }
 
 .button.disabled {
@@ -1068,12 +1106,16 @@ img {
 }
 
 .show {
-  display: flex;
+  display: flex !important;
 }
 
 /* Скрытие текста */
 .hidden {
   display: none;
+}
+
+.true__effect {
+  opacity: 0.1;
 }
 
 .button.disabled {

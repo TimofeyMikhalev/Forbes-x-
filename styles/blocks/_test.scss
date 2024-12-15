@@ -29,6 +29,7 @@
             &__img {
                 width: get-vw(708px, 1440);
                 height: get-vw(713px, 1440);
+                position: relative;
             }
 
             &__number {
@@ -131,6 +132,27 @@
                     pointer-events: none;
                     opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
                 }
+            }
+            .test__img-animation {
+                display: none;
+                width: get-vw(443px, 1440);
+                height: get-vw(476px, 1440);
+                position: absolute;
+                top: get-vw(100px, 1440);
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 10;
+            }
+            .test__img-confity {
+                display: none;
+                width: get-vw(656px, 1440);
+                height: get-vw(626px, 1440);
+                position: absolute;
+                top: get-vw(100px, 1440);
+                right: 0;
+                left: 0;
+                bottom: 0;
             }
             .select{
                 border-radius: get-vw(30px, 1440);

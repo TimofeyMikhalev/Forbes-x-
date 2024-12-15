@@ -109,13 +109,21 @@ img {
 }
 
 .show {
-    display: flex;
+    display: flex !important;
 }
 /* Скрытие текста */
 .hidden {
     display: none;
 }
 
+.true__effect {
+    opacity: 0.1;
+}
+
+
+.active {
+
+}
 
 .button.disabled {
     pointer-events: none; /* Отключает клики на кнопке */

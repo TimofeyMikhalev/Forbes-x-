@@ -2,55 +2,160 @@
 const containers = document.querySelectorAll('.test__answer');
 const btnNext = document.querySelectorAll('.test__button');
 
+// Блокируем кнопки перехода изначально
+btnNext.forEach(button => {
+    button.disabled = true;
+});
 
 // Добавляем обработчик событий на каждую кнопку
-containers.forEach((container) => {
-  const button = container.querySelector('.button');
-  const circle = container.querySelector('.num');
-  const extraContent = button.querySelector('.text-content');
-  const isCorrect = container.querySelector('.num').getAttribute('data-correct') === 'true'; // Проверка правильности ответа
+// containers.forEach((container) => {
+//   const button = container.querySelector('.button');
+//   const circle = container.querySelector('.num');
+//   const extraContent = button.querySelector('.text-content');
+//   const isCorrect = container.querySelector('.num').getAttribute('data-correct') === 'true'; // Проверка правильности ответа
 
-  button.addEventListener('click', function () {
+//   button.addEventListener('click', function () {
     
-    // Если кнопка уже активна, ничего не делаем
-    if (button.classList.contains('active') || button.classList.contains('disabled')) return;
+//     // Если кнопка уже активна, ничего не делаем
+//     if (button.classList.contains('active') || button.classList.contains('disabled')) return;
 
-    // Делаем текущую кнопку активной
-    button.classList.add('active');
-    circle.classList.add('active');
+//     // Делаем текущую кнопку активной
+//     button.classList.add('active');
+//     circle.classList.add('active');
     
-    // Показываем дополнительный текст
-    extraContent.classList.remove('hidden');
+//     // Показываем дополнительный текст
+//     extraContent.classList.remove('hidden');
 
-    // Меняем цвета в зависимости от правильности ответа
-    if (isCorrect) {
-      button.classList.add('correct'); // Подсвечиваем правильный ответ
-      circle.classList.add('correct'); // Подсвечиваем кружок
-    } else {
-      button.classList.add('incorrect'); // Подсвечиваем неправильный ответ
-      circle.classList.add('incorrect'); // Подсвечиваем кружок
-    }
+//     // Меняем цвета в зависимости от правильности ответа
+//     if (isCorrect) {
+//       button.classList.add('correct'); // Подсвечиваем правильный ответ
+//       circle.classList.add('correct'); // Подсвечиваем кружок
+//     } else {
+//       button.classList.add('incorrect'); // Подсвечиваем неправильный ответ
+//       circle.classList.add('incorrect'); // Подсвечиваем кружок
+//     }
 
-    // Блокируем возможность клика на другие кнопки
-    containers.forEach((otherContainer) => {
-      const otherButton = otherContainer.querySelector('.button');
-      const otherCircle = otherContainer.querySelector('.num');
-      if (otherButton !== button) {
-        otherButton.classList.add('disabled'); // Добавляем класс для блокировки
-        otherCircle.classList.add('disabled'); // Блокируем кружки
-      }
+   
+//     // Массив с данными для привязки ответов и элементов анимации
+//     const answers = [
+//         { answer: '1', img: '.test__img1', animation: '.test__img-animation1', confity: '.test__img-confity1' },
+//         { answer: '2', img: '.test__img2', animation: '.test__img-animation2', confity: '.test__img-confity2' },
+//         { answer: '3', img: '.test__img3', animation: '.test__img-animation3', confity: '.test__img-confity3' },
+//         { answer: '4', img: '.test__img4', animation: '.test__img-animation4', confity: '.test__img-confity4' },
+//         { answer: '5', img: '.test__img5', animation: '.test__img-animation5', confity: '.test__img-confity5' },
+//     ];
+
+//     // Привязываем обработчики событий через цикл
+//     answers.forEach(({ answer, img, animation, confity }) => {
+//         const answerElement = document.getElementById(answer);
+//         const imgElement = document.querySelector(img);
+//         const animationElement = document.querySelector(animation);
+//         const confityElement = document.querySelector(confity);
+
+//         answerElement.addEventListener('click', () => {
+//             imgElement.classList.add('true__effect');
+//             animationElement.classList.add('show');
+//             confityElement.classList.add('show');
+//         });
+//     });
+
+//     // Блокируем возможность клика на другие кнопки
+//     containers.forEach((otherContainer) => {
+//       const otherButton = otherContainer.querySelector('.button');
+//       const otherCircle = otherContainer.querySelector('.num');
+//       if (otherButton !== button) {
+//         otherButton.classList.add('disabled'); // Добавляем класс для блокировки
+//         otherCircle.classList.add('disabled'); // Блокируем кружки
+//       }
+//     });
+//   });
+// });
+
+// Инициализация анимаций и эффектов
+
+
+const answers = [
+    { answer: '1', img: '.test__img1', animation: '.test__img-animation1', confity: '.test__img-confity1' },
+    { answer: '2', img: '.test__img2', animation: '.test__img-animation2', confity: '.test__img-confity2' },
+    { answer: '3', img: '.test__img3', animation: '.test__img-animation3', confity: '.test__img-confity3' },
+    { answer: '4', img: '.test__img4', animation: '.test__img-animation4', confity: '.test__img-confity4' },
+    { answer: '5', img: '.test__img5', animation: '.test__img-animation5', confity: '.test__img-confity5' },
+];
+
+// Функция добавления анимации
+function triggerAnimation(answerId) {
+    const { img, animation, confity } = answers.find(a => a.answer === answerId);
+    document.querySelector(img).classList.add('true__effect');
+    document.querySelector(animation).classList.add('show');
+    document.querySelector(confity).classList.add('show');
+}
+
+// Функция сброса всех анимаций
+function resetAnimations() {
+    answers.forEach(({ img, animation, confity }) => {
+        document.querySelector(img).classList.remove('true__effect');
+        document.querySelector(animation).classList.remove('show');
+        document.querySelector(confity).classList.remove('show');
     });
-  });
+}
+
+// Обработка клика на кнопку
+containers.forEach((container) => {
+    const button = container.querySelector('.button');
+    const circle = container.querySelector('.num');
+    const extraContent = button.querySelector('.text-content');
+    const isCorrect = circle.getAttribute('data-correct') === 'true';
+
+    
+
+    
+
+    button.addEventListener('click', function () {
+        // Если кнопка уже активна, ничего не делаем
+        if (button.classList.contains('active') || button.classList.contains('disabled')) return;
+
+        // Делаем текущую кнопку активной
+        button.classList.add('active');
+        circle.classList.add('active');
+        extraContent.classList.remove('hidden');
+
+        // Меняем цвета в зависимости от правильности ответа
+        if (isCorrect) {
+            button.classList.add('correct');
+            circle.classList.add('correct');
+            triggerAnimation(container.id); // Включаем анимацию
+        } else {
+            button.classList.add('incorrect');
+            circle.classList.add('incorrect');
+        }
+
+        // Активируем кнопку перехода, если выбран вариант
+        btnNext.forEach(button => {
+            button.disabled = false;
+        });
+
+        // Блокируем возможность клика на другие кнопки
+        containers.forEach((otherContainer) => {
+            const otherButton = otherContainer.querySelector('.button');
+            const otherCircle = otherContainer.querySelector('.num');
+            if (otherButton !== button) {
+                otherButton.classList.add('disabled');
+                otherCircle.classList.add('disabled');
+            }
+        });
+    });
 });
+
+
 
 
 
 // Получаем все контейнеры с тестами
 const tests = document.querySelectorAll('.test');
 
-
 btnNext.forEach((button, index) => {
     button.addEventListener('click', function () {
+        
         // Скрываем текущий тест
         tests[index].classList.remove('show');
 
@@ -70,10 +175,10 @@ btnNext.forEach((button, index) => {
 
 //Переход с главной на тест
 const heroButton = document.querySelector('.hero__button');
+const sectionStart = document.querySelector('.section__start')
 
 heroButton.addEventListener('click', function () {
     const sectionTest = document.querySelector('.section__test')
-    const sectionStart = document.querySelector('.section__start')
 
     sectionStart.classList.add('hidden')
     sectionTest.classList.add('show')
@@ -84,6 +189,8 @@ heroButton.addEventListener('click', function () {
 let resultQuestion = document.querySelectorAll('.test__answer');
 let results = [];
 
+
+
 resultQuestion.forEach(inner => {
     inner.addEventListener('click', function handleClick() {
         // Если кнопка уже выбрана, ничего не делаем
@@ -92,6 +199,7 @@ resultQuestion.forEach(inner => {
         // Добавляем текущий выбор в массив
         results.push(inner.dataset.result);
         console.log(results); // Выводим массив с результатами
+
 
         // Отмечаем выбранный элемент
         inner.classList.add('selected');
@@ -107,6 +215,8 @@ resultQuestion.forEach(inner => {
 });
 
 
+
+
 // Обработчик для кнопки, который сбрасывает все действия
 btnNext.forEach(button => {
     button.addEventListener('click', function () {
@@ -115,8 +225,9 @@ btnNext.forEach(button => {
             inner.classList.remove('selected');
             inner.classList.remove('disabled');
             inner.style.pointerEvents = 'auto'; // Восстанавливаем возможность клика
-        });
+        });        
     });
+
 });
 
 const btnResult = document.querySelector('.btn__result');
@@ -157,44 +268,43 @@ btnResult.addEventListener('click', function() {
     }
 })
 
+
+
+
 //пройти тест заново
 const buttonReturn = document.querySelectorAll('.button__return')
 
+
 // Функция сброса приложения
 function resetApp() {
-    // Сбрасываем массив с результатами
-    results = [];
+    results = []; // Очищаем массив результатов
 
-    // Сбрасываем классы всех тестов
-    tests.forEach((test, index) => {
-        test.classList.remove('show'); // Убираем видимость всех тестов
-        const testAnswers = test.querySelectorAll('.test__answer');
+    // Сбрасываем состояние кнопок, кружков и текста
+    containers.forEach((container) => {
+        const button = container.querySelector('.button');
+        const circle = container.querySelector('.num');
+        const extraContent = button.querySelector('.text-content');
 
-        // Сбрасываем состояние кнопок и кружков внутри каждого теста
-        testAnswers.forEach(answer => {
-            const button = answer.querySelector('.button');
-            const circle = answer.querySelector('.num');
-            const extraContent = button.querySelector('.text-content');
-
-            button.classList.remove('active', 'correct', 'incorrect', 'disabled');
-            circle.classList.remove('active', 'correct', 'incorrect', 'disabled');
-            extraContent.classList.add('hidden');
-        });
+        button.classList.remove('active', 'correct', 'incorrect', 'disabled');
+        circle.classList.remove('active', 'correct', 'incorrect', 'disabled');
+        extraContent.classList.add('hidden');
     });
 
-    // Показываем первый тест
-    tests[0].classList.add('show');
-    const sectionStart = document.querySelector('.section__start')
+    // Сбрасываем анимации
+    resetAnimations();
 
-    //
-    resultOne.classList.remove('show')
-    resultTwo.classList.remove('show')
-    resultThree.classList.remove('show')
+    // Переключаем видимость секций
+    tests.forEach((test) => test.classList.remove('show'));
+    tests[0].classList.add('show'); // Показываем первый тест
 
-    // Скрываем секцию с результатами и показываем стартовую секцию
     sectionResult.classList.remove('show');
     sectionStart.classList.remove('show');
     sectionTest.classList.add('show');
+
+    // Сбрасываем отображение результатов
+    resultOne.classList.remove('show');
+    resultTwo.classList.remove('show');
+    resultThree.classList.remove('show');
 }
 
 // Добавляем обработчик сброса на кнопку возврата
