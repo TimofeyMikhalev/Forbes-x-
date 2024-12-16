@@ -2,10 +2,7 @@
 const containers = document.querySelectorAll('.test__answer');
 const btnNext = document.querySelectorAll('.test__button');
 
-// Блокируем кнопки перехода изначально
-btnNext.forEach(button => {
-    button.disabled = true;
-});
+
 
 // Добавляем обработчик событий на каждую кнопку
 // containers.forEach((container) => {
@@ -105,10 +102,7 @@ containers.forEach((container) => {
     const circle = container.querySelector('.num');
     const extraContent = button.querySelector('.text-content');
     const isCorrect = circle.getAttribute('data-correct') === 'true';
-
-    
-
-    
+    const testBtnAction = document.querySelectorAll('.test__button-action')
 
     button.addEventListener('click', function () {
         // Если кнопка уже активна, ничего не делаем
@@ -132,6 +126,7 @@ containers.forEach((container) => {
         // Активируем кнопку перехода, если выбран вариант
         btnNext.forEach(button => {
             button.disabled = false;
+            button.style.pointerEvents = 'auto';
         });
 
         // Блокируем возможность клика на другие кнопки
@@ -162,14 +157,20 @@ btnNext.forEach((button, index) => {
         // Показываем следующий тест, если он есть
         if (index + 1 < tests.length) {
             tests[index + 1].classList.add('show');
-
-            //блокирует нажатие повторно на один из вариатов в  тесте
+            btnNext.forEach(button => {
+                button.classList.add('disabled')
+                button.disabled = true;
+                button.style.pointerEvents = 'none';
+            });
+            //блокирует нажатие повторно на один из вариатов в тесте
             containers.forEach((otherContainer) => {
                 const otherButton = otherContainer.querySelector('.button');
                 otherButton.classList.remove('disabled');
             })
         }
+
     });
+
 });
 
 
@@ -182,6 +183,7 @@ heroButton.addEventListener('click', function () {
 
     sectionStart.classList.add('hidden')
     sectionTest.classList.add('show')
+
 })
 
 
@@ -305,9 +307,17 @@ function resetApp() {
     resultOne.classList.remove('show');
     resultTwo.classList.remove('show');
     resultThree.classList.remove('show');
+
+    btnNext.forEach(button => {
+        button.disabled = true;
+        button.style.pointerEvents = 'none';
+    });
 }
 
 // Добавляем обработчик сброса на кнопку возврата
 buttonReturn.forEach(button => {
     button.addEventListener('click', resetApp);
 });
+
+
+AOS.init();

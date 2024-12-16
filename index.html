@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Forbes x СБОЛ</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <header class="header">
@@ -38,7 +40,7 @@
                                     Пройдите тест и узнайте, как дворовые забавы могли подготовить вас к управлению финансами.
                                 </p>
                             </div>
-                            <button class="hero__button button__grean btn" type="button">
+                            <button class="hero__button button__grean" type="button">
                                 Пройти тест
                             </button>
                         </div>
@@ -53,11 +55,11 @@
                             <div class="test__number">
                                 1/5
                             </div>
-                            <div class="test__text">
+                            <div class="test__text fade-in">
                                 Вы играете в «Казаки-разбойники». Вы в команде «казаков», и ваша задача — поймать «разбойников» и узнать у них секретное слово-пароль. <span>Какую стратегию вы выберете для успешного выполнения задачи?</span>
                             </div>
                             <ul class="test__question">
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">1</div>
                                     <button class="button">
                                         <div class="text">
@@ -66,7 +68,7 @@
                                         <p class="text-content hidden">Бегая без плана, вы тратите время и силы, снижая шансы на успешный поиск.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="true" id="1">
+                                <li class="test__answer fade-in" data-result="true" id="1">
                                     <div class="num" data-correct="true">2</div>
                                     <button class="button">
                                         <div class="text">
@@ -75,7 +77,7 @@
                                         <p class="text-content hidden">Вы получили редкий вкладыш «Love is...». Координация с командой и анализ подсказок позволяют эффективно найти «разбойников». Это аналогично инвестированию на фондовом рынке, где важно проводить анализ и уделять внимание деталям для достижения лучших результатов. Так, размер комиссий, налогов, а также налоговых вычетов на первый взгляд может показаться незначительным, но в долгосрочной перспективе они могут значительно повлиять на капитал. Новый сервис приложения «Сбербанк Онлайн» в удобной форме учитывает влияние комиссий и налогов на состояние портфеля.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">3</div>
                                     <button class="button">
                                         <div class="text">
@@ -84,7 +86,7 @@
                                         <p class="text-content hidden">Это может работать какое-то время, пока «водящим» не станет кто-то более проворный.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">4</div>
                                     <button class="button">
                                         <div class="text">
@@ -94,14 +96,14 @@
                                     </button>
                                 </li>
                             </ul>
-                            <button class="test__button button__grey btn" type="button">
+                            <button class="test__button button__grey btn test__button-action" disabled type="button">
                                 Следующий вопрос
                             </button>
                         </div>
                         <div class="test__img">
-                            <img class="test__img1" src="images/test1.svg" alt="" loading="lazy">
+                            <img class="test__img1 test__img-movie" src="images/test1.svg" alt="" loading="lazy">
                             <div class="test__img-animation test__img-animation1">
-                                <img src="images/win-img1.svg" alt="" loading="lazy">
+                                <img src="images/res1.png" alt="" loading="lazy">
                             </div>
                             <div class="test__img-confity test__img-confity1">
                                 <img src="images/confiti.svg" alt="" loading="lazy">
@@ -114,11 +116,11 @@
                             <div class="test__number">
                                 2/5
                             </div>
-                            <div class="test__text">
+                            <div class="test__text fade-in">
                                 Вы играете в «Ножички», несмотря на недовольство родителей. Вы стремитесь захватить как можно больше территории своих соперников. <span>Какой подход вы выберете?</span>
                             </div>
                             <ul class="test__question">
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">1</div>
                                     <button class="button">
                                         <div class="text">
@@ -127,7 +129,7 @@
                                         <p class="text-content hidden">Действуя без стратегии, вы снижаете шансы на успех и зависите от случайности.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="true" id="2">
+                                <li class="test__answer fade-in" data-result="true" id="2">
                                     <div class="num" data-correct="true">2</div>
                                     <button class="button">
                                         <div class="text">
@@ -136,7 +138,7 @@
                                         <p class="text-content hidden">Вы получили пружинку «Слинки». В игре «Ножички» важен продуманный подход: анализ ситуации и выбор оптимальной стратегии помогают эффективно расширять свою территорию. Точно так же в управлении финансами важно регулярно отслеживать и анализировать работу своих активов. В мобильном приложении «Сбербанк Онлайн» появился новый сервис, который ежедневно предоставляет детальный отчет о доходности каждого актива и портфеля в целом, в разрезе месяца, квартала или года. Это позволяет вам принимать взвешенные решения и эффективно управлять своим капиталом, достигая финансовых целей.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">3</div>
                                     <button class="button">
                                         <div class="text">
@@ -145,7 +147,7 @@
                                         <p class="text-content hidden">Ограничиваясь ближайшими целями, вы упускаете перспективы для большего роста.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">4</div>
                                     <button class="button">
                                         <div class="text">
@@ -154,14 +156,14 @@
                                     </button>
                                 </li>
                             </ul>
-                            <button class="test__button button__grey btn" type="button">
+                            <button class="test__button button__grey btn test__button-action" type="button">
                                 Следующий вопрос
                             </button>
                         </div>
                         <div class="test__img">
-                            <img class="test__img2" src="images/test2.svg" alt="" loading="lazy">
+                            <img class="test__img2 test__img-movie" src="images/test2.svg" alt="" loading="lazy">
                             <div class="test__img-animation test__img-animation2">
-                                <img src="images/win-img2.svg" alt="" loading="lazy">
+                                <img src="images/res2.png" alt="" loading="lazy">
                             </div>
                             <div class="test__img-confity test__img-confity2">
                                 <img src="images/confiti.svg" alt="" loading="lazy">
@@ -173,11 +175,11 @@
                             <div class="test__number">
                                 3/5
                             </div>
-                            <div class="test__text">
+                            <div class="test__text fade-in">
                                 Вы играете в «Выше ноги от земли». <span>Какую стратегию вы выберете, чтобы не быть пойманным?</span>
                             </div>
                             <ul class="test__question">
-                                <li class="test__answer" data-result="true" id="3">
+                                <li class="test__answer fade-in" data-result="true" id="3">
                                     <div class="num" data-correct="true">1</div>
                                     <button class="button">
                                         <div class="text">
@@ -186,7 +188,7 @@
                                         <p class="text-content hidden">Вы получили акулу с ящиком золота из «Киндер Сюрприз». Постоянное движение и планирование в игре «Выше ноги от земли» помогают избежать поимки и достичь успеха. Аналогично, в управлении финансами важно регулярно отслеживать и корректировать свои вклады и пенсионные продукты в рамках финансового планирования. Это может обеспечить стабильность накоплений в долгосрочной перспективе. Новый сервис Сбербанка помогает управлять сбережениям и принимать обоснованные решения для достижения финансовых целей.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">2</div>
                                     <button class="button">
                                         <div class="text">
@@ -195,7 +197,7 @@
                                         <p class="text-content hidden">Вы нарушаете правила - оставаться на одном месте долгое время нельзя. Поэтому вас просто «осалят» в вашей безопасной высокой точке.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">3</div>
                                     <button class="button">
                                         <div class="text">
@@ -204,7 +206,7 @@
                                         <p class="text-content hidden">Не все чужие решения могут быть эффективными.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">4</div>
                                     <button class="button">
                                         <div class="text">
@@ -214,14 +216,14 @@
                                     </button>
                                 </li>
                             </ul>
-                            <button class="test__button button__grey btn" type="button">
+                            <button class="test__button button__grey btn test__button-action" type="button">
                                 Следующий вопрос
                             </button>
                         </div>
                         <div class="test__img">
-                            <img class="test__img3" src="images/test3.svg" alt="" loading="lazy">
+                            <img class="test__img3 test__img-movie" src="images/test3.svg" alt="" loading="lazy">
                             <div class="test__img-animation test__img-animation3">
-                                <img src="images/win-img3.svg" alt="" loading="lazy">
+                                <img src="images/res3.png" alt="" loading="lazy">
                             </div>
                             <div class="test__img-confity test__img-confity3">
                                 <img src="images/confiti.svg" alt="" loading="lazy">
@@ -233,11 +235,11 @@
                             <div class="test__number">
                                 4/5
                             </div>
-                            <div class="test__text">
+                            <div class="test__text fade-in">
                                 Вы играете в "Жмурки" и хотите поймать кого-то из соперников <span>Какой подход вы выберете?</span>
                             </div>
                             <ul class="test__question">
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">1</div>
                                     <button class="button">
                                         <div class="text">
@@ -246,7 +248,7 @@
                                         <p class="text-content hidden">Полагаться только на скорость без ориентации может привести к неэффективным попыткам и упущенным возможностям, ведь всегда найдется кто-то быстрее.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">2</div>
                                     <button class="button">
                                         <div class="text">
@@ -255,7 +257,7 @@
                                         <p class="text-content hidden">Пассивное ожидание может принести успех, но это ненадежная стратегия, которая редко приводит к победе.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="true" id="4">
+                                <li class="test__answer fade-in" data-result="true" id="4">
                                     <div class="num" data-correct="true">3</div>
                                     <button class="button">
                                         <div class="text">
@@ -264,7 +266,7 @@
                                         <p class="text-content hidden">Вы получили фишку с «Покемоном». Используя слух и анализируя окружающие звуки, вы повышаете свои шансы на успех в игре. Аналогично, сравнивая доходность своего портфеля с рыночными индексами, вы можете объективно оценить эффективность своих инвестиций и скорректировать стратегию. Новый сервис приложения «Сбербанк онлайн» предоставляет такую возможность, помогая принимать взвешенные решения и улучшать показатели вашего портфеля.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">4</div>
                                     <button class="button">
                                         <div class="text">
@@ -274,14 +276,14 @@
                                     </button>
                                 </li>
                             </ul>
-                            <button class="test__button button__grey btn" type="button">
+                            <button class="test__button button__grey btn test__button-action" type="button">
                                 Следующий вопрос
                             </button>
                         </div>
                         <div class="test__img">
-                            <img  class="test__img4" src="images/test4.svg" alt="" loading="lazy">
+                            <img  class="test__img4 test__img-movie" src="images/test4.svg" alt="" loading="lazy">
                             <div class="test__img-animation test__img-animation4">
-                                <img src="images/win-img4.svg" alt="" loading="lazy">
+                                <img src="images/res4.svg" alt="" loading="lazy">
                             </div>
                             <div class="test__img-confity test__img-confity4">
                                 <img src="images/confiti.svg" alt="" loading="lazy">
@@ -293,11 +295,11 @@
                             <div class="test__number">
                                 5/5
                             </div>
-                            <div class="test__text">
+                            <div class="test__text fade-in">
                                 Во дворе вы играете в "Классики". Асфальт расчерчен мелом на квадраты — дорожку из одиночных и двойных клеток. Вы прыгаете на одной ноге, толкая битку из банки из квадрата в квадрат, стараясь не наступить на линии и не вывести ее за пределы поля. <span> Какая у вас тактика игры?</span>
                             </div>
                             <ul class="test__question">
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">1</div>
                                     <button class="button">
                                         <div class="text">
@@ -306,7 +308,7 @@
                                         <p class="text-content hidden">Уверенность важна, но без тщательного расчета можно легко наступить на линию и начать все заново.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="true" id="5">
+                                <li class="test__answer fade-in" data-result="true" id="5">
                                     <div class="num" data-correct="true">2</div>
                                     <button class="button">
                                         <div class="text">
@@ -315,7 +317,7 @@
                                         <p class="text-content hidden">Вы получаете тамагочи. Сохраняя равновесие и принимая взвешенные решения перед каждым прыжком, вы повышаете свои шансы на успех. Это аналогично управлению инвестиционным портфелем: неосторожные шаги могут привести к финансовым потерям. Сервис «Сбербанк онлайн» позволяет без труда проводить своевременную балансировку портфеля для поддержания стабильность инвестиций в долгосрочной перспективе.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">3</div>
                                     <button class="button">
                                         <div class="text">
@@ -324,7 +326,7 @@
                                         <p class="text-content hidden">Отказ от игры из-за мелких трудностей лишает вас удовольствия.</p>
                                     </button>
                                 </li>
-                                <li class="test__answer" data-result="false">
+                                <li class="test__answer fade-in" data-result="false">
                                     <div class="num" data-correct="false">4</div>
                                     <button class="button">
                                         <div class="text">
@@ -334,14 +336,14 @@
                                     </button>
                                 </li>
                             </ul>
-                            <button class="test__button button__grey btn btn__result" type="button">
+                            <button class="test__button button__grey btn btn__result test__button-action" type="button">
                                 Следующий вопрос
                             </button>
                         </div>
                         <div class="test__img">
-                            <img  class="test__img5" src="images/test5.svg" alt="" loading="lazy">
+                            <img  class="test__img5 test__img-movie" src="images/test5.svg" alt="" loading="lazy">
                             <div class="test__img-animation test__img-animation5">
-                                <img src="images/win-img5.svg" alt="" loading="lazy">
+                                <img src="images/res5.png" alt="" loading="lazy">
                             </div>
                             <div class="test__img-confity test__img-confity5">
                                 <img src="images/confiti.svg" alt="" loading="lazy">
@@ -370,12 +372,15 @@
                                 Отпад! Вы явно проводили время во дворе с пользой. Ваше стратегическое мышление и внимание к деталям помогают вам достигать успеха как в играх, так и в финансах. Сервис интерактивного отчета доходности капитала в «Сбербанк онлайн» станет надежным помощником в эффективном управлении вашими накоплениями 
                                 и достижении финансовых целей.
                             </div>
-                            <button class="button__result btn" type="button">
+                            <button class="button__result hero__button" type="button">
                                 На сайт
                             </button>
-                            <button class="button__return btn" type="button">
+                            <button class="button__return hero__button" type="button">
                                 Пройти тест заново
                             </button>
+                            <div class="result__footer">
+                                Доход от инвестирования не гарантирован. Инвестиционная деятельность сопряжена с риском неполучения ожидаемого дохода и потери части или всей суммы инвестированных средств. Банк обращает внимание Инвесторов, являющихся физическими лицами, на то, что на денежные средства, переданные Банку в рамках данных Условий, не распространяется действие Федерального закона от 23.12.2003. №177-ФЗ «О страховании вкладов в банках Российской Федерации».
+                            </div>
                         </div>
                     </div>
                     <div class="result result2"> 
@@ -394,12 +399,15 @@
                             <div class="result__description">
                                 Вы обладаете хорошими навыками стратегического мышления и анализа, которые вырабатывались еще в детстве. В контексте управления финансами сервис интерактивного отчета доходности капитала в «Сбербанк онлайн» поможет вам ничего не упустить детали. 
                             </div>
-                            <button class="button__result btn" type="button">
+                            <button class="button__result hero__button" type="button">
                                 На сайт
                             </button>
-                            <button class="button__return btn" type="button">
+                            <button class="button__return hero__button" type="button">
                                 Пройти тест заново
                             </button>
+                            <div class="result__footer">
+                                Доход от инвестирования не гарантирован. Инвестиционная деятельность сопряжена с риском неполучения ожидаемого дохода и потери части или всей суммы инвестированных средств. Банк обращает внимание Инвесторов, являющихся физическими лицами, на то, что на денежные средства, переданные Банку в рамках данных Условий, не распространяется действие Федерального закона от 23.12.2003. №177-ФЗ «О страховании вкладов в банках Российской Федерации».
+                            </div>
                         </div>
                     </div>
                     <div class="result result3"> 
@@ -418,12 +426,15 @@
                             <div class="result__description">
                                 Игры во дворе, возможно, были не в центре ваших интересов. Сервис С интерактивного отчета доходности капитала в «Сбербанк онлайн» поможет вам освоить эффективное управление накоплениями, предоставляя инструменты для анализа и контроля ваших финансов, чтобы вы могли уверенно двигаться к своим финансовым целям.
                             </div>
-                            <button class="button__result btn" type="button">
+                            <button class="button__result hero__button" type="button">
                                 На сайт
                             </button>
-                            <button class="button__return btn" type="button">
+                            <button class="button__return hero__button" type="button">
                                 Пройти тест заново
                             </button>
+                            <div class="result__footer">
+                                Доход от инвестирования не гарантирован. Инвестиционная деятельность сопряжена с риском неполучения ожидаемого дохода и потери части или всей суммы инвестированных средств. Банк обращает внимание Инвесторов, являющихся физическими лицами, на то, что на денежные средства, переданные Банку в рамках данных Условий, не распространяется действие Федерального закона от 23.12.2003. №177-ФЗ «О страховании вкладов в банках Российской Федерации».
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -432,7 +443,7 @@
         
     </main>
     
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

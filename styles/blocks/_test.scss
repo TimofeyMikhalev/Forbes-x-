@@ -16,7 +16,7 @@
         .test {
             display: none;
             justify-content: space-between;
-            align-items: start;
+            align-items: center;
 
             &__body {
                 display: flex;
@@ -24,7 +24,6 @@
                 align-items: start;
                 row-gap: get-vw(34px, 1440);
                 max-width: get-vw(633px, 1440);
-                padding-top: get-vw(33px, 1440);
             }
             &__img {
                 width: get-vw(708px, 1440);
@@ -38,6 +37,7 @@
 
             &__text {
                 font-size: get-vw(20px, 1440);
+                
                 span {
                     font-weight: 700;
                 }
@@ -133,26 +133,39 @@
                     opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
                 }
             }
+            .test__img-movie {
+                opacity: 0; /* Начальная прозрачность */
+                animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
+            }
             .test__img-animation {
                 display: none;
-                width: get-vw(443px, 1440);
-                height: get-vw(476px, 1440);
+                width: get-vw(568px, 1440);
+                height: get-vw(589px, 1440);
                 position: absolute;
-                top: get-vw(100px, 1440);
-                right: 0;
+                top: get-vw(60px, 1440);
+                right: get-vw(60px, 1440);
                 left: 0;
                 bottom: 0;
                 z-index: 10;
+
+                opacity: 0;
+                transform: scale(0);
+                animation: image-scale 1.3s ease-out forwards; /* Анимация появления */
             }
             .test__img-confity {
                 display: none;
                 width: get-vw(656px, 1440);
                 height: get-vw(626px, 1440);
                 position: absolute;
-                top: get-vw(100px, 1440);
+                top: get-vw(70px, 1440);
                 right: 0;
                 left: 0;
                 bottom: 0;
+                z-index: 11;
+
+                opacity: 0;
+                transform: scale(0);
+                animation: confetti-scale 1.2s ease-out 0.8s forwards;
             }
             .select{
                 border-radius: get-vw(30px, 1440);
