@@ -894,7 +894,7 @@ img {
   right: 0;
   bottom: 0;
   z-index: 10;
-  background-image: url(../images/hero-bg.svg);
+  background-image: url(../images/hero-bg.png);
   background-size: cover;
 }
 .section__start .hero {
@@ -944,7 +944,7 @@ img {
   right: 0;
   bottom: 0;
   z-index: 10;
-  background: url(/images/test1-bg.svg) no-repeat center center/cover;
+  background: url(/images/test-bg.png) no-repeat center center/cover;
 }
 .section__test .container__test {
   width: 93.125vw;
@@ -1310,7 +1310,7 @@ img {
   right: 0;
   bottom: 0;
   z-index: 10;
-  background: url(/images/result-bg.svg) no-repeat center center/cover;
+  background: url(/images/result-bg.png) no-repeat center center/cover;
 }
 .section__result .container__result {
   width: 93.125vw;
