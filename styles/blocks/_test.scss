@@ -133,6 +133,7 @@
                     opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
                 }
             }
+
             .test__img-movie {
                 opacity: 0; /* Начальная прозрачность */
                 animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
@@ -151,13 +152,14 @@
                 opacity: 0;
                 transform: scale(0);
                 animation: image-scale 1.3s ease-out forwards; /* Анимация появления */
+                animation-delay: 0.3s;
             }
             .test__img-confity {
                 display: none;
                 width: get-vw(656px, 1440);
                 height: get-vw(626px, 1440);
                 position: absolute;
-                top: get-vw(70px, 1440);
+                top: get-vw(20px, 1440);
                 right: 0;
                 left: 0;
                 bottom: 0;
@@ -166,6 +168,39 @@
                 opacity: 0;
                 transform: scale(0);
                 animation: confetti-scale 1.2s ease-out 0.8s forwards;
+            }
+            .test__img-animation1 {
+                width: get-vw(321px, 1440);
+                height: get-vw(457px, 1440);
+                top: get-vw(90px, 1440);
+                left: get-vw(190px, 1440);
+                img {
+                    transform: rotate(10deg);
+                }
+            }
+            .test__img-animation2 {
+                width: get-vw(446px, 1440);
+                height: get-vw(400px, 1440);
+                top: get-vw(130px, 1440);
+                left: get-vw(120px, 1440);
+            }
+            .test__img-animation3 {
+                width: get-vw(446px, 1440);
+                height: get-vw(448px, 1440);
+                top: get-vw(130px, 1440);
+                left: get-vw(120px, 1440);
+            }
+            .test__img-animation4 {
+                width: get-vw(448px, 1440);
+                height: get-vw(446px, 1440);
+                top: get-vw(130px, 1440);
+                left: get-vw(120px, 1440);
+            }
+            .test__img-animation5 {
+                width: get-vw(448px, 1440);
+                height: get-vw(486px, 1440);
+                top: get-vw(130px, 1440);
+                left: get-vw(120px, 1440);
             }
             .select{
                 border-radius: get-vw(30px, 1440);

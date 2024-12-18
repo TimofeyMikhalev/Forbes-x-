@@ -69,8 +69,6 @@ const btnNext = document.querySelectorAll('.test__button');
 // });
 
 // Инициализация анимаций и эффектов
-
-
 const answers = [
     { answer: '1', img: '.test__img1', animation: '.test__img-animation1', confity: '.test__img-confity1' },
     { answer: '2', img: '.test__img2', animation: '.test__img-animation2', confity: '.test__img-confity2' },

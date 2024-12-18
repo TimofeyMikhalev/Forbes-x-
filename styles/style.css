@@ -340,7 +340,8 @@ img {
 }
 
 .true__effect {
-  opacity: 0.1;
+  opacity: 0.1 !important;
+  transition: all 0.3;
 }
 
 .button.disabled {
@@ -374,17 +375,18 @@ img {
   animation: fadeIn 0.8s ease-out forwards;
 }
 
-/* Анимация плавного появления */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.fade-in-result {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRes 1.3s ease-out forwards;
+  animation-delay: 1.5s;
 }
+
+.fade-inis {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
 /* Задержки для последовательного появления */
 .fade-in:nth-child(1) {
   animation-delay: 0.2s;
@@ -425,6 +427,27 @@ img {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+/* Анимация плавного появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRes {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 :root {
@@ -563,7 +586,8 @@ img {
 }
 
 .true__effect {
-  opacity: 0.1;
+  opacity: 0.1 !important;
+  transition: all 0.3;
 }
 
 .button.disabled {
@@ -597,17 +621,18 @@ img {
   animation: fadeIn 0.8s ease-out forwards;
 }
 
-/* Анимация плавного появления */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.fade-in-result {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRes 1.3s ease-out forwards;
+  animation-delay: 1.5s;
 }
+
+.fade-inis {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
 /* Задержки для последовательного появления */
 .fade-in:nth-child(1) {
   animation-delay: 0.2s;
@@ -648,6 +673,27 @@ img {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+/* Анимация плавного появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRes {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @media screen and (min-width: 650px) {
@@ -797,7 +843,8 @@ img {
 }
 
 .true__effect {
-  opacity: 0.1;
+  opacity: 0.1 !important;
+  transition: all 0.3;
 }
 
 .button.disabled {
@@ -831,17 +878,18 @@ img {
   animation: fadeIn 0.8s ease-out forwards;
 }
 
-/* Анимация плавного появления */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.fade-in-result {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRes 1.3s ease-out forwards;
+  animation-delay: 1.5s;
 }
+
+.fade-inis {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
 /* Задержки для последовательного появления */
 .fade-in:nth-child(1) {
   animation-delay: 0.2s;
@@ -882,6 +930,27 @@ img {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+/* Анимация плавного появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRes {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .section__start {
@@ -1069,13 +1138,14 @@ img {
   opacity: 0;
   transform: scale(0);
   animation: image-scale 1.3s ease-out forwards; /* Анимация появления */
+  animation-delay: 0.3s;
 }
 .section__test .container__test .test .test__img-confity {
   display: none;
   width: 45.5555555556vw;
   height: 43.4722222222vw;
   position: absolute;
-  top: 4.8611111111vw;
+  top: 1.3888888889vw;
   right: 0;
   left: 0;
   bottom: 0;
@@ -1083,6 +1153,39 @@ img {
   opacity: 0;
   transform: scale(0);
   animation: confetti-scale 1.2s ease-out 0.8s forwards;
+}
+.section__test .container__test .test .test__img-animation1 {
+  width: 22.2916666667vw;
+  height: 31.7361111111vw;
+  top: 6.25vw;
+  left: 13.1944444444vw;
+}
+.section__test .container__test .test .test__img-animation1 img {
+  transform: rotate(10deg);
+}
+.section__test .container__test .test .test__img-animation2 {
+  width: 30.9722222222vw;
+  height: 27.7777777778vw;
+  top: 9.0277777778vw;
+  left: 8.3333333333vw;
+}
+.section__test .container__test .test .test__img-animation3 {
+  width: 30.9722222222vw;
+  height: 31.1111111111vw;
+  top: 9.0277777778vw;
+  left: 8.3333333333vw;
+}
+.section__test .container__test .test .test__img-animation4 {
+  width: 31.1111111111vw;
+  height: 30.9722222222vw;
+  top: 9.0277777778vw;
+  left: 8.3333333333vw;
+}
+.section__test .container__test .test .test__img-animation5 {
+  width: 31.1111111111vw;
+  height: 33.75vw;
+  top: 9.0277777778vw;
+  left: 8.3333333333vw;
 }
 .section__test .container__test .test .select {
   border-radius: 2.0833333333vw;
@@ -1213,7 +1316,8 @@ img {
 }
 
 .true__effect {
-  opacity: 0.1;
+  opacity: 0.1 !important;
+  transition: all 0.3;
 }
 
 .button.disabled {
@@ -1247,17 +1351,18 @@ img {
   animation: fadeIn 0.8s ease-out forwards;
 }
 
-/* Анимация плавного появления */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.fade-in-result {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRes 1.3s ease-out forwards;
+  animation-delay: 1.5s;
 }
+
+.fade-inis {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
 /* Задержки для последовательного появления */
 .fade-in:nth-child(1) {
   animation-delay: 0.2s;
@@ -1298,6 +1403,27 @@ img {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+/* Анимация плавного появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRes {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .section__result {
@@ -1481,7 +1607,8 @@ img {
 }
 
 .true__effect {
-  opacity: 0.1;
+  opacity: 0.1 !important;
+  transition: all 0.3;
 }
 
 .button.disabled {
@@ -1515,17 +1642,18 @@ img {
   animation: fadeIn 0.8s ease-out forwards;
 }
 
-/* Анимация плавного появления */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.fade-in-result {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRes 1.3s ease-out forwards;
+  animation-delay: 1.5s;
 }
+
+.fade-inis {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
 /* Задержки для последовательного появления */
 .fade-in:nth-child(1) {
   animation-delay: 0.2s;
@@ -1566,5 +1694,26 @@ img {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+/* Анимация плавного появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRes {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
