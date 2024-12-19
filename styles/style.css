@@ -1055,7 +1055,9 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 36.3194444444vw;
+  height: auto;
   cursor: pointer;
+  animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
   /* Когда кнопка активирована */
   /* Правильный ответ */
   /* Неправильный ответ */
@@ -1120,6 +1122,23 @@ img {
 .section__test .container__test .test__answer .disabled {
   pointer-events: none;
   opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
+}
+.section__test .container__test .test .test__answer.selected {
+  align-items: flex-start;
+}
+.section__test .container__test .test .magic {
+  position: absolute;
+  top: 0;
+  left: 4.5138888889vw;
+  width: 40.1388888889vw;
+}
+.section__test .container__test .test .varfalse {
+  opacity: 0.2 !important;
+}
+.section__test .container__test .test .answer__true {
+  position: relative;
+  opacity: 1 !important;
+  z-index: 99;
 }
 .section__test .container__test .test .test__img-movie {
   opacity: 0; /* Начальная прозрачность */

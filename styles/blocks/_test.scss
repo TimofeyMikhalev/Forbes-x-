@@ -48,6 +48,7 @@
                 flex-direction: column;
                 align-items: start;
                 row-gap: get-vw(13px, 1440);
+        
             }
 
             &__answer {
@@ -56,7 +57,9 @@
                 align-items: center;
 
                 width: get-vw(523px, 1440);
+                height: auto;
                 cursor: pointer;
+                animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
                 .num {
                     display: flex;
                     justify-content: center;
@@ -106,12 +109,14 @@
                     color: #fff;
                     border: none;
                     transition: background-color 0.7s ease-out;/* Плавное изменение фона */
+
                 }    
                 /* Правильный ответ */
                 .correct {
                     background-color: var(--color-grean);
                     color: var(--color-ligth);
                 }
+
                 
                 .correct .num {
                     background-color: var(--color-grean); /* Кружок правильного ответа */
@@ -133,7 +138,26 @@
                     opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
                 }
             }
-
+            .test__answer.selected {
+                align-items: flex-start;
+                
+            }
+            .magic {
+                position: absolute;
+                top: 0;
+                left: get-vw(65px, 1440);
+                width: get-vw(578px, 1440);
+           
+            }
+            .varfalse {
+                opacity: 0.2 !important;
+            }
+            .answer__true {
+                position: relative;
+                opacity: 1 !important;
+                z-index: 99;
+         
+            }
             .test__img-movie {
                 opacity: 0; /* Начальная прозрачность */
                 animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */

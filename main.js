@@ -101,7 +101,7 @@ containers.forEach((container) => {
     const extraContent = button.querySelector('.text-content');
     const isCorrect = circle.getAttribute('data-correct') === 'true';
     const testBtnAction = document.querySelectorAll('.test__button-action')
-
+    const answerTrue = container.querySelectorAll('.answer__true')
     button.addEventListener('click', function () {
         // Если кнопка уже активна, ничего не делаем
         if (button.classList.contains('active') || button.classList.contains('disabled')) return;
@@ -109,12 +109,21 @@ containers.forEach((container) => {
         // Делаем текущую кнопку активной
         button.classList.add('active');
         circle.classList.add('active');
+
+
         extraContent.classList.remove('hidden');
 
         // Меняем цвета в зависимости от правильности ответа
         if (isCorrect) {
             button.classList.add('correct');
+       
+            button.classList.add('magic');
             circle.classList.add('correct');
+
+            containers.forEach(item => {
+                item.classList.add('varfalse')
+            })
+      
             triggerAnimation(container.id); // Включаем анимацию
         } else {
             button.classList.add('incorrect');
@@ -145,7 +154,6 @@ containers.forEach((container) => {
 
 // Получаем все контейнеры с тестами
 const tests = document.querySelectorAll('.test');
-
 btnNext.forEach((button, index) => {
     button.addEventListener('click', function () {
         
@@ -175,7 +183,6 @@ btnNext.forEach((button, index) => {
 //Переход с главной на тест
 const heroButton = document.querySelector('.hero__button');
 const sectionStart = document.querySelector('.section__start')
-
 heroButton.addEventListener('click', function () {
     const sectionTest = document.querySelector('.section__test')
 
@@ -188,9 +195,6 @@ heroButton.addEventListener('click', function () {
 //подсчитывать правильные ответы
 let resultQuestion = document.querySelectorAll('.test__answer');
 let results = [];
-
-
-
 resultQuestion.forEach(inner => {
     inner.addEventListener('click', function handleClick() {
         // Если кнопка уже выбрана, ничего не делаем
@@ -226,6 +230,9 @@ btnNext.forEach(button => {
             inner.classList.remove('disabled');
             inner.style.pointerEvents = 'auto'; // Восстанавливаем возможность клика
         });        
+        containers.forEach(item => {
+            item.classList.remove('varfalse')
+        })
     });
 
 });
@@ -284,8 +291,8 @@ function resetApp() {
         const button = container.querySelector('.button');
         const circle = container.querySelector('.num');
         const extraContent = button.querySelector('.text-content');
-
-        button.classList.remove('active', 'correct', 'incorrect', 'disabled');
+        
+        button.classList.remove('active', 'correct', 'incorrect', 'disabled', 'magic');
         circle.classList.remove('active', 'correct', 'incorrect', 'disabled');
         extraContent.classList.add('hidden');
     });
