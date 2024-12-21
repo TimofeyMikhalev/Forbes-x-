@@ -1,0 +1,100 @@
+@import '../globals';
+
+
+@function get-vw($fontSize, $vw-viewport){
+    $vw-context: $vw-viewport * 0.01 * 1px;
+    @return $fontSize / $vw-context * 1vw;
+    @return $fontSize;
+}
+
+
+
+@media screen and (max-width:650px){
+
+
+    .section__start {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+
+        background-image: url(/images/hero-bg-mobile.png);
+        background-size: cover;
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            flex-direction: row-reverse; 
+            flex-direction: column-reverse; 
+            &__img {
+                width: get-vw(329px, 393);
+                height: get-vw(333px, 393);
+                margin-left: get-vw(15px, 393);
+                margin-top: get-vw(23px, 393);
+            }
+            &__body {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                row-gap: get-vw(18px, 393);
+                max-width: get-vw(655px, 393);
+                margin-top: get-vw(61px, 393);
+            }
+        
+            &__test {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: get-vw(89px, 393);
+                height: get-vw(34px, 393);
+        
+                text-transform: uppercase;
+                font-size: get-vw(17px, 393);
+                color: var(--color-grean);
+                font-weight: 400;
+                border: get-vw(2px, 393) solid var(--color-grean);
+                border-radius: get-vw(34px, 393);
+                
+            }   
+        
+            &__title {
+                width: get-vw(288px, 393);
+                font-size: get-vw(21px, 393);
+                font-weight: 500;
+            }
+
+            &__description {
+                width: get-vw(343px, 393);
+                font-size: get-vw(12px, 393);
+                p:where(:not([class]):not(:last-child)) {
+                    margin-bottom: get-vw(15px, 393);
+                }
+            }
+            .button__grean {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                background: var(--color-grean);
+                color: var(--color-ligth);
+                border: none;
+                cursor: pointer;
+                min-width: get-vw(226px, 393);
+                height: get-vw(37px, 393);
+                transition: var(--transition-duration);
+                border-radius: get-vw(29px, 393);
+                font-size: get-vw(16px, 393);
+            }
+        }  
+        .container {
+            width: get-vw(359px, 393); 
+        }
+    }
+
+
+}

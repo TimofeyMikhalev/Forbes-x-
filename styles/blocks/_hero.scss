@@ -1,58 +1,63 @@
 @import '../globals';
 
-.section__start {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
+@media screen and (min-width:650px){
 
-    background-image: url(../images/hero-bg.png);
-    background-size: cover;
-    .hero {
+    .section__start {
         display: flex;
-        justify-content: space-between;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
     
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
     
-        column-gap: get-vw(45px, 1440);
-        &__img {
-            width: get-vw(629px, 1440);
-            height: get-vw(643px, 1440);
-        }
-        &__body {
+        background-image: url(../images/hero-bg.png);
+        background-size: cover;
+        .hero {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: start;
-            row-gap: get-vw(35px, 1440);
-            max-width: get-vw(655px, 1440);
-            padding-top: get-vw(92px, 1440);
-        }
-    
-        &__test {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: get-vw(145px, 1440);
-            height: get-vw(56px, 1440);
-    
-            text-transform: uppercase;
-            font-size: get-vw(27px, 1440);
-            color: var(--color-grean);
-            font-weight: 400;
-            border: get-vw(2px, 1440) solid var(--color-grean);
-            border-radius: get-vw(57px, 1440);
-            
-        }   
-    
-        &__title {
-            font-size: get-vw(48px, 1440);
-            font-weight: 500;
+        
+        
+            column-gap: get-vw(45px, 1440);
+            &__img {
+                width: get-vw(629px, 1440);
+                height: get-vw(643px, 1440);
+            }
+            &__body {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                row-gap: get-vw(35px, 1440);
+                max-width: get-vw(655px, 1440);
+                padding-top: get-vw(92px, 1440);
+            }
+        
+            &__test {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: get-vw(145px, 1440);
+                height: get-vw(56px, 1440);
+        
+                text-transform: uppercase;
+                font-size: get-vw(27px, 1440);
+                color: var(--color-grean);
+                font-weight: 400;
+                border: get-vw(2px, 1440) solid var(--color-grean);
+                border-radius: get-vw(57px, 1440);
+                
+            }   
+        
+            &__title {
+                font-size: get-vw(48px, 1440);
+                font-weight: 500;
+            }
         }
     }
+    
 }

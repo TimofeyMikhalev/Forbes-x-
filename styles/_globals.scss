@@ -122,13 +122,23 @@ img {
 .show {
     display: flex !important;
 }
+.varfalse {
+    opacity: 0.2 !important;
+}
+
 /* Скрытие текста */
 .hidden {
     display: none;
 }
-
-.true__effect {  
-    opacity: 0.1 !important;   
+@media screen and (min-width:650px){
+    .true__effect {  
+        opacity: 0.1 !important;   
+    }
+}
+@media screen and (max-width:650px){
+    .true__effect {  
+        opacity: 0 !important;   
+    }
 }
 
 
@@ -264,3 +274,5 @@ img {
         transform: translateY(0);
     }
 }
+
+

@@ -1,0 +1,44 @@
+@import '../globals';
+
+
+@function get-vw($fontSize, $vw-viewport){
+    $vw-context: $vw-viewport * 0.01 * 1px;
+    @return $fontSize / $vw-context * 1vw;
+    @return $fontSize;
+}
+
+
+
+@media screen and (max-width:650px){
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: get-vw(14px, 393);
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__logo {
+            width: get-vw(59px, 393);
+            height: get-vw(13px, 393);
+        }
+        &__sber {
+            width: get-vw(142px, 393);
+            height: get-vw(24px, 393);
+        }
+        .container {
+            width: get-vw(363px, 393); 
+        }
+    }
+
+}

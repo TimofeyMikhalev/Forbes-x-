@@ -334,15 +334,25 @@ img {
   display: flex !important;
 }
 
+.varfalse {
+  opacity: 0.2 !important;
+}
+
 /* Скрытие текста */
 .hidden {
   display: none;
 }
 
-.true__effect {
-  opacity: 0.1 !important;
+@media screen and (min-width: 650px) {
+  .true__effect {
+    opacity: 0.1 !important;
+  }
 }
-
+@media screen and (max-width: 650px) {
+  .true__effect {
+    opacity: 0 !important;
+  }
+}
 .button.disabled {
   pointer-events: none; /* Отключает клики на кнопке */
   opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
@@ -595,15 +605,25 @@ img {
   display: flex !important;
 }
 
+.varfalse {
+  opacity: 0.2 !important;
+}
+
 /* Скрытие текста */
 .hidden {
   display: none;
 }
 
-.true__effect {
-  opacity: 0.1 !important;
+@media screen and (min-width: 650px) {
+  .true__effect {
+    opacity: 0.1 !important;
+  }
 }
-
+@media screen and (max-width: 650px) {
+  .true__effect {
+    opacity: 0 !important;
+  }
+}
 .button.disabled {
   pointer-events: none; /* Отключает клики на кнопке */
   opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
@@ -867,524 +887,25 @@ img {
   display: flex !important;
 }
 
-/* Скрытие текста */
-.hidden {
-  display: none;
-}
-
-.true__effect {
-  opacity: 0.1 !important;
-}
-
-.button.disabled {
-  pointer-events: none; /* Отключает клики на кнопке */
-  opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
-  cursor: not-allowed; /* Меняем курсор */
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(100%); /* Позиция слева */
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0); /* Конечное положение */
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* Полностью прозрачный */
-  }
-  to {
-    opacity: 1; /* Полностью видимый */
-  }
-}
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 0.8s ease forwards;
-}
-
-/* Общий класс для плавного появления */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px); /* Лёгкий сдвиг вниз */
-  animation: fadeIn 0.8s ease-out forwards;
-}
-
-.fade-in-result {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInRes 1.3s ease-out forwards;
-  animation-delay: 1.5s;
-}
-
-.fade-inis {
-  opacity: 0;
-  animation: fadeIn 0.5s forwards;
-}
-
-/* Задержки для последовательного появления */
-.fade-in:nth-child(1) {
-  animation-delay: 0.2s;
-}
-
-.fade-in:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-.fade-in:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-.fade-in:nth-child(4) {
-  animation-delay: 0.8s;
-}
-
-.fade-in:nth-child(5) { /* Например, кнопка */
-  animation-delay: 1s;
-}
-
-/* Анимации */
-@keyframes image-scale {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-@keyframes confetti-scale {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-/* Анимация плавного появления */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeInRes {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeClose {
-  from {
-    opacity: 1;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(0);
-  }
-}
-.section__start {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  background-image: url(../images/hero-bg.png);
-  background-size: cover;
-}
-.section__start .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  -moz-column-gap: 3.125vw;
-       column-gap: 3.125vw;
-}
-.section__start .hero__img {
-  width: 43.6805555556vw;
-  height: 44.6527777778vw;
-}
-.section__start .hero__body {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  row-gap: 2.4305555556vw;
-  max-width: 45.4861111111vw;
-  padding-top: 6.3888888889vw;
-}
-.section__start .hero__test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10.0694444444vw;
-  height: 3.8888888889vw;
-  text-transform: uppercase;
-  font-size: 1.875vw;
-  color: var(--color-grean);
-  font-weight: 400;
-  border: 0.1388888889vw solid var(--color-grean);
-  border-radius: 3.9583333333vw;
-}
-.section__start .hero__title {
-  font-size: 3.3333333333vw;
-  font-weight: 500;
-}
-
-.section__test {
-  display: none;
-  justify-content: flex-end;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  background: url(/images/test-bg.png) no-repeat center center/cover;
-}
-.section__test .container__test {
-  width: 93.125vw;
-}
-.section__test .container__test .test {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-}
-.section__test .container__test .test__body {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  row-gap: 2.3611111111vw;
-  max-width: 43.9583333333vw;
-}
-.section__test .container__test .test__img {
-  width: 49.1666666667vw;
-  height: 49.5138888889vw;
-  position: relative;
-}
-.section__test .container__test .test__number {
-  color: var(--color-gray);
-}
-.section__test .container__test .test__text {
-  font-size: 1.3888888889vw;
-}
-.section__test .container__test .test__text span {
-  font-weight: 700;
-}
-.section__test .container__test .test__question {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  row-gap: 0.9027777778vw;
-}
-.section__test .container__test .test__answer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 36.3194444444vw;
-  height: auto;
-  cursor: pointer;
-  transition: background-color 0.5s ease, color 0.5s ease;
-  /* Когда кнопка активирована */
-  /* Правильный ответ */
-  /* Неправильный ответ */
-  /* Блокировка */
-}
-.section__test .container__test .test__answer .num {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 4.0972222222vw;
-  height: 4.0972222222vw;
-  background: var(--color-gray);
-  border-radius: 50%;
-  color: var(--color-ligth);
-  font-size: 2.0833333333vw;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.section__test .container__test .test__answer button {
-  width: 31.875vw;
-  height: auto;
-  border: 0.1388888889vw solid var(--color-gray);
-  border-radius: 4.5138888889vw;
-  padding: 0.6944444444vw 2.7083333333vw 0.6944444444vw 2.0138888889vw;
-  background: inherit;
-}
-.section__test .container__test .test__answer button .text {
-  max-width: 27.0833333333vw;
-}
-.section__test .container__test .test__answer button .text-content {
-  text-align: start;
-  font-size: 0.6944444444vw;
-  border-top: 0.0694444444vw solid #fff;
-  margin-top: 0.625vw;
-  padding-top: 0.625vw;
-  color: #fff;
-  opacity: 0; /* Скрыт по умолчанию */
-  transition: background-color 1s ease-out opacity 1s ease-out; /* Плавное изменение фона */
-}
-.section__test .container__test .test__answer button.active .text-content {
-  opacity: 1; /* Плавно отображается */
-  transform: translateY(0); /* Плавно появляется сверху */
-  color: #fff; /* Белый текст при активации */
-}
-.section__test .container__test .test__answer button.active {
-  border-radius: 2.0833333333vw;
-  opacity: 1;
-  color: #fff;
-  border: none;
-  transition: background-color 1s ease-out; /* Плавное изменение фона */
-}
-.section__test .container__test .test__answer .correct {
-  background-color: var(--color-grean);
-  color: var(--color-ligth);
-}
-.section__test .container__test .test__answer .correct .num {
-  background-color: var(--color-grean); /* Кружок правильного ответа */
-}
-.section__test .container__test .test__answer .incorrect {
-  background-color: var(--color-malina);
-  color: var(--color-ligth);
-}
-.section__test .container__test .test__answer .incorrect .num {
-  background-color: var(--color-malina); /* Кружок неправильного ответа */
-}
-.section__test .container__test .test__answer .disabled {
-  pointer-events: none;
-  opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
-}
-.section__test .container__test .test .test__answer.selected {
-  align-items: flex-start;
-}
-.section__test .container__test .test .magic {
-  position: absolute;
-  top: 0;
-  left: 4.5138888889vw;
-  width: 40.1388888889vw;
-}
-.section__test .container__test .test .varfalse {
+.varfalse {
   opacity: 0.2 !important;
 }
-.section__test .container__test .test .answer__true {
-  position: relative;
-  opacity: 1 !important;
-  z-index: 99;
-}
-.section__test .container__test .test .test__img-movie {
-  animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
-}
-.section__test .container__test .test .test__img-animation {
-  display: none;
-  width: 39.4444444444vw;
-  height: 40.9027777778vw;
-  position: absolute;
-  top: 4.1666666667vw;
-  right: 4.1666666667vw;
-  left: 0;
-  bottom: 0;
-  z-index: 10;
-  opacity: 0;
-  transform: scale(0);
-  animation: image-scale 1.3s ease-out forwards; /* Анимация появления */
-  animation-delay: 0.3s;
-}
-.section__test .container__test .test .test__img-confity {
-  display: none;
-  width: 45.5555555556vw;
-  height: 43.4722222222vw;
-  position: absolute;
-  top: 1.3888888889vw;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 11;
-  opacity: 0;
-  transform: scale(0);
-  animation: confetti-scale 1.2s ease-out 0.8s forwards;
-}
-.section__test .container__test .test .test__img-animation1 {
-  width: 22.2916666667vw;
-  height: 31.7361111111vw;
-  top: 6.25vw;
-  left: 13.1944444444vw;
-}
-.section__test .container__test .test .test__img-animation1 img {
-  transform: rotate(10deg);
-}
-.section__test .container__test .test .test__img-animation2 {
-  width: 30.9722222222vw;
-  height: 27.7777777778vw;
-  top: 9.0277777778vw;
-  left: 8.3333333333vw;
-}
-.section__test .container__test .test .test__img-animation3 {
-  width: 30.9722222222vw;
-  height: 31.1111111111vw;
-  top: 9.0277777778vw;
-  left: 8.3333333333vw;
-}
-.section__test .container__test .test .test__img-animation4 {
-  width: 31.1111111111vw;
-  height: 30.9722222222vw;
-  top: 9.0277777778vw;
-  left: 8.3333333333vw;
-}
-.section__test .container__test .test .test__img-animation5 {
-  width: 31.1111111111vw;
-  height: 33.75vw;
-  top: 9.0277777778vw;
-  left: 8.3333333333vw;
-}
-.section__test .container__test .test .select {
-  border-radius: 2.0833333333vw;
-  color: var(--color-ligth);
-}
-.section__test .container__test .test.show {
-  display: flex;
-}
-
-body {
-  font-family: var(--font-family-base);
-  font-weight: 500;
-  font-size: 1.1111111111vw;
-  line-height: 1.28;
-  color: var(--color--dark);
-  background-color: var(--color-ligth);
-}
-
-a,
-button,
-input,
-textarea,
-svg * {
-  transition-duration: var(--transition-duration);
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-}
-
-.container {
-  width: 95.1388888889vw;
-}
-
-.test__button-action {
-  pointer-events: none;
-}
-
-.hero__button:hover {
-  opacity: 0.7;
-}
-
-.button__grean {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--color-grean);
-  color: var(--color-ligth);
-  border: none;
-  cursor: pointer;
-  min-width: 21.7361111111vw;
-  height: 2.5694444444vw;
-  transition: var(--transition-duration);
-  border-radius: 2.0138888889vw;
-}
-
-.button__grey {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--color-gray);
-  color: var(--color-ligth);
-  border: none;
-  cursor: pointer;
-  min-width: 21.7361111111vw;
-  height: 2.5694444444vw;
-  transition: var(--transition-duration);
-  border-radius: 2.0138888889vw;
-}
-
-.button__result {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--color-grean);
-  color: var(--color-ligth);
-  border: none;
-  cursor: pointer;
-  min-width: 14.5833333333vw;
-  height: 2.5694444444vw;
-  transition: var(--transition-duration);
-  border-radius: 2.0138888889vw;
-}
-
-.button__return {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background: inherit;
-  color: var(--color-grean);
-  border: 0.1388888889vw solid var(--color-grean);
-  cursor: pointer;
-  min-width: 21.7361111111vw;
-  height: 2.5694444444vw;
-  transition: var(--transition-duration);
-  border-radius: 2.0138888889vw;
-}
-
-.btn:hover {
-  background: #3DAC51;
-}
-
-.text {
-  text-align: start;
-}
-
-.malina {
-  background-color: var(--color-malina);
-}
-
-.green {
-  background-color: var(--color-grean);
-}
-
-.show {
-  display: flex !important;
-}
 
 /* Скрытие текста */
 .hidden {
   display: none;
 }
 
-.true__effect {
-  opacity: 0.1 !important;
+@media screen and (min-width: 650px) {
+  .true__effect {
+    opacity: 0.1 !important;
+  }
 }
-
+@media screen and (max-width: 650px) {
+  .true__effect {
+    opacity: 0 !important;
+  }
+}
 .button.disabled {
   pointer-events: none; /* Отключает клики на кнопке */
   opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
@@ -1507,66 +1028,268 @@ img {
     transform: translateY(0);
   }
 }
-.section__result {
-  display: none;
-  justify-content: flex-start;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  background: url(/images/result-bg.png) no-repeat center center/cover;
+@media screen and (min-width: 650px) {
+  .section__start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-image: url(../images/hero-bg.png);
+    background-size: cover;
+  }
+  .section__start .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    -moz-column-gap: 3.125vw;
+         column-gap: 3.125vw;
+  }
+  .section__start .hero__img {
+    width: 43.6805555556vw;
+    height: 44.6527777778vw;
+  }
+  .section__start .hero__body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2.4305555556vw;
+    max-width: 45.4861111111vw;
+    padding-top: 6.3888888889vw;
+  }
+  .section__start .hero__test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10.0694444444vw;
+    height: 3.8888888889vw;
+    text-transform: uppercase;
+    font-size: 1.875vw;
+    color: var(--color-grean);
+    font-weight: 400;
+    border: 0.1388888889vw solid var(--color-grean);
+    border-radius: 3.9583333333vw;
+  }
+  .section__start .hero__title {
+    font-size: 3.3333333333vw;
+    font-weight: 500;
+  }
 }
-.section__result .container__result {
-  width: 93.125vw;
+@media screen and (min-width: 650px) {
+  .section__test {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: url(/images/test-bg.png) no-repeat center center/cover;
+  }
+  .section__test .container__test {
+    width: 93.125vw;
+  }
+  .section__test .container__test .test {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section__test .container__test .test__body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2.3611111111vw;
+    max-width: 43.9583333333vw;
+  }
+  .section__test .container__test .test__img {
+    width: 49.1666666667vw;
+    height: 49.5138888889vw;
+    position: relative;
+  }
+  .section__test .container__test .test__number {
+    color: var(--color-gray);
+  }
+  .section__test .container__test .test__text {
+    font-size: 1.3888888889vw;
+  }
+  .section__test .container__test .test__text span {
+    font-weight: 700;
+  }
+  .section__test .container__test .test__question {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 0.9027777778vw;
+  }
+  .section__test .container__test .test__answer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 36.3194444444vw;
+    height: auto;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    /* Когда кнопка активирована */
+    /* Правильный ответ */
+    /* Неправильный ответ */
+    /* Блокировка */
+  }
+  .section__test .container__test .test__answer .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.0972222222vw;
+    height: 4.0972222222vw;
+    background: var(--color-gray);
+    border-radius: 50%;
+    color: var(--color-ligth);
+    font-size: 2.0833333333vw;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .section__test .container__test .test__answer button {
+    width: 31.875vw;
+    height: auto;
+    border: 0.1388888889vw solid var(--color-gray);
+    border-radius: 4.5138888889vw;
+    padding: 0.6944444444vw 2.7083333333vw 0.6944444444vw 2.0138888889vw;
+    background: inherit;
+  }
+  .section__test .container__test .test__answer button .text {
+    max-width: 27.0833333333vw;
+  }
+  .section__test .container__test .test__answer button .text-content {
+    text-align: start;
+    font-size: 0.6944444444vw;
+    border-top: 0.0694444444vw solid #fff;
+    margin-top: 0.625vw;
+    padding-top: 0.625vw;
+    color: #fff;
+    opacity: 0; /* Скрыт по умолчанию */
+    transition: background-color 1s ease-out opacity 1s ease-out; /* Плавное изменение фона */
+  }
+  .section__test .container__test .test__answer button.active .text-content {
+    opacity: 1; /* Плавно отображается */
+    transform: translateY(0); /* Плавно появляется сверху */
+    color: #fff; /* Белый текст при активации */
+  }
+  .section__test .container__test .test__answer button.active {
+    border-radius: 2.0833333333vw;
+    opacity: 1;
+    color: #fff;
+    border: none;
+    transition: background-color 1s ease-out; /* Плавное изменение фона */
+  }
+  .section__test .container__test .test__answer .correct {
+    background-color: var(--color-grean);
+    color: var(--color-ligth);
+  }
+  .section__test .container__test .test__answer .correct .num {
+    background-color: var(--color-grean); /* Кружок правильного ответа */
+  }
+  .section__test .container__test .test__answer .incorrect {
+    background-color: var(--color-malina);
+    color: var(--color-ligth);
+  }
+  .section__test .container__test .test__answer .incorrect .num {
+    background-color: var(--color-malina); /* Кружок неправильного ответа */
+  }
+  .section__test .container__test .test__answer .disabled {
+    pointer-events: none;
+    opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
+  }
+  .section__test .container__test .test .test__answer.selected {
+    align-items: flex-start;
+  }
+  .section__test .container__test .test .magic {
+    position: absolute;
+    top: 0;
+    left: 4.5138888889vw;
+    width: 40.1388888889vw;
+  }
+  .section__test .container__test .test .answer__true {
+    position: relative;
+    opacity: 1 !important;
+    z-index: 99;
+  }
+  .section__test .container__test .test .test__img-movie {
+    animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
+  }
+  .section__test .container__test .test .test__img-animation {
+    display: none;
+    width: 39.4444444444vw;
+    height: 40.9027777778vw;
+    position: absolute;
+    top: 4.1666666667vw;
+    right: 4.1666666667vw;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0);
+    animation: image-scale 1.3s ease-out forwards; /* Анимация появления */
+    animation-delay: 0.3s;
+  }
+  .section__test .container__test .test .test__img-confity {
+    display: none;
+    width: 45.5555555556vw;
+    height: 43.4722222222vw;
+    position: absolute;
+    top: 1.3888888889vw;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    opacity: 0;
+    transform: scale(0);
+    animation: confetti-scale 1.2s ease-out 0.8s forwards;
+  }
+  .section__test .container__test .test .test__img-animation1 {
+    width: 22.2916666667vw;
+    height: 31.7361111111vw;
+    top: 6.25vw;
+    left: 13.1944444444vw;
+  }
+  .section__test .container__test .test .test__img-animation1 img {
+    transform: rotate(10deg);
+  }
+  .section__test .container__test .test .test__img-animation2 {
+    width: 30.9722222222vw;
+    height: 27.7777777778vw;
+    top: 9.0277777778vw;
+    left: 8.3333333333vw;
+  }
+  .section__test .container__test .test .test__img-animation3 {
+    width: 30.9722222222vw;
+    height: 31.1111111111vw;
+    top: 9.0277777778vw;
+    left: 8.3333333333vw;
+  }
+  .section__test .container__test .test .test__img-animation4 {
+    width: 31.1111111111vw;
+    height: 30.9722222222vw;
+    top: 9.0277777778vw;
+    left: 8.3333333333vw;
+  }
+  .section__test .container__test .test .test__img-animation5 {
+    width: 31.1111111111vw;
+    height: 33.75vw;
+    top: 9.0277777778vw;
+    left: 8.3333333333vw;
+  }
+  .section__test .container__test .test .select {
+    border-radius: 2.0833333333vw;
+    color: var(--color-ligth);
+  }
+  .section__test .container__test .test.show {
+    display: flex;
+  }
 }
-.section__result .container__result .section__body .result {
-  display: none;
-  justify-content: space-between;
-  align-items: start;
-}
-.section__result .container__result .section__body .result__img {
-  width: 49.3055555556vw;
-  height: 49.5138888889vw;
-}
-.section__result .container__result .section__body .result__body {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  row-gap: 1.5277777778vw;
-  max-width: 43.9583333333vw;
-  padding-top: 7.8472222222vw;
-}
-.section__result .container__result .section__body .result__cicle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 38.4722222222vw;
-}
-.section__result .container__result .section__body .result__cicle-img {
-  width: 6.7361111111vw;
-  height: 6.7361111111vw;
-}
-.section__result .container__result .section__body .result__title {
-  font-size: 3.3333333333vw;
-  font-weight: 500;
-}
-.section__result .container__result .section__body .result__description {
-  max-width: 43.9583333333vw;
-}
-.section__result .container__result .section__body .result__button {
-  width: 14.5833333333vw;
-}
-.section__result .container__result .section__body .result__footer {
-  font-size: 0.4861111111vw;
-  padding-top: 8.3333333333vw;
-}
-.section__result .container__result .section__body .result.show {
-  display: flex;
-}
-
 body {
   font-family: var(--font-family-base);
   font-weight: 500;
@@ -1682,15 +1405,2052 @@ img {
   display: flex !important;
 }
 
+.varfalse {
+  opacity: 0.2 !important;
+}
+
 /* Скрытие текста */
 .hidden {
   display: none;
 }
 
-.true__effect {
-  opacity: 0.1 !important;
+@media screen and (min-width: 650px) {
+  .true__effect {
+    opacity: 0.1 !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .true__effect {
+    opacity: 0 !important;
+  }
+}
+.button.disabled {
+  pointer-events: none; /* Отключает клики на кнопке */
+  opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+  cursor: not-allowed; /* Меняем курсор */
 }
 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Позиция слева */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Конечное положение */
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Полностью прозрачный */
+  }
+  to {
+    opacity: 1; /* Полностью видимый */
+  }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Общий класс для плавного появления */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Лёгкий сдвиг вниз */
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fade-in-result {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRes 1.3s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+.fade-inis {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Задержки для последовательного появления */
+.fade-in:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.fade-in:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.fade-in:nth-child(5) { /* Например, кнопка */
+  animation-delay: 1s;
+}
+
+/* Анимации */
+@keyframes image-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes confetti-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Анимация плавного появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRes {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeClose {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+@media screen and (min-width: 650px) {
+  .section__result {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: url(/images/result-bg.png) no-repeat center center/cover;
+  }
+  .section__result .container__result {
+    width: 93.125vw;
+  }
+  .section__result .container__result .section__body .result {
+    display: none;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .section__result .container__result .section__body .result__img {
+    width: 49.3055555556vw;
+    height: 49.5138888889vw;
+  }
+  .section__result .container__result .section__body .result__body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 1.5277777778vw;
+    max-width: 43.9583333333vw;
+    padding-top: 7.8472222222vw;
+  }
+  .section__result .container__result .section__body .result__cicle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 38.4722222222vw;
+  }
+  .section__result .container__result .section__body .result__cicle-img {
+    width: 6.7361111111vw;
+    height: 6.7361111111vw;
+  }
+  .section__result .container__result .section__body .result__title {
+    font-size: 3.3333333333vw;
+    font-weight: 500;
+  }
+  .section__result .container__result .section__body .result__description {
+    max-width: 43.9583333333vw;
+  }
+  .section__result .container__result .section__body .result__button {
+    width: 14.5833333333vw;
+  }
+  .section__result .container__result .section__body .result__footer {
+    font-size: 0.4861111111vw;
+    padding-top: 8.3333333333vw;
+  }
+  .section__result .container__result .section__body .result.show {
+    display: flex;
+  }
+  .item_mobile {
+    display: none !important;
+  }
+}
+body {
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 1.1111111111vw;
+  line-height: 1.28;
+  color: var(--color--dark);
+  background-color: var(--color-ligth);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 95.1388888889vw;
+}
+
+.test__button-action {
+  pointer-events: none;
+}
+
+.hero__button:hover {
+  opacity: 0.7;
+}
+
+.button__grean {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__grey {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-gray);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__result {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 14.5833333333vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__return {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+  color: var(--color-grean);
+  border: 0.1388888889vw solid var(--color-grean);
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.btn:hover {
+  background: #3DAC51;
+}
+
+.text {
+  text-align: start;
+}
+
+.malina {
+  background-color: var(--color-malina);
+}
+
+.green {
+  background-color: var(--color-grean);
+}
+
+.show {
+  display: flex !important;
+}
+
+.varfalse {
+  opacity: 0.2 !important;
+}
+
+/* Скрытие текста */
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+  .true__effect {
+    opacity: 0.1 !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .true__effect {
+    opacity: 0 !important;
+  }
+}
+.button.disabled {
+  pointer-events: none; /* Отключает клики на кнопке */
+  opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+  cursor: not-allowed; /* Меняем курсор */
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Позиция слева */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Конечное положение */
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Полностью прозрачный */
+  }
+  to {
+    opacity: 1; /* Полностью видимый */
+  }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Общий класс для плавного появления */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Лёгкий сдвиг вниз */
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fade-in-result {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRes 1.3s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+.fade-inis {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Задержки для последовательного появления */
+.fade-in:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.fade-in:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.fade-in:nth-child(5) { /* Например, кнопка */
+  animation-delay: 1s;
+}
+
+/* Анимации */
+@keyframes image-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes confetti-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Анимация плавного появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRes {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeClose {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+body {
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 1.1111111111vw;
+  line-height: 1.28;
+  color: var(--color--dark);
+  background-color: var(--color-ligth);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 95.1388888889vw;
+}
+
+.test__button-action {
+  pointer-events: none;
+}
+
+.hero__button:hover {
+  opacity: 0.7;
+}
+
+.button__grean {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__grey {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-gray);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__result {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 14.5833333333vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__return {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+  color: var(--color-grean);
+  border: 0.1388888889vw solid var(--color-grean);
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.btn:hover {
+  background: #3DAC51;
+}
+
+.text {
+  text-align: start;
+}
+
+.malina {
+  background-color: var(--color-malina);
+}
+
+.green {
+  background-color: var(--color-grean);
+}
+
+.show {
+  display: flex !important;
+}
+
+.varfalse {
+  opacity: 0.2 !important;
+}
+
+/* Скрытие текста */
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+  .true__effect {
+    opacity: 0.1 !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .true__effect {
+    opacity: 0 !important;
+  }
+}
+.button.disabled {
+  pointer-events: none; /* Отключает клики на кнопке */
+  opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+  cursor: not-allowed; /* Меняем курсор */
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Позиция слева */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Конечное положение */
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Полностью прозрачный */
+  }
+  to {
+    opacity: 1; /* Полностью видимый */
+  }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Общий класс для плавного появления */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Лёгкий сдвиг вниз */
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fade-in-result {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRes 1.3s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+.fade-inis {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Задержки для последовательного появления */
+.fade-in:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.fade-in:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.fade-in:nth-child(5) { /* Например, кнопка */
+  animation-delay: 1s;
+}
+
+/* Анимации */
+@keyframes image-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes confetti-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Анимация плавного появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRes {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeClose {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 650px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.5623409669vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__logo {
+    width: 15.0127226463vw;
+    height: 3.3078880407vw;
+  }
+  .header__sber {
+    width: 36.1323155216vw;
+    height: 6.106870229vw;
+  }
+  .header .container {
+    width: 92.3664122137vw;
+  }
+}
+body {
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 1.1111111111vw;
+  line-height: 1.28;
+  color: var(--color--dark);
+  background-color: var(--color-ligth);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 95.1388888889vw;
+}
+
+.test__button-action {
+  pointer-events: none;
+}
+
+.hero__button:hover {
+  opacity: 0.7;
+}
+
+.button__grean {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__grey {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-gray);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__result {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 14.5833333333vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__return {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+  color: var(--color-grean);
+  border: 0.1388888889vw solid var(--color-grean);
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.btn:hover {
+  background: #3DAC51;
+}
+
+.text {
+  text-align: start;
+}
+
+.malina {
+  background-color: var(--color-malina);
+}
+
+.green {
+  background-color: var(--color-grean);
+}
+
+.show {
+  display: flex !important;
+}
+
+.varfalse {
+  opacity: 0.2 !important;
+}
+
+/* Скрытие текста */
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+  .true__effect {
+    opacity: 0.1 !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .true__effect {
+    opacity: 0 !important;
+  }
+}
+.button.disabled {
+  pointer-events: none; /* Отключает клики на кнопке */
+  opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+  cursor: not-allowed; /* Меняем курсор */
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Позиция слева */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Конечное положение */
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Полностью прозрачный */
+  }
+  to {
+    opacity: 1; /* Полностью видимый */
+  }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Общий класс для плавного появления */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Лёгкий сдвиг вниз */
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fade-in-result {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRes 1.3s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+.fade-inis {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Задержки для последовательного появления */
+.fade-in:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.fade-in:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.fade-in:nth-child(5) { /* Например, кнопка */
+  animation-delay: 1s;
+}
+
+/* Анимации */
+@keyframes image-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes confetti-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Анимация плавного появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRes {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeClose {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 650px) {
+  .section__start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-image: url(/images/hero-bg-mobile.png);
+    background-size: cover;
+  }
+  .section__start .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+  }
+  .section__start .hero__img {
+    width: 83.7150127226vw;
+    height: 84.7328244275vw;
+    margin-left: 3.8167938931vw;
+    margin-top: 5.8524173028vw;
+  }
+  .section__start .hero__body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 4.5801526718vw;
+    max-width: 166.6666666667vw;
+    margin-top: 15.5216284987vw;
+  }
+  .section__start .hero__test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22.6463104326vw;
+    height: 8.6513994911vw;
+    text-transform: uppercase;
+    font-size: 4.3256997455vw;
+    color: var(--color-grean);
+    font-weight: 400;
+    border: 0.5089058524vw solid var(--color-grean);
+    border-radius: 8.6513994911vw;
+  }
+  .section__start .hero__title {
+    width: 73.2824427481vw;
+    font-size: 5.3435114504vw;
+    font-weight: 500;
+  }
+  .section__start .hero__description {
+    width: 87.2773536896vw;
+    font-size: 3.0534351145vw;
+  }
+  .section__start .hero__description p:where(:not([class]):not(:last-child)) {
+    margin-bottom: 3.8167938931vw;
+  }
+  .section__start .hero .button__grean {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-grean);
+    color: var(--color-ligth);
+    border: none;
+    cursor: pointer;
+    min-width: 57.5063613232vw;
+    height: 9.4147582697vw;
+    transition: var(--transition-duration);
+    border-radius: 7.3791348601vw;
+    font-size: 4.0712468193vw;
+  }
+  .section__start .container {
+    width: 91.3486005089vw;
+  }
+}
+body {
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 1.1111111111vw;
+  line-height: 1.28;
+  color: var(--color--dark);
+  background-color: var(--color-ligth);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 95.1388888889vw;
+}
+
+.test__button-action {
+  pointer-events: none;
+}
+
+.hero__button:hover {
+  opacity: 0.7;
+}
+
+.button__grean {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__grey {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-gray);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__result {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 14.5833333333vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__return {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+  color: var(--color-grean);
+  border: 0.1388888889vw solid var(--color-grean);
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.btn:hover {
+  background: #3DAC51;
+}
+
+.text {
+  text-align: start;
+}
+
+.malina {
+  background-color: var(--color-malina);
+}
+
+.green {
+  background-color: var(--color-grean);
+}
+
+.show {
+  display: flex !important;
+}
+
+.varfalse {
+  opacity: 0.2 !important;
+}
+
+/* Скрытие текста */
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+  .true__effect {
+    opacity: 0.1 !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .true__effect {
+    opacity: 0 !important;
+  }
+}
+.button.disabled {
+  pointer-events: none; /* Отключает клики на кнопке */
+  opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+  cursor: not-allowed; /* Меняем курсор */
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Позиция слева */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Конечное положение */
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Полностью прозрачный */
+  }
+  to {
+    opacity: 1; /* Полностью видимый */
+  }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Общий класс для плавного появления */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Лёгкий сдвиг вниз */
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fade-in-result {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRes 1.3s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+.fade-inis {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Задержки для последовательного появления */
+.fade-in:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.fade-in:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.fade-in:nth-child(5) { /* Например, кнопка */
+  animation-delay: 1s;
+}
+
+/* Анимации */
+@keyframes image-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes confetti-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Анимация плавного появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRes {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeClose {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 650px) {
+  .section__test {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: url(/images/test-bg-mobile.png) no-repeat center center/cover;
+  }
+  .section__test .container__test {
+    width: 92.3664122137vw;
+  }
+  .section__test .container__test .test {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 14.5038167939vw;
+  }
+  .section__test .container__test .test__body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 91.0941475827vw;
+  }
+  .section__test .container__test .test__img {
+    width: 56.4885496183vw;
+    height: 56.7430025445vw;
+    position: relative;
+  }
+  .section__test .container__test .test__number {
+    font-size: 4.0712468193vw;
+    color: var(--color-gray);
+    margin-bottom: 6.8702290076vw;
+  }
+  .section__test .container__test .test__text {
+    font-size: 3.5623409669vw;
+    margin-bottom: 8.9058524173vw;
+  }
+  .section__test .container__test .test__text span {
+    font-weight: 700;
+  }
+  .section__test .container__test .test__question {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2.2900763359vw;
+    margin-bottom: 7.3791348601vw;
+  }
+  .section__test .container__test .test__answer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 133.0788804071vw;
+    min-height: 11.7048346056vw;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    /* Когда кнопка активирована */
+    /* Правильный ответ */
+    /* Неправильный ответ */
+    /* Блокировка */
+  }
+  .section__test .container__test .test__answer .num {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 15.0127226463vw;
+    height: 15.0127226463vw;
+    background: var(--color-gray);
+    border-radius: 50%;
+    color: var(--color-ligth);
+    font-size: 7.6335877863vw;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .section__test .container__test .test__answer button {
+    width: 79.8982188295vw;
+    height: auto;
+    border: 0.5089058524vw solid var(--color-gray);
+    border-radius: 16.5394402036vw;
+    padding: 2.0356234097vw 6.6157760814vw 2.0356234097vw 4.834605598vw;
+    background: inherit;
+    font-size: 2.7989821883vw;
+  }
+  .section__test .container__test .test__answer button .text {
+    max-width: 67.9389312977vw;
+    font-size: 3.0534351145vw;
+  }
+  .section__test .container__test .test__answer button .text-content {
+    text-align: start;
+    border-top: 0.2544529262vw solid #fff;
+    margin-top: 1.0178117048vw;
+    padding-top: 1.0178117048vw;
+    color: #fff;
+    font-size: 2.0356234097vw;
+    line-height: 1.1;
+    opacity: 0; /* Скрыт по умолчанию */
+    transition: background-color 1s ease-out opacity 1s ease-out; /* Плавное изменение фона */
+  }
+  .section__test .container__test .test__answer button.active .text-content {
+    opacity: 1; /* Плавно отображается */
+    transform: translateY(0); /* Плавно появляется сверху */
+    color: #fff; /* Белый текст при активации */
+  }
+  .section__test .container__test .test__answer button.active {
+    border-radius: 7.6335877863vw;
+    opacity: 1;
+    color: #fff;
+    border: none;
+    transition: background-color 1s ease-out; /* Плавное изменение фона */
+  }
+  .section__test .container__test .test__answer .correct {
+    background-color: var(--color-grean);
+    color: var(--color-ligth);
+  }
+  .section__test .container__test .test__answer .correct .num {
+    background-color: var(--color-grean); /* Кружок правильного ответа */
+  }
+  .section__test .container__test .test__answer .incorrect {
+    background-color: var(--color-malina);
+    color: var(--color-ligth);
+  }
+  .section__test .container__test .test__answer .incorrect .num {
+    background-color: var(--color-malina); /* Кружок неправильного ответа */
+  }
+  .section__test .container__test .test__answer .disabled {
+    pointer-events: none;
+    opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
+  }
+  .section__test .container__test .test .button__grey {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-gray);
+    color: var(--color-ligth);
+    border: none;
+    cursor: pointer;
+    min-width: 50.3816793893vw;
+    height: 9.4147582697vw;
+    transition: var(--transition-duration);
+    border-radius: 7.3791348601vw;
+    font-size: 3.5623409669vw;
+    margin-bottom: 7.6335877863vw;
+  }
+  .section__test .container__test .test .test__answer.selected {
+    align-items: flex-start;
+  }
+  .section__test .container__test .test .magic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 87.0229007634vw;
+  }
+  .section__test .container__test .test .answer__true {
+    position: relative;
+    opacity: 1 !important;
+    z-index: 99;
+  }
+  .section__test .container__test .test .test__img-movie {
+    animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
+  }
+  .section__test .container__test .test .test__img-animation {
+    display: none;
+    width: 144.5292620865vw;
+    height: 149.8727735369vw;
+    position: absolute;
+    top: 15.2671755725vw;
+    right: 15.2671755725vw;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0);
+    animation: image-scale 1.3s ease-out forwards; /* Анимация появления */
+    animation-delay: 0.3s;
+  }
+  .section__test .container__test .test .test__img-confity {
+    display: none !important;
+    width: 166.9211195929vw;
+    height: 159.2875318066vw;
+    position: absolute;
+    top: 5.0890585242vw;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    opacity: 0;
+    transform: scale(0);
+    animation: confetti-scale 1.2s ease-out 0.8s forwards;
+  }
+  .section__test .container__test .test .test__img-animation1 {
+    width: 42.7480916031vw;
+    height: 61.3231552163vw;
+    top: 0vw;
+    left: 3.8167938931vw;
+  }
+  .section__test .container__test .test .test__img-animation1 img {
+    transform: rotate(10deg);
+  }
+  .section__test .container__test .test .test__img-animation2 {
+    width: 73.2824427481vw;
+    height: 65.3944020356vw;
+    top: 0vw;
+    left: -10.1781170483vw;
+  }
+  .section__test .container__test .test .test__img-animation3 {
+    width: 79.1348600509vw;
+    height: 64.631043257vw;
+    top: 0vw;
+    left: -10.1781170483vw;
+  }
+  .section__test .container__test .test .test__img-animation4 {
+    width: 67.4300254453vw;
+    height: 69.9745547074vw;
+    top: 0vw;
+    left: -7.6335877863vw;
+  }
+  .section__test .container__test .test .test__img-animation5 {
+    width: 62.5954198473vw;
+    height: 64.8854961832vw;
+    top: 0vw;
+    left: -2.5445292621vw;
+  }
+  .section__test .container__test .test .select {
+    border-radius: 7.6335877863vw;
+    color: var(--color-ligth);
+  }
+  .section__test .container__test .test.show {
+    display: flex;
+  }
+  body {
+    font-family: var(--font-family-base);
+    font-weight: 500;
+    font-size: 1.1111111111vw;
+    line-height: 1.28;
+    color: var(--color--dark);
+    background-color: var(--color-ligth);
+  }
+  a,
+  button,
+  input,
+  textarea,
+  svg * {
+    transition-duration: var(--transition-duration);
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    width: 95.1388888889vw;
+  }
+  .test__button-action {
+    pointer-events: none;
+  }
+  .hero__button:hover {
+    opacity: 0.7;
+  }
+  .button__grean {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-grean);
+    color: var(--color-ligth);
+    border: none;
+    cursor: pointer;
+    min-width: 21.7361111111vw;
+    height: 2.5694444444vw;
+    transition: var(--transition-duration);
+    border-radius: 2.0138888889vw;
+  }
+  .button__grey {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-gray);
+    color: var(--color-ligth);
+    border: none;
+    cursor: pointer;
+    min-width: 21.7361111111vw;
+    height: 2.5694444444vw;
+    transition: var(--transition-duration);
+    border-radius: 2.0138888889vw;
+  }
+  .button__result {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-grean);
+    color: var(--color-ligth);
+    border: none;
+    cursor: pointer;
+    min-width: 14.5833333333vw;
+    height: 2.5694444444vw;
+    transition: var(--transition-duration);
+    border-radius: 2.0138888889vw;
+  }
+  .button__return {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: inherit;
+    color: var(--color-grean);
+    border: 0.1388888889vw solid var(--color-grean);
+    cursor: pointer;
+    min-width: 21.7361111111vw;
+    height: 2.5694444444vw;
+    transition: var(--transition-duration);
+    border-radius: 2.0138888889vw;
+  }
+  .btn:hover {
+    background: #3DAC51;
+  }
+  .text {
+    text-align: start;
+  }
+  .malina {
+    background-color: var(--color-malina);
+  }
+  .green {
+    background-color: var(--color-grean);
+  }
+  .show {
+    display: flex !important;
+  }
+  .varfalse {
+    opacity: 0.2 !important;
+  }
+  /* Скрытие текста */
+  .hidden {
+    display: none;
+  }
+  /* Общий класс для плавного появления */
+  /* Задержки для последовательного появления */
+  /* Анимации */
+  /* Анимация плавного появления */
+}
+@media screen and (max-width: 650px) and (min-width: 650px) {
+  .true__effect {
+    opacity: 0.1 !important;
+  }
+}
+@media screen and (max-width: 650px) and (max-width: 650px) {
+  .true__effect {
+    opacity: 0 !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .button.disabled {
+    pointer-events: none; /* Отключает клики на кнопке */
+    opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
+    cursor: not-allowed; /* Меняем курсор */
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(100%); /* Позиция слева */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Конечное положение */
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Полностью прозрачный */
+    }
+    to {
+      opacity: 1; /* Полностью видимый */
+    }
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease forwards;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Лёгкий сдвиг вниз */
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  .fade-in-result {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInRes 1.3s ease-out forwards;
+    animation-delay: 1.5s;
+  }
+  .fade-inis {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  .fade-in:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .fade-in:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .fade-in:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .fade-in:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  .fade-in:nth-child(5) { /* Например, кнопка */
+    animation-delay: 1s;
+  }
+  @keyframes image-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes confetti-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInRes {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeClose {
+    from {
+      opacity: 1;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(0);
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .section__result {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: url(/images/result-bg-mobile.png) no-repeat center center/cover;
+  }
+  .section__result .container__result {
+    width: 92.3664122137vw;
+  }
+  .section__result .container__result .section__body {
+    margin-top: 15.2671755725vw;
+  }
+  .section__result .container__result .section__body .result {
+    display: none;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+  }
+  .section__result .container__result .section__body .result__img {
+    width: 83.7150127226vw;
+    height: 88.2951653944vw;
+  }
+  .section__result .container__result .section__body .result__body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .section__result .container__result .section__body .result__body .result__test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22.6463104326vw;
+    height: 8.6513994911vw;
+    text-transform: uppercase;
+    font-size: 4.0712468193vw;
+    color: var(--color-grean);
+    font-weight: 400;
+    border: 0.5089058524vw solid var(--color-grean);
+    border-radius: 14.5038167939vw;
+    margin-bottom: 3.8167938931vw;
+  }
+  .section__result .container__result .section__body .result__cicle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75.8269720102vw;
+    margin-bottom: 2.5445292621vw;
+  }
+  .section__result .container__result .section__body .result__cicle-img {
+    width: 13.2315521628vw;
+    height: 13.2315521628vw;
+  }
+  .section__result .container__result .section__body .result__title {
+    font-size: 5.3435114504vw;
+    font-weight: 500;
+    margin-bottom: 2.5445292621vw;
+  }
+  .section__result .container__result .section__body .result__description {
+    max-width: 87.2773536896vw;
+    font-size: 3.0534351145vw;
+    margin-bottom: 6.3613231552vw;
+  }
+  .section__result .container__result .section__body .result__footer {
+    width: 87.2773536896vw;
+    font-size: 1.272264631vw;
+    padding-top: 3.3078880407vw;
+  }
+  .section__result .container__result .section__body .result .button__result {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-grean);
+    color: var(--color-ligth);
+    border: none;
+    cursor: pointer;
+    min-width: 39.4402035623vw;
+    height: 9.4147582697vw;
+    transition: var(--transition-duration);
+    border-radius: 7.3791348601vw;
+    font-size: 4.0712468193vw;
+    margin-bottom: 3.3078880407vw;
+  }
+  .section__result .container__result .section__body .result .button__return {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: inherit;
+    color: var(--color-grean);
+    border: 0.5089058524vw solid var(--color-grean);
+    cursor: pointer;
+    min-width: 65.1399491094vw;
+    height: 9.4147582697vw;
+    transition: var(--transition-duration);
+    border-radius: 7.3791348601vw;
+    font-size: 4.0712468193vw;
+    margin-bottom: 3.8167938931vw;
+  }
+  .section__result .container__result .section__body .result.show {
+    display: flex;
+  }
+  .item_desktop {
+    display: none !important;
+  }
+}
+body {
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 1.1111111111vw;
+  line-height: 1.28;
+  color: var(--color--dark);
+  background-color: var(--color-ligth);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 95.1388888889vw;
+}
+
+.test__button-action {
+  pointer-events: none;
+}
+
+.hero__button:hover {
+  opacity: 0.7;
+}
+
+.button__grean {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__grey {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-gray);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__result {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grean);
+  color: var(--color-ligth);
+  border: none;
+  cursor: pointer;
+  min-width: 14.5833333333vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.button__return {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+  color: var(--color-grean);
+  border: 0.1388888889vw solid var(--color-grean);
+  cursor: pointer;
+  min-width: 21.7361111111vw;
+  height: 2.5694444444vw;
+  transition: var(--transition-duration);
+  border-radius: 2.0138888889vw;
+}
+
+.btn:hover {
+  background: #3DAC51;
+}
+
+.text {
+  text-align: start;
+}
+
+.malina {
+  background-color: var(--color-malina);
+}
+
+.green {
+  background-color: var(--color-grean);
+}
+
+.show {
+  display: flex !important;
+}
+
+.varfalse {
+  opacity: 0.2 !important;
+}
+
+/* Скрытие текста */
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+  .true__effect {
+    opacity: 0.1 !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .true__effect {
+    opacity: 0 !important;
+  }
+}
 .button.disabled {
   pointer-events: none; /* Отключает клики на кнопке */
   opacity: 1; /* Можно изменить стиль, чтобы показать, что кнопка заблокирована */
