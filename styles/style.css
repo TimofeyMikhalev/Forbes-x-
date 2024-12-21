@@ -1039,8 +1039,10 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
-    background-image: url("/images/hero-bg.png");
-    background-size: cover;
+  }
+  .section__start .hero-bg {
+    position: absolute;
+    z-index: -1;
   }
   .section__start .hero {
     display: flex;
@@ -1090,8 +1092,10 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
-    background-image: url("/images/test-bg.png");
-    background-size: cover;
+  }
+  .section__test .test-bg {
+    position: absolute;
+    z-index: -1;
   }
   .section__test .container__test {
     width: 93.125vw;
@@ -1558,8 +1562,10 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
-    background-image: url("/images/result-bg.png");
-    background-size: cover;
+  }
+  .section__result .result-bg {
+    position: absolute;
+    z-index: -1;
   }
   .section__result .container__result {
     width: 93.125vw;
@@ -2420,8 +2426,10 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
-    background-image: url(/images/hero-bg-mobile.png);
-    background-size: cover;
+  }
+  .section__start .hero-bg {
+    position: absolute;
+    z-index: -1;
   }
   .section__start .hero {
     display: flex;
@@ -2754,8 +2762,10 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
-    background: url(/images/test-bg-mobile.png);
-    background-size: cover;
+  }
+  .section__test .test-bg {
+    position: absolute;
+    z-index: -1;
   }
   .section__test .container__test {
     width: 92.3664122137vw;
@@ -3219,8 +3229,10 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
-    background: url(/images/result-bg-mobile.png);
-    background-size: cover;
+  }
+  .section__result .result-bg {
+    position: absolute;
+    z-index: -1;
   }
   .section__result .container__result {
     width: 92.3664122137vw;

@@ -23,8 +23,13 @@
         bottom: 0;
         z-index: 10;
     
-        background: url(/images/test-bg-mobile.png);
-        background-size: cover;
+        .test-bg {
+            position: absolute;
+            z-index: -1;
+        }
+
+        // background: url(/images/test-bg-mobile.png);
+        // background-size: cover;
         .container__test {
             width: get-vw(363px, 393);
             

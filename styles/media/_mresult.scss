@@ -19,9 +19,14 @@
         right: 0;
         bottom: 0;
         z-index: 10;
+
+        .result-bg {
+            position: absolute;
+            z-index: -1;
+        }
     
-        background: url(/images/result-bg-mobile.png);
-        background-size: cover;
+        // background: url(/images/result-bg-mobile.png);
+        // background-size: cover;
         .container__result {
             width: get-vw(363px, 393);
             .section__body {

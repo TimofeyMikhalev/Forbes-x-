@@ -24,8 +24,12 @@
         bottom: 0;
         z-index: 10;
 
-        background-image: url(/images/hero-bg-mobile.png);
-        background-size: cover;
+        .hero-bg {
+            position: absolute;
+            z-index: -1;
+        }
+        // background-image: url(/images/hero-bg-mobile.png);
+        // background-size: cover;
         .hero {
             display: flex;
             justify-content: space-between;
