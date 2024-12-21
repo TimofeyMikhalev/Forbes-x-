@@ -35,9 +35,9 @@
             flex-direction: row-reverse; 
             flex-direction: column-reverse; 
             &__img {
-                width: get-vw(230px, 320);
-                height: get-vw(233px, 320);
-                margin-left: get-vw(40px, 320);
+                width: get-vw(180px, 320);
+                height: get-vw(183px, 320);
+                margin-left: get-vw(60px, 320);
                 margin-top: get-vw(15px, 320);
             }
             &__body {
@@ -46,15 +46,15 @@
                 align-items: start;
                 row-gap: get-vw(18px, 320);
                 max-width: get-vw(300px, 320);
-                margin-top: get-vw(51px, 320);
+                margin-top: get-vw(45px, 320);
             }
         
             &__test {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: get-vw(80px, 320);
-                height: get-vw(34px, 320);
+                width: get-vw(70px, 320);
+                height: get-vw(26px, 320);
         
                 text-transform: uppercase;
                 font-size: get-vw(15px, 320);
@@ -86,8 +86,8 @@
                 color: var(--color-ligth);
                 border: none;
                 cursor: pointer;
-                min-width: get-vw(216px, 320);
-                height: get-vw(33px, 320);
+                min-width: get-vw(206px, 320);
+                height: get-vw(30px, 320);
                 transition: var(--transition-duration);
                 border-radius: get-vw(29px, 320);
                 font-size: get-vw(16px, 320);

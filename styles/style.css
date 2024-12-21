@@ -2556,9 +2556,9 @@ img {
     flex-direction: column-reverse;
   }
   .section__start .hero__img {
-    width: 71.875vw;
-    height: 72.8125vw;
-    margin-left: 12.5vw;
+    width: 56.25vw;
+    height: 57.1875vw;
+    margin-left: 18.75vw;
     margin-top: 4.6875vw;
   }
   .section__start .hero__body {
@@ -2567,14 +2567,14 @@ img {
     align-items: start;
     row-gap: 5.625vw;
     max-width: 93.75vw;
-    margin-top: 15.9375vw;
+    margin-top: 14.0625vw;
   }
   .section__start .hero__test {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25vw;
-    height: 10.625vw;
+    width: 21.875vw;
+    height: 8.125vw;
     text-transform: uppercase;
     font-size: 4.6875vw;
     color: var(--color-grean);
@@ -2602,8 +2602,8 @@ img {
     color: var(--color-ligth);
     border: none;
     cursor: pointer;
-    min-width: 67.5vw;
-    height: 10.3125vw;
+    min-width: 64.375vw;
+    height: 9.375vw;
     transition: var(--transition-duration);
     border-radius: 9.0625vw;
     font-size: 5vw;
