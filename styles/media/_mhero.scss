@@ -15,7 +15,7 @@
     .section__start {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
 
         position: fixed;
         top: 0;
@@ -35,47 +35,47 @@
             flex-direction: row-reverse; 
             flex-direction: column-reverse; 
             &__img {
-                width: get-vw(329px, 393);
-                height: get-vw(333px, 393);
-                margin-left: get-vw(15px, 393);
-                margin-top: get-vw(23px, 393);
+                width: get-vw(230px, 320);
+                height: get-vw(233px, 320);
+                margin-left: get-vw(40px, 320);
+                margin-top: get-vw(15px, 320);
             }
             &__body {
                 display: flex;
                 flex-direction: column;
                 align-items: start;
-                row-gap: get-vw(18px, 393);
-                max-width: get-vw(655px, 393);
-                margin-top: get-vw(61px, 393);
+                row-gap: get-vw(18px, 320);
+                max-width: get-vw(300px, 320);
+                margin-top: get-vw(51px, 320);
             }
         
             &__test {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: get-vw(89px, 393);
-                height: get-vw(34px, 393);
+                width: get-vw(80px, 320);
+                height: get-vw(34px, 320);
         
                 text-transform: uppercase;
-                font-size: get-vw(17px, 393);
+                font-size: get-vw(15px, 320);
                 color: var(--color-grean);
                 font-weight: 400;
-                border: get-vw(2px, 393) solid var(--color-grean);
-                border-radius: get-vw(34px, 393);
+                border: get-vw(2px, 320) solid var(--color-grean);
+                border-radius: get-vw(34px, 320);
                 
             }   
         
             &__title {
-                width: get-vw(288px, 393);
-                font-size: get-vw(21px, 393);
+                width: get-vw(288px, 320);
+                font-size: get-vw(18px, 320);
                 font-weight: 500;
             }
 
             &__description {
-                width: get-vw(343px, 393);
-                font-size: get-vw(12px, 393);
+                width: get-vw(290px, 320);
+                font-size: get-vw(11px, 320);
                 p:where(:not([class]):not(:last-child)) {
-                    margin-bottom: get-vw(15px, 393);
+                    margin-bottom: get-vw(12px, 320);
                 }
             }
             .button__grean {
@@ -86,15 +86,15 @@
                 color: var(--color-ligth);
                 border: none;
                 cursor: pointer;
-                min-width: get-vw(226px, 393);
-                height: get-vw(37px, 393);
+                min-width: get-vw(216px, 320);
+                height: get-vw(33px, 320);
                 transition: var(--transition-duration);
-                border-radius: get-vw(29px, 393);
-                font-size: get-vw(16px, 393);
+                border-radius: get-vw(29px, 320);
+                font-size: get-vw(16px, 320);
             }
         }  
         .container {
-            width: get-vw(359px, 393); 
+            width: get-vw(300px, 320); 
         }
     }
 

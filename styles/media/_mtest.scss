@@ -28,8 +28,6 @@
             z-index: -1;
         }
 
-        // background: url(/images/test-bg-mobile.png);
-        // background-size: cover;
         .container__test {
             width: get-vw(363px, 393);
             
@@ -192,7 +190,7 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    width: get-vw(342px, 393);
+                    width: get-vw(320px, 393);
                     
                 }
                

@@ -2535,7 +2535,7 @@ img {
   .section__start {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     position: fixed;
     top: 0;
     left: 0;
@@ -2556,43 +2556,43 @@ img {
     flex-direction: column-reverse;
   }
   .section__start .hero__img {
-    width: 83.7150127226vw;
-    height: 84.7328244275vw;
-    margin-left: 3.8167938931vw;
-    margin-top: 5.8524173028vw;
+    width: 71.875vw;
+    height: 72.8125vw;
+    margin-left: 12.5vw;
+    margin-top: 4.6875vw;
   }
   .section__start .hero__body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    row-gap: 4.5801526718vw;
-    max-width: 166.6666666667vw;
-    margin-top: 15.5216284987vw;
+    row-gap: 5.625vw;
+    max-width: 93.75vw;
+    margin-top: 15.9375vw;
   }
   .section__start .hero__test {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 22.6463104326vw;
-    height: 8.6513994911vw;
+    width: 25vw;
+    height: 10.625vw;
     text-transform: uppercase;
-    font-size: 4.3256997455vw;
+    font-size: 4.6875vw;
     color: var(--color-grean);
     font-weight: 400;
-    border: 0.5089058524vw solid var(--color-grean);
-    border-radius: 8.6513994911vw;
+    border: 0.625vw solid var(--color-grean);
+    border-radius: 10.625vw;
   }
   .section__start .hero__title {
-    width: 73.2824427481vw;
-    font-size: 5.3435114504vw;
+    width: 90vw;
+    font-size: 5.625vw;
     font-weight: 500;
   }
   .section__start .hero__description {
-    width: 87.2773536896vw;
-    font-size: 3.0534351145vw;
+    width: 90.625vw;
+    font-size: 3.4375vw;
   }
   .section__start .hero__description p:where(:not([class]):not(:last-child)) {
-    margin-bottom: 3.8167938931vw;
+    margin-bottom: 3.75vw;
   }
   .section__start .hero .button__grean {
     display: inline-flex;
@@ -2602,14 +2602,14 @@ img {
     color: var(--color-ligth);
     border: none;
     cursor: pointer;
-    min-width: 57.5063613232vw;
-    height: 9.4147582697vw;
+    min-width: 67.5vw;
+    height: 10.3125vw;
     transition: var(--transition-duration);
-    border-radius: 7.3791348601vw;
-    font-size: 4.0712468193vw;
+    border-radius: 9.0625vw;
+    font-size: 5vw;
   }
   .section__start .container {
-    width: 91.3486005089vw;
+    width: 93.75vw;
   }
 }
 :root {
@@ -3041,7 +3041,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 87.0229007634vw;
+    width: 81.4249363868vw;
   }
   .section__test .container__test .test .answer__true {
     position: relative;
