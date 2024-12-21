@@ -44,38 +44,38 @@
                 display: flex;
                 flex-direction: column;
                 align-items: start;
-                row-gap: get-vw(18px, 320);
-                max-width: get-vw(300px, 320);
-                margin-top: get-vw(45px, 320);
+                row-gap: 1rem;
+                max-width: 21.4rem;
+                margin-top: 3rem;
             }
         
             &__test {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: get-vw(62px, 320);
-                height: get-vw(20px, 320);
+                width: 5.5rem;
+                height: 2.1rem;
         
                 text-transform: uppercase;
-                font-size: get-vw(13px, 320);
+                font-size: 1rem;
                 color: var(--color-grean);
                 font-weight: 400;
-                border: get-vw(1px, 320) solid var(--color-grean);
-                border-radius: get-vw(34px, 320);
+                border: get-vw(2px, 320) solid var(--color-grean);
+                border-radius: 21rem;
                 
             }   
         
             &__title {
-                width: get-vw(288px, 320);
-                font-size: get-vw(16px, 320);
+                width: 18rem;
+                font-size: 1.3rem;
                 font-weight: 500;
             }
 
             &__description {
-                width: get-vw(290px, 320);
-                font-size: get-vw(9px, 320);
+                width: 18rem;
+                font-size: 0.7rem;
                 p:where(:not([class]):not(:last-child)) {
-                    margin-bottom: get-vw(10px, 320);
+                    margin-bottom: 0.7rem;
                 }
             }
             .button__grean {
@@ -86,15 +86,15 @@
                 color: var(--color-ligth);
                 border: none;
                 cursor: pointer;
-                min-width: get-vw(200px, 320);
+                min-width: 14rem;
                 height: get-vw(25px, 320);
                 transition: var(--transition-duration);
-                border-radius: get-vw(29px, 320);
-                font-size: get-vw(14px, 320);
+                border-radius: 1.8rem;
+                font-size: 0.8rem;
             }
         }  
         .container {
-            width: get-vw(300px, 320); 
+            width: 22rem; 
         }
     }
 
