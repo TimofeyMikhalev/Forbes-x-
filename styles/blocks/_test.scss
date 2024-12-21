@@ -29,6 +29,7 @@
                 width: get-vw(708px, 1440);
                 height: get-vw(713px, 1440);
                 position: relative;
+                
             }
 
             &__number {
@@ -59,7 +60,9 @@
                 width: get-vw(523px, 1440);
                 height: auto;
                 cursor: pointer;
-                animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
+                
+                transition: background-color 0.5s ease, color 0.5s ease;
+
                 .num {
                     display: flex;
                     justify-content: center;
@@ -84,6 +87,9 @@
                 
                     padding: get-vw(10px, 1440) get-vw(39px, 1440) get-vw(10px, 1440) get-vw(29px, 1440);
                     background: inherit;
+                    .text {
+                        max-width: get-vw(390px, 1440);
+                    }
                     .text-content {
                         text-align: start;
                         font-size: get-vw(10px, 1440);
@@ -93,8 +99,7 @@
                         color: #fff;
                         
                         opacity: 0; /* Скрыт по умолчанию */
-                        transform: translateY(30px); /* Начальная позиция текста ниже */
-                        transition: opacity 1s ease-out, transform 2s ease-out;
+                        transition: background-color 1s ease-out opacity 1s ease-out;/* Плавное изменение фона */
                     }
                 }
                 /* Когда кнопка активирована */
@@ -102,13 +107,15 @@
                     opacity: 1; /* Плавно отображается */
                     transform: translateY(0); /* Плавно появляется сверху */
                     color: #fff; /* Белый текст при активации */
+                    
                 }
                 button.active {
                     border-radius: get-vw(30px, 1440);
-               
+                    opacity: 1;
+                    
                     color: #fff;
                     border: none;
-                    transition: background-color 0.7s ease-out;/* Плавное изменение фона */
+                    transition: background-color 1s ease-out;/* Плавное изменение фона */
 
                 }    
                 /* Правильный ответ */
@@ -147,7 +154,7 @@
                 top: 0;
                 left: get-vw(65px, 1440);
                 width: get-vw(578px, 1440);
-           
+          
             }
             .varfalse {
                 opacity: 0.2 !important;
@@ -159,7 +166,6 @@
          
             }
             .test__img-movie {
-                opacity: 0; /* Начальная прозрачность */
                 animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
             }
             .test__img-animation {
@@ -177,6 +183,8 @@
                 transform: scale(0);
                 animation: image-scale 1.3s ease-out forwards; /* Анимация появления */
                 animation-delay: 0.3s;
+
+
             }
             .test__img-confity {
                 display: none;

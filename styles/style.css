@@ -341,7 +341,6 @@ img {
 
 .true__effect {
   opacity: 0.1 !important;
-  transition: all 0.3;
 }
 
 .button.disabled {
@@ -368,6 +367,12 @@ img {
     opacity: 1; /* Полностью видимый */
   }
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
 /* Общий класс для плавного появления */
 .fade-in {
   opacity: 0;
@@ -447,6 +452,16 @@ img {
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeClose {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
     transform: translateY(0);
   }
 }
@@ -587,7 +602,6 @@ img {
 
 .true__effect {
   opacity: 0.1 !important;
-  transition: all 0.3;
 }
 
 .button.disabled {
@@ -614,6 +628,12 @@ img {
     opacity: 1; /* Полностью видимый */
   }
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
 /* Общий класс для плавного появления */
 .fade-in {
   opacity: 0;
@@ -693,6 +713,16 @@ img {
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeClose {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
     transform: translateY(0);
   }
 }
@@ -844,7 +874,6 @@ img {
 
 .true__effect {
   opacity: 0.1 !important;
-  transition: all 0.3;
 }
 
 .button.disabled {
@@ -871,6 +900,12 @@ img {
     opacity: 1; /* Полностью видимый */
   }
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
 /* Общий класс для плавного появления */
 .fade-in {
   opacity: 0;
@@ -950,6 +985,16 @@ img {
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeClose {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
     transform: translateY(0);
   }
 }
@@ -1057,7 +1102,7 @@ img {
   width: 36.3194444444vw;
   height: auto;
   cursor: pointer;
-  animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
+  transition: background-color 0.5s ease, color 0.5s ease;
   /* Когда кнопка активирована */
   /* Правильный ответ */
   /* Неправильный ответ */
@@ -1083,6 +1128,9 @@ img {
   padding: 0.6944444444vw 2.7083333333vw 0.6944444444vw 2.0138888889vw;
   background: inherit;
 }
+.section__test .container__test .test__answer button .text {
+  max-width: 27.0833333333vw;
+}
 .section__test .container__test .test__answer button .text-content {
   text-align: start;
   font-size: 0.6944444444vw;
@@ -1091,8 +1139,7 @@ img {
   padding-top: 0.625vw;
   color: #fff;
   opacity: 0; /* Скрыт по умолчанию */
-  transform: translateY(30px); /* Начальная позиция текста ниже */
-  transition: opacity 1s ease-out, transform 2s ease-out;
+  transition: background-color 1s ease-out opacity 1s ease-out; /* Плавное изменение фона */
 }
 .section__test .container__test .test__answer button.active .text-content {
   opacity: 1; /* Плавно отображается */
@@ -1101,9 +1148,10 @@ img {
 }
 .section__test .container__test .test__answer button.active {
   border-radius: 2.0833333333vw;
+  opacity: 1;
   color: #fff;
   border: none;
-  transition: background-color 0.7s ease-out; /* Плавное изменение фона */
+  transition: background-color 1s ease-out; /* Плавное изменение фона */
 }
 .section__test .container__test .test__answer .correct {
   background-color: var(--color-grean);
@@ -1141,7 +1189,6 @@ img {
   z-index: 99;
 }
 .section__test .container__test .test .test__img-movie {
-  opacity: 0; /* Начальная прозрачность */
   animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
 }
 .section__test .container__test .test .test__img-animation {
@@ -1336,7 +1383,6 @@ img {
 
 .true__effect {
   opacity: 0.1 !important;
-  transition: all 0.3;
 }
 
 .button.disabled {
@@ -1363,6 +1409,12 @@ img {
     opacity: 1; /* Полностью видимый */
   }
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
 /* Общий класс для плавного появления */
 .fade-in {
   opacity: 0;
@@ -1442,6 +1494,16 @@ img {
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeClose {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
     transform: translateY(0);
   }
 }
@@ -1627,7 +1689,6 @@ img {
 
 .true__effect {
   opacity: 0.1 !important;
-  transition: all 0.3;
 }
 
 .button.disabled {
@@ -1654,6 +1715,12 @@ img {
     opacity: 1; /* Полностью видимый */
   }
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
 /* Общий класс для плавного появления */
 .fade-in {
   opacity: 0;
@@ -1733,6 +1800,16 @@ img {
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeClose {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
     transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */

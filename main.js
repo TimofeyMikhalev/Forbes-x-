@@ -85,6 +85,10 @@ function triggerAnimation(answerId) {
     document.querySelector(confity).classList.add('show');
 }
 
+containers.forEach(item => {
+
+})
+
 // Функция сброса всех анимаций
 function resetAnimations() {
     answers.forEach(({ img, animation, confity }) => {
@@ -115,15 +119,16 @@ containers.forEach((container) => {
 
         // Меняем цвета в зависимости от правильности ответа
         if (isCorrect) {
+            container.classList.add('answer__true')
             button.classList.add('correct');
-       
+         
             button.classList.add('magic');
             circle.classList.add('correct');
-
+            
             containers.forEach(item => {
                 item.classList.add('varfalse')
             })
-      
+
             triggerAnimation(container.id); // Включаем анимацию
         } else {
             button.classList.add('incorrect');
@@ -294,7 +299,9 @@ function resetApp() {
         
         button.classList.remove('active', 'correct', 'incorrect', 'disabled', 'magic');
         circle.classList.remove('active', 'correct', 'incorrect', 'disabled');
+
         extraContent.classList.add('hidden');
+        container.classList.remove('answer__true')
     });
 
     // Сбрасываем анимации
