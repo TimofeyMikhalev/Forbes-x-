@@ -2556,10 +2556,10 @@ img {
     flex-direction: column-reverse;
   }
   .section__start .hero__img {
-    width: 53.125vw;
-    height: 54.0625vw;
-    margin-left: 18.75vw;
-    margin-top: 4.6875vw;
+    width: 20rem;
+    height: 20.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
   }
   .section__start .hero__body {
     display: flex;

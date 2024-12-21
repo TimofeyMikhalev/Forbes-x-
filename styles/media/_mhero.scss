@@ -35,10 +35,10 @@
             flex-direction: row-reverse; 
             flex-direction: column-reverse; 
             &__img {
-                width: get-vw(170px, 320);
-                height: get-vw(173px, 320);
-                margin-left: get-vw(60px, 320);
-                margin-top: get-vw(15px, 320);
+                width: 20rem;
+                height: 20.5rem;
+                margin-left: 1rem;
+                margin-top: 1rem;
             }
             &__body {
                 display: flex;
