@@ -20,7 +20,8 @@
         bottom: 0;
         z-index: 10;
     
-        background: url(/images/result-bg-mobile.png) no-repeat center center/cover;
+        background: url(/images/result-bg-mobile.png);
+        background-size: cover;
         .container__result {
             width: get-vw(363px, 393);
             .section__body {

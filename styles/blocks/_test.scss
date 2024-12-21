@@ -12,7 +12,7 @@
         bottom: 0;
         z-index: 10;
     
-        background: url(../images/test-bg.png);
+        background-image: url('/images/test-bg.png');
         background-size: cover;
         .container__test {
             width: get-vw(1341px, 1440);
