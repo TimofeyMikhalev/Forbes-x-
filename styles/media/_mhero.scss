@@ -35,8 +35,8 @@
             flex-direction: row-reverse; 
             flex-direction: column-reverse; 
             &__img {
-                width: get-vw(180px, 320);
-                height: get-vw(183px, 320);
+                width: get-vw(170px, 320);
+                height: get-vw(173px, 320);
                 margin-left: get-vw(60px, 320);
                 margin-top: get-vw(15px, 320);
             }
@@ -53,29 +53,29 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: get-vw(70px, 320);
-                height: get-vw(26px, 320);
+                width: get-vw(62px, 320);
+                height: get-vw(20px, 320);
         
                 text-transform: uppercase;
-                font-size: get-vw(15px, 320);
+                font-size: get-vw(13px, 320);
                 color: var(--color-grean);
                 font-weight: 400;
-                border: get-vw(2px, 320) solid var(--color-grean);
+                border: get-vw(1px, 320) solid var(--color-grean);
                 border-radius: get-vw(34px, 320);
                 
             }   
         
             &__title {
                 width: get-vw(288px, 320);
-                font-size: get-vw(18px, 320);
+                font-size: get-vw(16px, 320);
                 font-weight: 500;
             }
 
             &__description {
                 width: get-vw(290px, 320);
-                font-size: get-vw(11px, 320);
+                font-size: get-vw(9px, 320);
                 p:where(:not([class]):not(:last-child)) {
-                    margin-bottom: get-vw(12px, 320);
+                    margin-bottom: get-vw(10px, 320);
                 }
             }
             .button__grean {
@@ -86,11 +86,11 @@
                 color: var(--color-ligth);
                 border: none;
                 cursor: pointer;
-                min-width: get-vw(206px, 320);
-                height: get-vw(30px, 320);
+                min-width: get-vw(200px, 320);
+                height: get-vw(25px, 320);
                 transition: var(--transition-duration);
                 border-radius: get-vw(29px, 320);
-                font-size: get-vw(16px, 320);
+                font-size: get-vw(14px, 320);
             }
         }  
         .container {

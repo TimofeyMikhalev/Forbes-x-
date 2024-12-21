@@ -2556,8 +2556,8 @@ img {
     flex-direction: column-reverse;
   }
   .section__start .hero__img {
-    width: 56.25vw;
-    height: 57.1875vw;
+    width: 53.125vw;
+    height: 54.0625vw;
     margin-left: 18.75vw;
     margin-top: 4.6875vw;
   }
@@ -2573,26 +2573,26 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 21.875vw;
-    height: 8.125vw;
+    width: 19.375vw;
+    height: 6.25vw;
     text-transform: uppercase;
-    font-size: 4.6875vw;
+    font-size: 4.0625vw;
     color: var(--color-grean);
     font-weight: 400;
-    border: 0.625vw solid var(--color-grean);
+    border: 0.3125vw solid var(--color-grean);
     border-radius: 10.625vw;
   }
   .section__start .hero__title {
     width: 90vw;
-    font-size: 5.625vw;
+    font-size: 5vw;
     font-weight: 500;
   }
   .section__start .hero__description {
     width: 90.625vw;
-    font-size: 3.4375vw;
+    font-size: 2.8125vw;
   }
   .section__start .hero__description p:where(:not([class]):not(:last-child)) {
-    margin-bottom: 3.75vw;
+    margin-bottom: 3.125vw;
   }
   .section__start .hero .button__grean {
     display: inline-flex;
@@ -2602,11 +2602,11 @@ img {
     color: var(--color-ligth);
     border: none;
     cursor: pointer;
-    min-width: 64.375vw;
-    height: 9.375vw;
+    min-width: 62.5vw;
+    height: 7.8125vw;
     transition: var(--transition-duration);
     border-radius: 9.0625vw;
-    font-size: 5vw;
+    font-size: 4.375vw;
   }
   .section__start .container {
     width: 93.75vw;
