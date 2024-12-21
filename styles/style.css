@@ -787,7 +787,6 @@ img {
     left: 0;
     right: 0;
     z-index: 99;
-    color: #000000;
   }
   .header__inner {
     display: flex;
@@ -1085,7 +1084,6 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
-    color: #000000;
   }
   .section__start .hero-bg {
     position: absolute;
@@ -1139,7 +1137,6 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
-    color: #000000;
   }
   .section__test .test-bg {
     position: absolute;
@@ -1625,7 +1622,6 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
-    color: #000000;
   }
   .section__result .result-bg {
     position: absolute;
@@ -2535,6 +2531,7 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
+    color: #000000;
   }
   .section__start .hero-bg {
     position: absolute;
@@ -2886,6 +2883,7 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
+    color: #000000;
   }
   .section__test .test-bg {
     position: absolute;
@@ -3367,6 +3365,7 @@ img {
     right: 0;
     bottom: 0;
     z-index: 10;
+    color: #000000;
   }
   .section__result .result-bg {
     position: absolute;
