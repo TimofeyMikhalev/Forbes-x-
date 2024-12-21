@@ -104,6 +104,16 @@
  button {
    font: inherit;
  }
+
+ button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+  color: #000; /* Укажите нужный цвет текста */
+  text-decoration: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
  
  html {
    /**
