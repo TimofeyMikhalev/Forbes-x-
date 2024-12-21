@@ -10,15 +10,12 @@
         right: 0;
         bottom: 0;
         z-index: 10;
-
+        color: #000000;
                
         .result-bg {
             position: absolute;
             z-index: -1;
         }
-
-        // background-image: url('/images/result-bg.png');
-        // background-size: cover;
         .container__result {
             width: get-vw(1341px, 1440);
             .section__body {

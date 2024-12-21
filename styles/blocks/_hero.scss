@@ -14,12 +14,12 @@
         right: 0;
         bottom: 0;
         z-index: 10;
-        
+
+        color: #000000;
         .hero-bg {
             position: absolute;
             z-index: -1;
         }
-        // background-image: url('/images/hero-bg.png');
         
         .hero {
             display: flex;
