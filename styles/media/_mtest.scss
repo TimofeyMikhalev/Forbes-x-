@@ -19,7 +19,7 @@
         z-index: 10;
         color: #000000;
         position: relative;
-        padding-bottom: 1.2rem;
+        padding-bottom: 1.4rem;
         .test-bg {
             position: absolute;
             top: 0;
@@ -71,6 +71,7 @@
                     row-gap: 0.55rem;
                     margin-bottom: 1.8rem;
                     width: 21.8rem;
+                    height: auto;
                 }
                 
                 &__answer {
@@ -79,7 +80,7 @@
                     align-items: center;
     
                     width: 22rem;
-                    min-height: 2.8rem;
+                    min-height: 2.3rem;
                     cursor: pointer;
                     
                     transition: background-color 0.5s ease, color 0.5s ease;
@@ -253,8 +254,8 @@
                     left: -0.3rem;
                 }
                 .test__img-animation3 {
-                    width: 19.4rem;
-                    height: 20.3rem;
+                    width: 19rem;
+                    height: 16.6rem;
                     top: get-vw(0px, 393);
                     left: -2.5rem;
                 }

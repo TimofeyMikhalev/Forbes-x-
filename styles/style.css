@@ -2586,12 +2586,10 @@ img {
     border-radius: 21rem;
   }
   .section__start .hero__title {
-    width: 18rem;
     font-size: 1.3rem;
     font-weight: 500;
   }
   .section__start .hero__description {
-    width: 18rem;
     font-size: 0.75rem;
   }
   .section__start .hero__description p:where(:not([class]):not(:last-child)) {
@@ -2894,7 +2892,7 @@ img {
     z-index: 10;
     color: #000000;
     position: relative;
-    padding-bottom: 1.2rem;
+    padding-bottom: 1.4rem;
   }
   .section__test .test-bg {
     position: absolute;
@@ -2945,13 +2943,14 @@ img {
     row-gap: 0.55rem;
     margin-bottom: 1.8rem;
     width: 21.8rem;
+    height: auto;
   }
   .section__test .container__test .test__answer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 22rem;
-    min-height: 2.8rem;
+    min-height: 2.3rem;
     cursor: pointer;
     transition: background-color 0.5s ease, color 0.5s ease;
     /* Когда кнопка активирована */
@@ -3102,8 +3101,8 @@ img {
     left: -0.3rem;
   }
   .section__test .container__test .test .test__img-animation3 {
-    width: 19.4rem;
-    height: 20.3rem;
+    width: 19rem;
+    height: 16.6rem;
     top: 0vw;
     left: -2.5rem;
   }

@@ -67,13 +67,11 @@
             }   
         
             &__title {
-                width: 18rem;
                 font-size: 1.3rem;
                 font-weight: 500;
             }
 
             &__description {
-                width: 18rem;
                 font-size: 0.75rem;
                 p:where(:not([class]):not(:last-child)) {
                     margin-bottom: 0.8rem;
