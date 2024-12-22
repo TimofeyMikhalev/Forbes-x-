@@ -2950,7 +2950,7 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 22rem;
-    min-height: 2.3rem;
+    min-height: 2.5rem;
     cursor: pointer;
     transition: background-color 0.5s ease, color 0.5s ease;
     /* Когда кнопка активирована */
