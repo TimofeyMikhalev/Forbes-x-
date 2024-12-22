@@ -361,7 +361,7 @@ img {
 }
 
 .varfalse {
-  opacity: 0.2 !important;
+  opacity: 0.1 !important;
 }
 
 /* Скрытие текста */
@@ -647,7 +647,7 @@ img {
 }
 
 .varfalse {
-  opacity: 0.2 !important;
+  opacity: 0.1 !important;
 }
 
 /* Скрытие текста */
@@ -944,7 +944,7 @@ img {
 }
 
 .varfalse {
-  opacity: 0.2 !important;
+  opacity: 0.1 !important;
 }
 
 /* Скрытие текста */
@@ -1482,7 +1482,7 @@ img {
 }
 
 .varfalse {
-  opacity: 0.2 !important;
+  opacity: 0.1 !important;
 }
 
 /* Скрытие текста */
@@ -1820,7 +1820,7 @@ img {
 }
 
 .varfalse {
-  opacity: 0.2 !important;
+  opacity: 0.1 !important;
 }
 
 /* Скрытие текста */
@@ -2091,7 +2091,7 @@ img {
 }
 
 .varfalse {
-  opacity: 0.2 !important;
+  opacity: 0.1 !important;
 }
 
 /* Скрытие текста */
@@ -2257,7 +2257,7 @@ img {
     height: 1.5rem;
   }
   .header .container {
-    width: 22rem;
+    width: 22.6rem;
   }
 }
 :root {
@@ -2391,7 +2391,7 @@ img {
 }
 
 .varfalse {
-  opacity: 0.2 !important;
+  opacity: 0.1 !important;
 }
 
 /* Скрытие текста */
@@ -2536,17 +2536,20 @@ img {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     z-index: 10;
     color: #000000;
+    position: relative;
+    padding-bottom: 1.2rem;
   }
   .section__start .hero-bg {
     position: absolute;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%; /* Растягиваем по ширине */
+    height: 100%; /* Растягиваем по высоте */
+    -o-object-fit: cover;
+       object-fit: cover; /* Заполняет контейнер, сохраняя пропорции */
+    z-index: -1; /* Отправляем изображение на задний план, если нужно */
   }
   .section__start .hero {
     display: flex;
@@ -2556,18 +2559,18 @@ img {
     flex-direction: column-reverse;
   }
   .section__start .hero__img {
-    width: 20rem;
-    height: 20.5rem;
+    width: 20.5rem;
+    height: 20.8rem;
     margin-left: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .section__start .hero__body {
     display: flex;
     flex-direction: column;
     align-items: start;
     row-gap: 1rem;
-    max-width: 21.4rem;
-    margin-top: 3rem;
+    max-width: 22.4rem;
+    margin-top: 4rem;
   }
   .section__start .hero__test {
     display: flex;
@@ -2589,10 +2592,10 @@ img {
   }
   .section__start .hero__description {
     width: 18rem;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
   .section__start .hero__description p:where(:not([class]):not(:last-child)) {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.8rem;
   }
   .section__start .hero .button__grean {
     display: inline-flex;
@@ -2602,14 +2605,14 @@ img {
     color: var(--color-ligth);
     border: none;
     cursor: pointer;
-    min-width: 14rem;
-    height: 1.8rem;
+    min-width: 14.1rem;
+    height: 2.3rem;
     transition: var(--transition-duration);
     border-radius: 1.8rem;
     font-size: 0.8rem;
   }
   .section__start .container {
-    width: 22rem;
+    width: 22.6rem;
   }
 }
 :root {
@@ -2743,7 +2746,7 @@ img {
 }
 
 .varfalse {
-  opacity: 0.2 !important;
+  opacity: 0.1 !important;
 }
 
 /* Скрытие текста */
@@ -2888,27 +2891,30 @@ img {
     display: none;
     justify-content: center;
     align-items: flex-start;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     z-index: 10;
     color: #000000;
+    position: relative;
+    padding-bottom: 1.2rem;
   }
   .section__test .test-bg {
     position: absolute;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%; /* Растягиваем по ширине */
+    height: 100%; /* Растягиваем по высоте */
+    -o-object-fit: cover;
+       object-fit: cover; /* Заполняет контейнер, сохраняя пропорции */
+    z-index: -1; /* Отправляем изображение на задний план, если нужно */
   }
   .section__test .container__test {
-    width: 22rem;
+    width: 22.6rem;
   }
   .section__test .container__test .test {
     display: none;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin-top: 3.5rem;
+    margin-top: 4rem;
   }
   .section__test .container__test .test__body {
     display: flex;
@@ -2916,8 +2922,8 @@ img {
     align-items: start;
   }
   .section__test .container__test .test__img {
-    width: 13.8rem;
-    height: 13.9rem;
+    width: 15.6rem;
+    height: 15.8rem;
     position: relative;
   }
   .section__test .container__test .test__number {
@@ -2926,7 +2932,7 @@ img {
     margin-bottom: 1.6rem;
   }
   .section__test .container__test .test__text {
-    font-size: 0.8rem;
+    font-size: 0.87rem;
     margin-bottom: 2.1rem;
   }
   .section__test .container__test .test__text span {
@@ -2936,9 +2942,9 @@ img {
     display: flex;
     flex-direction: column;
     align-items: start;
-    row-gap: 0.5rem;
+    row-gap: 0.55rem;
     margin-bottom: 1.8rem;
-    width: 22rem;
+    width: 21.8rem;
   }
   .section__test .container__test .test__answer {
     display: flex;
@@ -3081,10 +3087,10 @@ img {
     animation: confetti-scale 1.2s ease-out 0.8s forwards;
   }
   .section__test .container__test .test .test__img-animation1 {
-    width: 10.5rem;
+    width: 11rem;
     height: 15rem;
     top: 0vw;
-    left: 0.95rem;
+    left: 2.35rem;
   }
   .section__test .container__test .test .test__img-animation1 img {
     transform: rotate(10deg);
@@ -3093,11 +3099,11 @@ img {
     width: 18rem;
     height: 16rem;
     top: 0vw;
-    left: -2.5rem;
+    left: -0.3rem;
   }
   .section__test .container__test .test .test__img-animation3 {
     width: 19.4rem;
-    height: 15.8rem;
+    height: 20.3rem;
     top: 0vw;
     left: -2.5rem;
   }
@@ -3105,13 +3111,13 @@ img {
     width: 16.5rem;
     height: 17rem;
     top: 0vw;
-    left: -1.8rem;
+    left: -0.5rem;
   }
   .section__test .container__test .test .test__img-animation5 {
     width: 15.3rem;
     height: 15.9rem;
     top: 0vw;
-    left: -0.6rem;
+    left: 0.6rem;
   }
   .section__test .container__test .test .select {
     border-radius: 1.8rem;
@@ -3234,7 +3240,7 @@ img {
     display: flex !important;
   }
   .varfalse {
-    opacity: 0.2 !important;
+    opacity: 0.1 !important;
   }
   /* Скрытие текста */
   .hidden {
@@ -3370,23 +3376,26 @@ img {
     display: none;
     justify-content: center;
     align-items: flex-start;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     z-index: 10;
     color: #000000;
+    position: relative;
+    padding-bottom: 1.2rem;
   }
   .section__result .result-bg {
     position: absolute;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%; /* Растягиваем по ширине */
+    height: 100%; /* Растягиваем по высоте */
+    -o-object-fit: cover;
+       object-fit: cover; /* Заполняет контейнер, сохраняя пропорции */
+    z-index: -1; /* Отправляем изображение на задний план, если нужно */
   }
   .section__result .container__result {
-    width: 22rem;
+    width: 22.6rem;
   }
   .section__result .container__result .section__body {
-    margin-top: 3.75rem;
+    margin-top: 4rem;
   }
   .section__result .container__result .section__body .result {
     display: none;
@@ -3396,8 +3405,8 @@ img {
     flex-direction: column-reverse;
   }
   .section__result .container__result .section__body .result__img {
-    width: 18.8rem;
-    height: 19.5rem;
+    width: 20.6rem;
+    height: 20.8rem;
   }
   .section__result .container__result .section__body .result__body {
     display: flex;
@@ -3416,26 +3425,26 @@ img {
     font-weight: 400;
     border: 0.12rem solid var(--color-grean);
     border-radius: 21rem;
-    margin-bottom: 0.9rem;
+    margin-bottom: 1.1rem;
   }
   .section__result .container__result .section__body .result__cicle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 18.6rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
   }
   .section__result .container__result .section__body .result__cicle-img {
-    width: 3.25rem;
-    height: 3.25rem;
+    width: 3rem;
+    height: 3rem;
   }
   .section__result .container__result .section__body .result__title {
     font-size: 1.3rem;
     font-weight: 500;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
   }
   .section__result .container__result .section__body .result__description {
-    max-width: 21rem;
+    max-width: 21.5rem;
     font-size: 0.75rem;
     margin-bottom: 1.3rem;
   }
@@ -3453,7 +3462,7 @@ img {
     border: none;
     cursor: pointer;
     min-width: 9.6rem;
-    height: 2rem;
+    height: 2.3rem;
     transition: var(--transition-duration);
     border-radius: 1.8rem;
     font-size: 1rem;
@@ -3468,11 +3477,11 @@ img {
     border: 0.12rem solid var(--color-grean);
     cursor: pointer;
     min-width: 16rem;
-    height: 2rem;
+    height: 2.3rem;
     transition: var(--transition-duration);
     border-radius: 1.8rem;
     font-size: 1rem;
-    margin-bottom: 0.9rem;
+    margin-bottom: 1.3rem;
   }
   .section__result .container__result .section__body .result.show {
     display: flex;
@@ -3612,7 +3621,7 @@ img {
 }
 
 .varfalse {
-  opacity: 0.2 !important;
+  opacity: 0.1 !important;
 }
 
 /* Скрытие текста */

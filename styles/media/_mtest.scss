@@ -16,35 +16,37 @@
         justify-content: center;
         align-items: flex-start;
     
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
         z-index: 10;
         color: #000000;
+        position: relative;
+        padding-bottom: 1.2rem;
         .test-bg {
             position: absolute;
-            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%; /* Растягиваем по ширине */
+            height: 100%; /* Растягиваем по высоте */
+            object-fit: cover; /* Заполняет контейнер, сохраняя пропорции */
+            z-index: -1; /* Отправляем изображение на задний план, если нужно */
         }
 
         .container__test {
-            width: 22rem; 
+            width: 22.6rem; 
              
             .test {
                 display: none;
                 justify-content: space-between;
                 align-items: center;
                 flex-direction: column;
-                margin-top: 3.5rem;
+                margin-top: 4rem;
                 &__body {
                     display: flex;
                     flex-direction: column;
                     align-items: start;
                 }
                 &__img {
-                    width: 13.8rem;
-                    height: 13.9rem;
+                    width: 15.6rem;
+                    height: 15.8rem;
                     position: relative;
                 }
     
@@ -55,7 +57,7 @@
                 }
     
                 &__text {
-                    font-size: 0.8rem;
+                    font-size: 0.87rem;
                     margin-bottom: 2.1rem;
                     span {
                         font-weight: 700;
@@ -66,9 +68,9 @@
                     display: flex;
                     flex-direction: column;
                     align-items: start;
-                    row-gap: 0.5rem;
+                    row-gap: 0.55rem;
                     margin-bottom: 1.8rem;
-                    width: 22rem;
+                    width: 21.8rem;
                 }
                 
                 &__answer {
@@ -236,10 +238,10 @@
                     animation: confetti-scale 1.2s ease-out 0.8s forwards;
                 }
                 .test__img-animation1 {
-                    width: 10.5rem;
+                    width: 11rem;
                     height: 15rem;
                     top: get-vw(0px, 393);
-                    left: 0.95rem;
+                    left: 2.35rem;
                     img {
                         transform: rotate(10deg);
                     }
@@ -248,11 +250,11 @@
                     width: 18rem;
                     height: 16rem;
                     top: get-vw(0px, 393);
-                    left: -2.5rem;
+                    left: -0.3rem;
                 }
                 .test__img-animation3 {
                     width: 19.4rem;
-                    height: 15.8rem;
+                    height: 20.3rem;
                     top: get-vw(0px, 393);
                     left: -2.5rem;
                 }
@@ -260,13 +262,13 @@
                     width: 16.5rem;
                     height: 17rem;
                     top: get-vw(0px, 393);
-                    left: -1.8rem;
+                    left: -0.5rem;
                 }
                 .test__img-animation5 {
                     width: 15.3rem;
                     height: 15.9rem;
                     top: get-vw(0px, 393);
-                    left: -0.6rem;
+                    left: 0.6rem;
                 }
                 .select{
                     border-radius: 1.8rem;

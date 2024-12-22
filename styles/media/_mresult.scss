@@ -13,21 +13,24 @@
         justify-content: center;
         align-items: flex-start;
     
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
         z-index: 10;
         color: #000000;
+        position: relative;
+        padding-bottom: 1.2rem;
         .result-bg {
             position: absolute;
-            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%; /* Растягиваем по ширине */
+            height: 100%; /* Растягиваем по высоте */
+            object-fit: cover; /* Заполняет контейнер, сохраняя пропорции */
+            z-index: -1; /* Отправляем изображение на задний план, если нужно */
+
         }
         .container__result {
-            width: 22rem;
+            width: 22.6rem; 
             .section__body {
-                margin-top: 3.75rem;
+                margin-top: 4rem;
                 .result {
                     display: none;
                     justify-content: space-between;
@@ -35,8 +38,8 @@
                     flex-direction: row-reverse; 
                     flex-direction: column-reverse; 
                     &__img {
-                        width: 18.8rem;
-                        height: 19.5rem;
+                        width: 20.6rem;
+                        height: 20.8rem;
                     }
                     &__body {
                         display: flex;
@@ -45,7 +48,7 @@
                         // row-gap: get-vw(22px, 393);
                         // max-width: get-vw(633px, 393);
                         // padding-top: get-vw(113px, 393);
-                        .result__test {
+                        .result__test { 
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -58,7 +61,8 @@
                             font-weight: 400;
                             border: 0.12rem solid var(--color-grean);
                             border-radius: 21rem;
-                            margin-bottom: 0.9rem;
+                            margin-bottom: 1.1rem;
+
                         }
                     }
                     &__cicle {
@@ -67,19 +71,19 @@
                         align-items: center;
     
                         width: 18.6rem;
-                        margin-bottom: 0.6rem;
+                        margin-bottom: 0.8rem;
                         &-img {
-                            width: 3.25rem;
-                            height: 3.25rem;
+                            width: 3rem;
+                            height: 3rem;
                         }   
                     }
                     &__title {
                         font-size: 1.3rem;
                         font-weight: 500;
-                        margin-bottom: 0.6rem;
+                        margin-bottom: 0.8rem;
                     }
                     &__description {
-                        max-width: 21rem;
+                        max-width: 21.5rem;
                         font-size: 0.75rem;
                         margin-bottom: 1.3rem;
                     }
@@ -98,7 +102,7 @@
                         border: none;
                         cursor: pointer;
                         min-width: 9.6rem;
-                        height: 2rem;
+                        height: 2.3rem;
                         transition: var(--transition-duration);
                         border-radius: 1.8rem;
                         font-size: 1rem;
@@ -113,11 +117,11 @@
                         border: 0.12rem solid var(--color-grean); 
                         cursor: pointer;
                         min-width: 16rem;
-                        height: 2rem;
+                        height: 2.3rem;
                         transition: var(--transition-duration);
                         border-radius: 1.8rem;
                         font-size: 1rem;
-                        margin-bottom: 0.9rem;
+                        margin-bottom: 1.3rem;
                     }
                 }   
                 .result.show {
