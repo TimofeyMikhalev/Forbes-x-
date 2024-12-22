@@ -17,8 +17,6 @@
             position: absolute;
             z-index: -1;
         }
-        // background-image: url('/images/test-bg.png');
-        // background-size: cover;
         .container__test {
             width: get-vw(1341px, 1440);
             .test {
@@ -65,7 +63,7 @@
                     justify-content: space-between;
                     align-items: center;
     
-                    width: get-vw(523px, 1440);
+                    width: get-vw(595px, 1440);
                     height: auto;
                     cursor: pointer;
                     

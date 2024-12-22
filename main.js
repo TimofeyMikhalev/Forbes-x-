@@ -207,7 +207,7 @@ resultQuestion.forEach(inner => {
 
         // Добавляем текущий выбор в массив
         results.push(inner.dataset.result);
-        console.log(results); // Выводим массив с результатами
+        // console.log(results); // Выводим массив с результатами
 
 
         // Отмечаем выбранный элемент

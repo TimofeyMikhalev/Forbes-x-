@@ -41,7 +41,6 @@
                     display: flex;
                     flex-direction: column;
                     align-items: start;
-                    // max-width: 22.3rem;
                 }
                 &__img {
                     width: 13.8rem;
@@ -102,7 +101,7 @@
                         width: 21rem;
                         height: auto;
                     
-                        border: get-vw(2px, 393) solid var(--color-gray);
+                        border: 0.12rem solid var(--color-gray);
                         border-radius: 4rem;
                     
                         padding: 0.5rem 1.6rem 0.5rem 1.1rem;
@@ -132,7 +131,7 @@
                         
                     }
                     button.active {
-                        border-radius: get-vw(30px, 393);
+                        border-radius: 1.8rem;
                         opacity: 1;
                         
                         color: #fff;

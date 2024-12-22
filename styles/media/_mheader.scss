@@ -16,7 +16,7 @@
         justify-content: center;
         align-items: center;
 
-        padding-top: get-vw(14px, 393);
+        padding-top: 0.87rem;
 
         position: fixed;
         top: 0;
@@ -29,12 +29,12 @@
             align-items: center;
         }
         &__logo {
-            width: get-vw(59px, 393);
-            height: get-vw(13px, 393);
+            width: 3.6rem;
+            height: 0.8rem;
         }
         &__sber {
-            width: get-vw(142px, 393);
-            height: get-vw(24px, 393);
+            width: 8.8rem;
+            height: 1.5rem;
         }
         .container {
             width: 22rem; 
