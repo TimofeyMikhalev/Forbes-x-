@@ -3044,7 +3044,7 @@ img {
   }
   .section__test .container__test .test .magic {
     position: absolute;
-    top: 0;
+    top: -1.2rem;
     left: 0;
     width: 19.5rem;
   }
