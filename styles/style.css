@@ -1305,7 +1305,7 @@ img {
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 11;
+    z-index: 5;
     opacity: 0;
     transform: scale(0);
     animation: confetti-scale 1.2s ease-out 0.8s forwards;
