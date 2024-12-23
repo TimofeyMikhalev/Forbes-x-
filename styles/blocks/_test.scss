@@ -28,7 +28,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: start;
-                    row-gap: get-vw(34px, 1440);
+                    row-gap: get-vw(46px, 1440);
                     max-width: get-vw(633px, 1440);
                 }
                 &__img {
@@ -98,7 +98,7 @@
                         }
                         .text-content {
                             text-align: start;
-                            font-size: get-vw(10px, 1440);
+                            font-size: get-vw(11.5px, 1440);
                             border-top: get-vw(1px, 1440) solid #fff;
                             margin-top: get-vw(9px, 1440);
                             padding-top: get-vw(9px, 1440);

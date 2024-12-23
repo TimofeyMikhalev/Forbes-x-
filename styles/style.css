@@ -1165,7 +1165,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: start;
-    row-gap: 2.3611111111vw;
+    row-gap: 3.1944444444vw;
     max-width: 43.9583333333vw;
   }
   .section__test .container__test .test__img {
@@ -1226,7 +1226,7 @@ img {
   }
   .section__test .container__test .test__answer button .text-content {
     text-align: start;
-    font-size: 0.6944444444vw;
+    font-size: 0.7986111111vw;
     border-top: 0.0694444444vw solid #fff;
     margin-top: 0.625vw;
     padding-top: 0.625vw;
@@ -2989,7 +2989,7 @@ img {
     margin-top: 0.25rem;
     padding-top: 0.25rem;
     color: #fff;
-    font-size: 0.5rem;
+    font-size: 0.55rem;
     line-height: 1.1;
     opacity: 0; /* Скрыт по умолчанию */
     transition: background-color 1s ease-out opacity 1s ease-out; /* Плавное изменение фона */

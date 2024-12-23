@@ -85,9 +85,6 @@ function triggerAnimation(answerId) {
     document.querySelector(confity).classList.add('show');
 }
 
-containers.forEach(item => {
-
-})
 
 // Функция сброса всех анимаций
 function resetAnimations() {
