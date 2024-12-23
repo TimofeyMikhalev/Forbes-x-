@@ -107,7 +107,7 @@
                             padding-top: get-vw(9px, 1440);
                             color: #fff;
                             
-                            opacity: 0; /* Скрыт по умолчанию */
+                            opacity: 0; 
                             transition: background-color 1s ease-out opacity 1s ease-out;/* Плавное изменение фона */
                         }
                     }

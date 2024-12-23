@@ -1234,7 +1234,7 @@ img {
     margin-top: 0.625vw;
     padding-top: 0.625vw;
     color: #fff;
-    opacity: 0; /* Скрыт по умолчанию */
+    opacity: 0;
     transition: background-color 1s ease-out opacity 1s ease-out; /* Плавное изменение фона */
   }
   .section__test .container__test .test__answer button.active .text-content {
