@@ -41,6 +41,9 @@
                 &__number {
                     color: var(--color-gray);
                 }
+                &__number_one {
+                    margin-bottom: get-vw(-20px, 1440);
+                }
     
                 &__text {
                     font-size: get-vw(20px, 1440);
@@ -64,7 +67,7 @@
                     align-items: center;
     
                     width: get-vw(595px, 1440);
-                    height: auto;
+                    min-height: get-vw(60px, 1440);
                     cursor: pointer;
                     
                     transition: background-color 0.5s ease, color 0.5s ease;
@@ -150,6 +153,9 @@
                         pointer-events: none;
                         opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
                     }
+                }
+                .test__answer_katan button{
+                    padding: get-vw(18px, 1440) get-vw(39px, 1440) get-vw(18px, 1440) get-vw(29px, 1440);
                 }
                 .test__answer.selected {
                     align-items: flex-start;

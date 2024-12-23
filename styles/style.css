@@ -1176,6 +1176,9 @@ img {
   .section__test .container__test .test__number {
     color: var(--color-gray);
   }
+  .section__test .container__test .test__number_one {
+    margin-bottom: -1.3888888889vw;
+  }
   .section__test .container__test .test__text {
     font-size: 1.3888888889vw;
   }
@@ -1193,7 +1196,7 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 41.3194444444vw;
-    height: auto;
+    min-height: 4.1666666667vw;
     cursor: pointer;
     transition: background-color 0.5s ease, color 0.5s ease;
     /* Когда кнопка активирована */
@@ -1263,6 +1266,9 @@ img {
   .section__test .container__test .test__answer .disabled {
     pointer-events: none;
     opacity: 1; /* Блокируем кнопки и делаем их полупрозрачными */
+  }
+  .section__test .container__test .test .test__answer_katan button {
+    padding: 1.25vw 2.7083333333vw 1.25vw 2.0138888889vw;
   }
   .section__test .container__test .test .test__answer.selected {
     align-items: flex-start;
