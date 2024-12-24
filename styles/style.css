@@ -1168,6 +1168,9 @@ img {
     row-gap: 3.1944444444vw;
     max-width: 43.9583333333vw;
   }
+  .section__test .container__test .test__body_mini {
+    row-gap: 2.4305555556vw;
+  }
   .section__test .container__test .test__img {
     width: 49.1666666667vw;
     height: 49.5138888889vw;

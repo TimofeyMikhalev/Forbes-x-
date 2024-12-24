@@ -31,6 +31,9 @@
                     row-gap: get-vw(46px, 1440);
                     max-width: get-vw(633px, 1440);
                 }
+                &__body_mini {
+                    row-gap: get-vw(35px, 1440);
+                }
                 &__img {
                     width: get-vw(708px, 1440);
                     height: get-vw(713px, 1440);
@@ -96,6 +99,8 @@
                     
                         padding: get-vw(10px, 1440) get-vw(39px, 1440) get-vw(10px, 1440) get-vw(29px, 1440);
                         background: inherit;
+
+              
                         .text {
                             max-width: get-vw(390px, 1440);
                         }
@@ -109,6 +114,7 @@
                             
                             opacity: 0; 
                             transition: background-color 1s ease-out opacity 1s ease-out;/* Плавное изменение фона */
+
                         }
                     }
                     /* Когда кнопка активирована */
@@ -116,7 +122,6 @@
                         opacity: 1; /* Плавно отображается */
                         transform: translateY(0); /* Плавно появляется сверху */
                         color: #fff; /* Белый текст при активации */
-                        
                     }
                     button.active {
                         border-radius: get-vw(30px, 1440);
@@ -125,7 +130,6 @@
                         color: #fff;
                         border: none;
                         transition: background-color 1s ease-out;/* Плавное изменение фона */
-    
                     }    
                     /* Правильный ответ */
                     .correct {
@@ -166,7 +170,7 @@
                     top: 0;
                     left: get-vw(65px, 1440);
                     width: get-vw(578px, 1440);
-              
+       
                 }
                 // .varfalse {
                 //     opacity: 0.2 !important;
@@ -175,7 +179,6 @@
                     position: relative;
                     opacity: 1 !important;
                     z-index: 99;
-             
                 }
                 .test__img-movie {
                     animation: fadeIn 1s ease-in forwards; /* Время и тип анимации */
@@ -260,8 +263,6 @@
         }
     }
 }
-
-
 
 
 @import '../globals';
