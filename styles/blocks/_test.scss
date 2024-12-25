@@ -19,6 +19,7 @@
         }
         .container__test {
             width: get-vw(1341px, 1440);
+            position: relative;
             .test {
                 display: none;
                 justify-content: space-between;
@@ -208,7 +209,7 @@
                     position: absolute;
                     top: get-vw(20px, 1440);
                     right: 0;
-                    left: 0;
+                    left: get-vw(30px, 1440);
                     bottom: 0;
                     z-index: 5;
     
@@ -216,11 +217,14 @@
                     transform: scale(0);
                     animation: confetti-scale 1.2s ease-out 0.8s forwards;
                 }
+                .test__img-confity4 {
+
+                }
                 .test__img-animation1 {
-                    width: get-vw(321px, 1440);
-                    height: get-vw(457px, 1440);
+                    width: get-vw(436px, 1440);
+                    height: get-vw(467px, 1440);
                     top: get-vw(90px, 1440);
-                    left: get-vw(190px, 1440);
+                    left: get-vw(120px, 1440);
                     img {
                         transform: rotate(10deg);
                     }
@@ -238,9 +242,9 @@
                     left: get-vw(120px, 1440);
                 }
                 .test__img-animation4 {
-                    width: get-vw(448px, 1440);
-                    height: get-vw(446px, 1440);
-                    top: get-vw(130px, 1440);
+                    width: get-vw(508px, 1440);
+                    height: get-vw(506px, 1440);
+                    top: get-vw(100px, 1440);
                     left: get-vw(120px, 1440);
                 }
                 .test__img-animation5 {
@@ -254,7 +258,14 @@
                     color: var(--color-ligth);
                 }
             }
-    
+            .test__footer {
+                position: absolute;
+
+                bottom: 0;
+                right: get-vw(24px, 1440);
+                font-size: get-vw(10px, 1440);
+                font-weight: 400;
+            }
     
             .test.show {
                 display: flex;

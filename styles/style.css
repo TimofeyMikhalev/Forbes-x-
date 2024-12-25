@@ -320,7 +320,7 @@ img {
   color: var(--color-ligth);
   border: none;
   cursor: pointer;
-  min-width: 14.5833333333vw;
+  min-width: 23.6111111111vw;
   height: 2.5694444444vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
@@ -606,7 +606,7 @@ img {
   color: var(--color-ligth);
   border: none;
   cursor: pointer;
-  min-width: 14.5833333333vw;
+  min-width: 23.6111111111vw;
   height: 2.5694444444vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
@@ -903,7 +903,7 @@ img {
   color: var(--color-ligth);
   border: none;
   cursor: pointer;
-  min-width: 14.5833333333vw;
+  min-width: 23.6111111111vw;
   height: 2.5694444444vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
@@ -1155,6 +1155,7 @@ img {
   }
   .section__test .container__test {
     width: 93.125vw;
+    position: relative;
   }
   .section__test .container__test .test {
     display: none;
@@ -1312,7 +1313,7 @@ img {
     position: absolute;
     top: 1.3888888889vw;
     right: 0;
-    left: 0;
+    left: 2.0833333333vw;
     bottom: 0;
     z-index: 5;
     opacity: 0;
@@ -1320,10 +1321,10 @@ img {
     animation: confetti-scale 1.2s ease-out 0.8s forwards;
   }
   .section__test .container__test .test .test__img-animation1 {
-    width: 22.2916666667vw;
-    height: 31.7361111111vw;
+    width: 30.2777777778vw;
+    height: 32.4305555556vw;
     top: 6.25vw;
-    left: 13.1944444444vw;
+    left: 8.3333333333vw;
   }
   .section__test .container__test .test .test__img-animation1 img {
     transform: rotate(10deg);
@@ -1341,9 +1342,9 @@ img {
     left: 8.3333333333vw;
   }
   .section__test .container__test .test .test__img-animation4 {
-    width: 31.1111111111vw;
-    height: 30.9722222222vw;
-    top: 9.0277777778vw;
+    width: 35.2777777778vw;
+    height: 35.1388888889vw;
+    top: 6.9444444444vw;
     left: 8.3333333333vw;
   }
   .section__test .container__test .test .test__img-animation5 {
@@ -1355,6 +1356,13 @@ img {
   .section__test .container__test .test .select {
     border-radius: 2.0833333333vw;
     color: var(--color-ligth);
+  }
+  .section__test .container__test .test__footer {
+    position: absolute;
+    bottom: 0;
+    right: 1.6666666667vw;
+    font-size: 0.6944444444vw;
+    font-weight: 400;
   }
   .section__test .container__test .test.show {
     display: flex;
@@ -1450,7 +1458,7 @@ img {
   color: var(--color-ligth);
   border: none;
   cursor: pointer;
-  min-width: 14.5833333333vw;
+  min-width: 23.6111111111vw;
   height: 2.5694444444vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
@@ -1688,8 +1696,10 @@ img {
     width: 14.5833333333vw;
   }
   .section__result .container__result .section__body .result__footer {
-    font-size: 0.4861111111vw;
-    padding-top: 8.3333333333vw;
+    width: 46.7361111111vw;
+    font-size: 0.625vw;
+    font-weight: 400;
+    padding-top: 2.0138888889vw;
   }
   .section__result .container__result .section__body .result.show {
     display: flex;
@@ -1788,7 +1798,7 @@ img {
   color: var(--color-ligth);
   border: none;
   cursor: pointer;
-  min-width: 14.5833333333vw;
+  min-width: 23.6111111111vw;
   height: 2.5694444444vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
@@ -2059,7 +2069,7 @@ img {
   color: var(--color-ligth);
   border: none;
   cursor: pointer;
-  min-width: 14.5833333333vw;
+  min-width: 23.6111111111vw;
   height: 2.5694444444vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
@@ -2359,7 +2369,7 @@ img {
   color: var(--color-ligth);
   border: none;
   cursor: pointer;
-  min-width: 14.5833333333vw;
+  min-width: 23.6111111111vw;
   height: 2.5694444444vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
@@ -2712,7 +2722,7 @@ img {
   color: var(--color-ligth);
   border: none;
   cursor: pointer;
-  min-width: 14.5833333333vw;
+  min-width: 23.6111111111vw;
   height: 2.5694444444vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
@@ -3131,6 +3141,14 @@ img {
     border-radius: 1.8rem;
     color: var(--color-ligth);
   }
+  .section__test .container__test .test__footer {
+    position: absolute;
+    bottom: 0;
+    left: 5.0890585242vw;
+    font-size: 2.0356234097vw;
+    font-weight: 400;
+    margin-bottom: 2.2900763359vw;
+  }
   .section__test .container__test .test.show {
     display: flex;
   }
@@ -3214,7 +3232,7 @@ img {
     color: var(--color-ligth);
     border: none;
     cursor: pointer;
-    min-width: 14.5833333333vw;
+    min-width: 23.6111111111vw;
     height: 2.5694444444vw;
     transition: var(--transition-duration);
     border-radius: 2.0138888889vw;
@@ -3588,7 +3606,7 @@ img {
   color: var(--color-ligth);
   border: none;
   cursor: pointer;
-  min-width: 14.5833333333vw;
+  min-width: 23.6111111111vw;
   height: 2.5694444444vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;

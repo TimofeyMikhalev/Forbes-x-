@@ -56,8 +56,10 @@
                         width: get-vw(210px, 1440);
                     }
                     &__footer{
-                        font-size: get-vw(7px, 1440);
-                        padding-top: get-vw(120px, 1440);
+                        width: get-vw(673px, 1440);
+                        font-size: get-vw(9px, 1440);
+                        font-weight: 400;
+                        padding-top: get-vw(29px, 1440);
                         
                     }
                 }   

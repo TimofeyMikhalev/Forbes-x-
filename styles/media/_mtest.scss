@@ -276,7 +276,15 @@
                     color: var(--color-ligth);
                 }
             }
-    
+            .test__footer {
+                position: absolute;
+
+                bottom: 0;
+                left: get-vw(20px, 393);
+                font-size: get-vw(8px, 393);
+                font-weight: 400;
+                margin-bottom: get-vw(9px, 393);
+            }
     
             .test.show {
                 display: flex;
