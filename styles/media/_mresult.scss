@@ -89,7 +89,8 @@
                     }
                     &__footer{
                         width: 21rem;
-                        font-size: 0.3rem;
+                        font-size: 0.43rem;
+                        font-weight: 400;
                         padding-top: 0.8rem;
                     }
 
@@ -99,9 +100,9 @@
                         align-items: center;
                         background: var(--color-grean);
                         color: var(--color-ligth);
-                        border: none;
+                        border: 0.12rem solid var(--color-grean);
                         cursor: pointer;
-                        min-width: 9.6rem;
+                        min-width: 17.8rem;
                         height: 2.3rem;
                         transition: var(--transition-duration);
                         border-radius: 1.8rem;

@@ -48,6 +48,7 @@
                     width: 15.6rem;
                     height: 15.8rem;
                     position: relative;
+                    margin-bottom: get-vw(20px, 393);
                 }
     
                 &__number {
@@ -239,10 +240,10 @@
                     animation: confetti-scale 1.2s ease-out 0.8s forwards;
                 }
                 .test__img-animation1 {
-                    width: 11rem;
+                    width: 14.5rem;
                     height: 15rem;
                     top: get-vw(0px, 393);
-                    left: 2.35rem;
+                    left: 0;
                     img {
                         transform: rotate(10deg);
                     }
@@ -250,11 +251,11 @@
                 .test__img-animation2 {
                     width: 18rem;
                     height: 16rem;
-                    top: get-vw(0px, 393);
-                    left: -0.3rem;
+                    top: 0;
+                    left: -1.3rem;
                 }
                 .test__img-animation3 {
-                    width: 19rem;
+                    width: 18.5rem;
                     height: 16.6rem;
                     top: get-vw(0px, 393);
                     left: -2.5rem;
@@ -262,14 +263,14 @@
                 .test__img-animation4 {
                     width: 16.5rem;
                     height: 17rem;
-                    top: get-vw(0px, 393);
+                    top: get-vw(-12px, 393);
                     left: -0.5rem;
                 }
                 .test__img-animation5 {
-                    width: 15.3rem;
-                    height: 15.9rem;
-                    top: get-vw(0px, 393);
-                    left: 0.6rem;
+                    width: 18.3rem;
+                    height: 20rem;
+                    top: get-vw(-30px, 393);
+                    left: -1.4rem;
                 }
                 .select{
                     border-radius: 1.8rem;

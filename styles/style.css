@@ -70,7 +70,7 @@ dl):where([class]) {
   чтобы избежать взаимодействие с более сложным селектором
  */
 p {
-  --paragraphMarginBottom: 24px;
+  --paragraphMarginBottom: 14px;
   margin-block: 0;
 }
 
@@ -2942,6 +2942,7 @@ img {
     width: 15.6rem;
     height: 15.8rem;
     position: relative;
+    margin-bottom: 5.0890585242vw;
   }
   .section__test .container__test .test__number {
     font-size: 1rem;
@@ -3105,10 +3106,10 @@ img {
     animation: confetti-scale 1.2s ease-out 0.8s forwards;
   }
   .section__test .container__test .test .test__img-animation1 {
-    width: 11rem;
+    width: 14.5rem;
     height: 15rem;
     top: 0vw;
-    left: 2.35rem;
+    left: 0;
   }
   .section__test .container__test .test .test__img-animation1 img {
     transform: rotate(10deg);
@@ -3116,11 +3117,11 @@ img {
   .section__test .container__test .test .test__img-animation2 {
     width: 18rem;
     height: 16rem;
-    top: 0vw;
-    left: -0.3rem;
+    top: 0;
+    left: -1.3rem;
   }
   .section__test .container__test .test .test__img-animation3 {
-    width: 19rem;
+    width: 18.5rem;
     height: 16.6rem;
     top: 0vw;
     left: -2.5rem;
@@ -3128,14 +3129,14 @@ img {
   .section__test .container__test .test .test__img-animation4 {
     width: 16.5rem;
     height: 17rem;
-    top: 0vw;
+    top: -3.0534351145vw;
     left: -0.5rem;
   }
   .section__test .container__test .test .test__img-animation5 {
-    width: 15.3rem;
-    height: 15.9rem;
-    top: 0vw;
-    left: 0.6rem;
+    width: 18.3rem;
+    height: 20rem;
+    top: -7.6335877863vw;
+    left: -1.4rem;
   }
   .section__test .container__test .test .select {
     border-radius: 1.8rem;
@@ -3476,7 +3477,8 @@ img {
   }
   .section__result .container__result .section__body .result__footer {
     width: 21rem;
-    font-size: 0.3rem;
+    font-size: 0.43rem;
+    font-weight: 400;
     padding-top: 0.8rem;
   }
   .section__result .container__result .section__body .result .button__result {
@@ -3485,9 +3487,9 @@ img {
     align-items: center;
     background: var(--color-grean);
     color: var(--color-ligth);
-    border: none;
+    border: 0.12rem solid var(--color-grean);
     cursor: pointer;
-    min-width: 9.6rem;
+    min-width: 17.8rem;
     height: 2.3rem;
     transition: var(--transition-duration);
     border-radius: 1.8rem;
