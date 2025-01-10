@@ -328,5 +328,12 @@ buttonReturn.forEach(button => {
     button.addEventListener('click', resetApp);
 });
 
+const infoBtn = document.querySelector('.info-btn');
+const infoBlock = document.querySelector('.info-block');
+
+infoBtn.addEventListener('click', () => {
+  infoBlock.classList.toggle('show');
+});
+
 
 AOS.init();
