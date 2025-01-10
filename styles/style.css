@@ -1152,6 +1152,8 @@ img {
   .section__test .test-bg {
     position: absolute;
     z-index: -1;
+    width: 100vw; /* Растянуть по ширине контейнера */
+    height: 108vh; /* Автоматически подобрать высоту */
   }
   .section__test .container__test {
     width: 93.125vw;
