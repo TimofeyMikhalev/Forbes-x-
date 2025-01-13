@@ -328,12 +328,26 @@ buttonReturn.forEach(button => {
     button.addEventListener('click', resetApp);
 });
 
+
+
+//кнопка информации о проекте result
 const infoBtn = document.querySelector('.info-btn');
 const infoBlock = document.querySelector('.info-block');
 
 infoBtn.addEventListener('click', () => {
   infoBlock.classList.toggle('show');
 });
+
+
+//кнопка информации о проекте test
+const infoBtnTest = document.querySelector('.test__info-btn');
+const infoBlockTest = document.querySelector('.test__info-block');
+
+infoBtnTest.addEventListener('click', () => {
+    infoBlockTest.classList.toggle('show');
+});
+
+
 
 
 AOS.init();
