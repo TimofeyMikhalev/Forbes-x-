@@ -343,8 +343,18 @@ infoBtn.addEventListener('click', () => {
 const infoBtnTest = document.querySelector('.test__info-btn');
 const infoBlockTest = document.querySelector('.test__info-block');
 
-infoBtnTest.addEventListener('click', () => {
+// Обработчик клика на кнопку
+infoBtnTest.addEventListener('click', (event) => {
+    event.stopPropagation(); // Останавливаем всплытие события
     infoBlockTest.classList.toggle('show');
+});
+
+// Обработчик клика на документ
+document.addEventListener('click', (event) => {
+    // Проверяем, был ли клик внутри блока
+    if (!infoBlockTest.contains(event.target) && !infoBtnTest.contains(event.target)) {
+        infoBlockTest.classList.remove('show');
+    }
 });
 
 
