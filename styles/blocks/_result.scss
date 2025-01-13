@@ -75,7 +75,7 @@
             .info-container {
                 position: relative;
                 display: inline-block;
-                .info-btn {
+                .result__info-btn {
                     width: get-vw(20px, 1440);
                     height: get-vw(20px, 1440);
                     cursor: pointer;
@@ -90,7 +90,7 @@
                     }
                 }
                   
-                .info-block {
+                .result__info-block {
                     display: flex;
                     justify-content: flex-start;
                     align-items: flex-start;
@@ -112,7 +112,7 @@
                     border-radius: get-vw(10px, 1440);
                     
                 }
-                .info-block.show {
+                .result__info-block.show {
                     opacity: 0.9;
                     visibility: visible;
                 }

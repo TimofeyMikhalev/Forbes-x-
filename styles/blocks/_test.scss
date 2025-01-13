@@ -279,6 +279,8 @@
             position: absolute;
             bottom: get-vw(20px, 1440);
             right: get-vw(20px, 1440);
+        
+            z-index: 100;
             .info-container {
                 position: relative;
                 display: inline-block;
@@ -302,7 +304,7 @@
                     justify-content: flex-start;
                     align-items: flex-start;
                     flex-direction: column;
-
+        
                     position: absolute;
                     left: get-vw(-180px, 1440);
                     top:  get-vw(-35px, 1440);

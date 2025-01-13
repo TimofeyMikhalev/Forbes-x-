@@ -331,12 +331,22 @@ buttonReturn.forEach(button => {
 
 
 //кнопка информации о проекте result
-const infoBtn = document.querySelector('.info-btn');
-const infoBlock = document.querySelector('.info-block');
+const infoBtn = document.querySelector('.result__info-btn');
+const infoBlock = document.querySelector('.result__info-block');
 
 infoBtn.addEventListener('click', () => {
   infoBlock.classList.toggle('show');
 });
+
+
+//кнопка информации о проекте start
+const infoBtnStart = document.querySelector('.start__info-btn');
+const infoBlockStart = document.querySelector('.start__info-block');
+
+infoBtnStart.addEventListener('click', () => {
+    infoBlockStart.classList.toggle('show');
+});
+
 
 
 //кнопка информации о проекте test
@@ -356,6 +366,7 @@ document.addEventListener('click', (event) => {
         infoBlockTest.classList.remove('show');
     }
 });
+
 
 
 
