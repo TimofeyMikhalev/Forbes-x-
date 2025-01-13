@@ -219,21 +219,21 @@
     
                     opacity: 0;
                     transform: scale(0);
-                    animation: image-scale 1.3s ease-out forwards; /* Анимация появления */
+                    animation: image-scale 0.8s ease-out forwards; /* Анимация появления */
                     animation-delay: 0.3s;
     
     
                 }
                 .test__img-confity {
-                    display: none !important;
-                    width: get-vw(656px, 393);
-                    height: get-vw(626px, 393);
+                    display: none;
+                    width: 20rem;
+                    height: 20rem;
                     position: absolute;
-                    top: get-vw(20px, 393);
+                    top: get-vw(-35px, 393);
                     right: 0;
-                    left: 0;
+                    left: -3rem;
                     bottom: 0;
-                    z-index: 11;
+                    z-index: 5;
     
                     opacity: 0;
                     transform: scale(0);
