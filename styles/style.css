@@ -1222,6 +1222,12 @@ img {
   .section__test .container__test .test__body_mini {
     row-gap: 2.4305555556vw;
   }
+  .section__test .container__test .test__body_mini {
+    row-gap: 2.4305555556vw;
+  }
+  .section__test .container__test .test__body_small {
+    row-gap: 3.4722222222vw;
+  }
   .section__test .container__test .test__img {
     width: 49.1666666667vw;
     height: 49.5138888889vw;
@@ -1244,6 +1250,9 @@ img {
     flex-direction: column;
     align-items: start;
     row-gap: 1.3888888889vw;
+  }
+  .section__test .container__test .test__button_four {
+    margin-top: 0.6944444444vw;
   }
   .section__test .container__test .test__answer {
     display: flex;
@@ -1778,6 +1787,7 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 38.4722222222vw;
+    margin-bottom: 1.0416666667vw;
   }
   .section__result .container__result .section__body .result__cicle-img {
     width: 6.7361111111vw;
@@ -3391,6 +3401,7 @@ img {
   .section__test .test__info .info-container .test__info-block.show {
     opacity: 0.9;
     visibility: visible;
+    z-index: 99;
   }
   :root {
     --color-grean: #3DAC51;

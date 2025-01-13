@@ -38,6 +38,12 @@
                 &__body_mini {
                     row-gap: get-vw(35px, 1440);
                 }
+                &__body_mini {
+                    row-gap: get-vw(35px, 1440);
+                }
+                &__body_small {
+                    row-gap: get-vw(50px, 1440);
+                }
                 &__img {
                     width: get-vw(708px, 1440);
                     height: get-vw(713px, 1440);
@@ -65,9 +71,11 @@
                     flex-direction: column;
                     align-items: start;
                     row-gap: get-vw(20px, 1440);
-            
                 }
-    
+                &__button_four {
+                    margin-top: get-vw(10px, 1440);
+                }
+                
                 &__answer {
                     display: flex;
                     justify-content: space-between;

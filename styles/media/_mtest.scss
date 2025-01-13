@@ -339,6 +339,7 @@
                 .test__info-block.show {
                     opacity: 0.9;
                     visibility: visible;
+                    z-index: 99;
                 }
             }
         }
