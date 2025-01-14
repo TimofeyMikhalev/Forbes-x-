@@ -26,6 +26,8 @@
         &__sber {
             width: get-vw(162px, 1440);
             height: get-vw(27px, 1440);
+            text-decoration: none;
+            cursor: default;
         }
     }
 }

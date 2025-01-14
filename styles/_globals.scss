@@ -33,7 +33,9 @@ img {
     @return $fontSize;
 }
 
-
+.disclaymer {
+    text-decoration: underline;
+}
 
 .container {
     width: get-vw(1370px, 1440);
