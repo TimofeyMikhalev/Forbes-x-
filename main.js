@@ -62,7 +62,7 @@ const btnNext = document.querySelectorAll('.test__button');
 //       const otherCircle = otherContainer.querySelector('.num');
 //       if (otherButton !== button) {
 //         otherButton.classList.add('disabled'); // Добавляем класс для блокировки
-//         otherCircle.classList.add('disabled'); // Блокируем кружки
+//         otherCircle.classList.add('disabled'); 
 //       }
 //     });
 //   });
