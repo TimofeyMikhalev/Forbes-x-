@@ -2746,7 +2746,7 @@ img {
     padding-bottom: 1.2rem;
   }
   .section__start .hero-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%; /* Растягиваем по ширине */
@@ -3150,7 +3150,7 @@ img {
     padding-bottom: 1.4rem;
   }
   .section__test .test-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%; /* Растягиваем по ширине */
@@ -3696,7 +3696,7 @@ img {
     padding-bottom: 1.2rem;
   }
   .section__result .result-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
