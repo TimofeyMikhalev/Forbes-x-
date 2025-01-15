@@ -86,7 +86,7 @@ img {
     align-items: center;
     background: var(--color-grean);
     color: var(--color-ligth);
-    border: none;
+    border: get-vw(2px, 1440) solid var(--color-grean); 
     cursor: pointer;
     min-width: get-vw(340px, 1440);
     height: get-vw(37px, 1440);

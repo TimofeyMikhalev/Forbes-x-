@@ -322,7 +322,7 @@ img {
   align-items: center;
   background: var(--color-grean);
   color: var(--color-ligth);
-  border: none;
+  border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
   height: 2.5694444444vw;
@@ -612,7 +612,7 @@ img {
   align-items: center;
   background: var(--color-grean);
   color: var(--color-ligth);
-  border: none;
+  border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
   height: 2.5694444444vw;
@@ -915,7 +915,7 @@ img {
   align-items: center;
   background: var(--color-grean);
   color: var(--color-ligth);
-  border: none;
+  border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
   height: 2.5694444444vw;
@@ -1581,7 +1581,7 @@ img {
   align-items: center;
   background: var(--color-grean);
   color: var(--color-ligth);
-  border: none;
+  border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
   height: 2.5694444444vw;
@@ -1973,7 +1973,7 @@ img {
   align-items: center;
   background: var(--color-grean);
   color: var(--color-ligth);
-  border: none;
+  border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
   height: 2.5694444444vw;
@@ -2248,7 +2248,7 @@ img {
   align-items: center;
   background: var(--color-grean);
   color: var(--color-ligth);
-  border: none;
+  border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
   height: 2.5694444444vw;
@@ -2552,7 +2552,7 @@ img {
   align-items: center;
   background: var(--color-grean);
   color: var(--color-ligth);
-  border: none;
+  border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
   height: 2.5694444444vw;
@@ -2956,7 +2956,7 @@ img {
   align-items: center;
   background: var(--color-grean);
   color: var(--color-ligth);
-  border: none;
+  border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
   height: 2.5694444444vw;
@@ -3518,7 +3518,7 @@ img {
     align-items: center;
     background: var(--color-grean);
     color: var(--color-ligth);
-    border: none;
+    border: 0.1388888889vw solid var(--color-grean);
     cursor: pointer;
     min-width: 23.6111111111vw;
     height: 2.5694444444vw;
@@ -3945,7 +3945,7 @@ img {
   align-items: center;
   background: var(--color-grean);
   color: var(--color-ligth);
-  border: none;
+  border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
   height: 2.5694444444vw;
