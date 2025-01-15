@@ -4128,3 +4128,8 @@ img {
     transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
+
+/* Делает полупрозрачным картинки с неправльным ответом */
+.result__cicle-img.opacity{
+  opacity: 0.2 !important;
+}

@@ -197,6 +197,7 @@ heroButton.addEventListener('click', function () {
 //подсчитывать правильные ответы
 let resultQuestion = document.querySelectorAll('.test__answer');
 let results = [];
+
 resultQuestion.forEach(inner => {
     inner.addEventListener('click', function handleClick() {
         // Если кнопка уже выбрана, ничего не делаем
@@ -204,7 +205,7 @@ resultQuestion.forEach(inner => {
 
         // Добавляем текущий выбор в массив
         results.push(inner.dataset.result);
-        // console.log(results); // Выводим массив с результатами
+        console.log(results); // Выводим массив с результатами
 
 
         // Отмечаем выбранный элемент
@@ -250,6 +251,17 @@ const resultFive = document.querySelector('.result5')//0-1
 
 const sectionTest = document.querySelector('.section__test')
 
+//Функция которая находит каринки с неправильными ответами и делает их полупрозрачными
+const modifyImageByResults = (results, numberResultBlock) => {
+    let circleImages = document.querySelectorAll(`.result${numberResultBlock} .result__cicle-img`);
+
+    circleImages.forEach((item, index) => {
+        if(results[index]=='false'){
+            item.classList.add('opacity');
+        }
+    })
+}
+
 btnResult.addEventListener('click', function() {
     let sum = 0;
 
@@ -265,26 +277,31 @@ btnResult.addEventListener('click', function() {
             sectionTest.classList.remove('show')
             sectionResult.classList.add('show')
             resultFive.classList.add('show')
+            modifyImageByResults(results, 5);//вызываем функцию изменения картинок. 5 это номер блока результатов в html
             break;
         case 2:
             sectionTest.classList.remove('show')
             sectionResult.classList.add('show')
             resultFour.classList.add('show')
+            modifyImageByResults(results, 4);
             break;
         case 3:
             sectionTest.classList.remove('show')
             sectionResult.classList.add('show')
             resultThree.classList.add('show')
+            modifyImageByResults(results, 3);
             break;
         case 4:
             sectionTest.classList.remove('show')
             sectionResult.classList.add('show')
             resultTwo.classList.add('show')
+            modifyImageByResults(results, 2);
             break;
         case 5: 
             sectionTest.classList.remove('show')
             sectionResult.classList.add('show')
             resultOne.classList.add('show')
+            modifyImageByResults(results, 1);
             break;
     }
 })
@@ -335,6 +352,13 @@ function resetApp() {
         button.disabled = true;
         button.style.pointerEvents = 'none';
     });
+    // Возвращаем картинкам прежний вид
+    let circleImages = document.querySelectorAll('.result__cicle-img');
+
+    circleImages.forEach(item => {
+            item.classList.remove('opacity');
+        }
+    )
 }
 
 // Добавляем обработчик сброса на кнопку возврата
@@ -385,4 +409,9 @@ document.addEventListener('click', (event) => {
 
 
 
+
+
 AOS.init();
+
+
+
