@@ -245,7 +245,8 @@ const sectionResult = document.querySelector('.section__result');
 const resultOne = document.querySelector('.result1')//5
 const resultTwo = document.querySelector('.result2')//4
 const resultThree = document.querySelector('.result3')//3
-const resultFour = document.querySelector('.result4')//0-2
+const resultFour = document.querySelector('.result4')//2
+const resultFive = document.querySelector('.result5')//0-1
 
 const sectionTest = document.querySelector('.section__test')
 
@@ -257,10 +258,14 @@ btnResult.addEventListener('click', function() {
             sum++
         }
     })
-    console.log(sum)
+    
     switch (sum){
         case 0:
         case 1:
+            sectionTest.classList.remove('show')
+            sectionResult.classList.add('show')
+            resultFive.classList.add('show')
+            break;
         case 2:
             sectionTest.classList.remove('show')
             sectionResult.classList.add('show')
@@ -324,6 +329,7 @@ function resetApp() {
     resultTwo.classList.remove('show');
     resultThree.classList.remove('show');
     resultFour.classList.remove('show');
+    resultFive.classList.remove('show');
 
     btnNext.forEach(button => {
         button.disabled = true;
