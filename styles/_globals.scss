@@ -51,6 +51,14 @@ img {
     opacity: .7;
 }
 
+.getin {
+    font-weight: bold;
+}
+/* Делает полупрозрачным картинки с неправльным ответом */
+.result__cicle-img.opacity{
+    opacity: 0.2 !important;
+}
+
 
 .button__grean {
     display: inline-flex;
@@ -89,7 +97,7 @@ img {
     border: get-vw(2px, 1440) solid var(--color-grean); 
     cursor: pointer;
     min-width: get-vw(340px, 1440);
-    height: get-vw(37px, 1440);
+    height: get-vw(40px, 1440);
     transition: var(--transition-duration);
     border-radius: get-vw(29px, 1440);
 }

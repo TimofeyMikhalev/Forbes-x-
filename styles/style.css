@@ -288,6 +288,15 @@ img {
   opacity: 0.7;
 }
 
+.getin {
+  font-weight: bold;
+}
+
+/* Делает полупрозрачным картинки с неправльным ответом */
+.result__cicle-img.opacity {
+  opacity: 0.2 !important;
+}
+
 .button__grean {
   display: inline-flex;
   justify-content: center;
@@ -325,7 +334,7 @@ img {
   border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
-  height: 2.5694444444vw;
+  height: 2.7777777778vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
 }
@@ -578,6 +587,15 @@ img {
   opacity: 0.7;
 }
 
+.getin {
+  font-weight: bold;
+}
+
+/* Делает полупрозрачным картинки с неправльным ответом */
+.result__cicle-img.opacity {
+  opacity: 0.2 !important;
+}
+
 .button__grean {
   display: inline-flex;
   justify-content: center;
@@ -615,7 +633,7 @@ img {
   border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
-  height: 2.5694444444vw;
+  height: 2.7777777778vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
 }
@@ -881,6 +899,15 @@ img {
   opacity: 0.7;
 }
 
+.getin {
+  font-weight: bold;
+}
+
+/* Делает полупрозрачным картинки с неправльным ответом */
+.result__cicle-img.opacity {
+  opacity: 0.2 !important;
+}
+
 .button__grean {
   display: inline-flex;
   justify-content: center;
@@ -918,7 +945,7 @@ img {
   border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
-  height: 2.5694444444vw;
+  height: 2.7777777778vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
 }
@@ -1547,6 +1574,15 @@ img {
   opacity: 0.7;
 }
 
+.getin {
+  font-weight: bold;
+}
+
+/* Делает полупрозрачным картинки с неправльным ответом */
+.result__cicle-img.opacity {
+  opacity: 0.2 !important;
+}
+
 .button__grean {
   display: inline-flex;
   justify-content: center;
@@ -1584,7 +1620,7 @@ img {
   border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
-  height: 2.5694444444vw;
+  height: 2.7777777778vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
 }
@@ -1939,6 +1975,15 @@ img {
   opacity: 0.7;
 }
 
+.getin {
+  font-weight: bold;
+}
+
+/* Делает полупрозрачным картинки с неправльным ответом */
+.result__cicle-img.opacity {
+  opacity: 0.2 !important;
+}
+
 .button__grean {
   display: inline-flex;
   justify-content: center;
@@ -1976,7 +2021,7 @@ img {
   border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
-  height: 2.5694444444vw;
+  height: 2.7777777778vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
 }
@@ -2214,6 +2259,15 @@ img {
   opacity: 0.7;
 }
 
+.getin {
+  font-weight: bold;
+}
+
+/* Делает полупрозрачным картинки с неправльным ответом */
+.result__cicle-img.opacity {
+  opacity: 0.2 !important;
+}
+
 .button__grean {
   display: inline-flex;
   justify-content: center;
@@ -2251,7 +2305,7 @@ img {
   border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
-  height: 2.5694444444vw;
+  height: 2.7777777778vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
 }
@@ -2518,6 +2572,15 @@ img {
   opacity: 0.7;
 }
 
+.getin {
+  font-weight: bold;
+}
+
+/* Делает полупрозрачным картинки с неправльным ответом */
+.result__cicle-img.opacity {
+  opacity: 0.2 !important;
+}
+
 .button__grean {
   display: inline-flex;
   justify-content: center;
@@ -2555,7 +2618,7 @@ img {
   border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
-  height: 2.5694444444vw;
+  height: 2.7777777778vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
 }
@@ -2922,6 +2985,15 @@ img {
   opacity: 0.7;
 }
 
+.getin {
+  font-weight: bold;
+}
+
+/* Делает полупрозрачным картинки с неправльным ответом */
+.result__cicle-img.opacity {
+  opacity: 0.2 !important;
+}
+
 .button__grean {
   display: inline-flex;
   justify-content: center;
@@ -2959,7 +3031,7 @@ img {
   border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
-  height: 2.5694444444vw;
+  height: 2.7777777778vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
 }
@@ -3486,6 +3558,13 @@ img {
   .hero__button:hover {
     opacity: 0.7;
   }
+  .getin {
+    font-weight: bold;
+  }
+  /* Делает полупрозрачным картинки с неправльным ответом */
+  .result__cicle-img.opacity {
+    opacity: 0.2 !important;
+  }
   .button__grean {
     display: inline-flex;
     justify-content: center;
@@ -3521,7 +3600,7 @@ img {
     border: 0.1388888889vw solid var(--color-grean);
     cursor: pointer;
     min-width: 23.6111111111vw;
-    height: 2.5694444444vw;
+    height: 2.7777777778vw;
     transition: var(--transition-duration);
     border-radius: 2.0138888889vw;
   }
@@ -3778,7 +3857,7 @@ img {
     border: 0.12rem solid var(--color-grean);
     cursor: pointer;
     min-width: 17.8rem;
-    height: 2.3rem;
+    height: 2.5rem;
     transition: var(--transition-duration);
     border-radius: 1.8rem;
     font-size: 1rem;
@@ -3911,6 +3990,15 @@ img {
   opacity: 0.7;
 }
 
+.getin {
+  font-weight: bold;
+}
+
+/* Делает полупрозрачным картинки с неправльным ответом */
+.result__cicle-img.opacity {
+  opacity: 0.2 !important;
+}
+
 .button__grean {
   display: inline-flex;
   justify-content: center;
@@ -3948,7 +4036,7 @@ img {
   border: 0.1388888889vw solid var(--color-grean);
   cursor: pointer;
   min-width: 23.6111111111vw;
-  height: 2.5694444444vw;
+  height: 2.7777777778vw;
   transition: var(--transition-duration);
   border-radius: 2.0138888889vw;
 }
@@ -4128,8 +4216,3 @@ img {
     transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
-
-/* Делает полупрозрачным картинки с неправльным ответом */
-.result__cicle-img.opacity{
-  opacity: 0.2 !important;
-}
