@@ -92,7 +92,31 @@
                         font-size: 0.43rem;
                         font-weight: 400;
                         padding-top: 0.8rem;
-                        padding-bottom: 2.5rem;
+                    
+
+                        position: relative;
+
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        flex-direction: column;
+
+                        .result__info-qr {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: flex-end;
+                
+                            .qr {   
+                                width: 2.9rem;
+                                height: 2.9rem;
+                                margin-right: 0.45rem;
+                            }
+                            .gr__text {
+                                width: 7rem;
+                                font-size: 0.45rem;
+                                font-weight: 400;
+                            }
+                        }
                     }
 
                     .button__result {

@@ -1834,7 +1834,7 @@ img {
     align-items: start;
     row-gap: 2.0833333333vw;
     max-width: 43.9583333333vw;
-    padding-top: 7.8472222222vw;
+    padding-top: 3.6805555556vw;
   }
   .section__result .container__result .section__body .result__cicle {
     display: flex;
@@ -1861,7 +1861,27 @@ img {
     width: 46.7361111111vw;
     font-size: 0.625vw;
     font-weight: 400;
-    padding-top: 2.0138888889vw;
+    padding-top: 1.3194444444vw;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .section__result .container__result .section__body .result__footer .result__info-qr {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .section__result .container__result .section__body .result__footer .result__info-qr .qr {
+    width: 3.2638888889vw;
+    height: 3.2638888889vw;
+    margin-right: 0.4861111111vw;
+  }
+  .section__result .container__result .section__body .result__footer .result__info-qr .gr__text {
+    width: 8.3333333333vw;
+    font-size: 0.4861111111vw;
+    font-weight: 400;
   }
   .section__result .container__result .section__body .result.show {
     display: flex;
@@ -3846,7 +3866,26 @@ img {
     font-size: 0.43rem;
     font-weight: 400;
     padding-top: 0.8rem;
-    padding-bottom: 2.5rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .section__result .container__result .section__body .result__footer .result__info-qr {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .section__result .container__result .section__body .result__footer .result__info-qr .qr {
+    width: 2.9rem;
+    height: 2.9rem;
+    margin-right: 0.45rem;
+  }
+  .section__result .container__result .section__body .result__footer .result__info-qr .gr__text {
+    width: 7rem;
+    font-size: 0.45rem;
+    font-weight: 400;
   }
   .section__result .container__result .section__body .result .button__result {
     display: inline-flex;
