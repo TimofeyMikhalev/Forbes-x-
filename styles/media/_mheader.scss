@@ -17,7 +17,8 @@
         align-items: center;
 
         padding-top: 0.87rem;
-
+        position: relative;
+        z-index: 99;
         &__inner {
             display: flex;
             justify-content: space-between;

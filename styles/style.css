@@ -2511,6 +2511,8 @@ img {
     justify-content: center;
     align-items: center;
     padding-top: 0.87rem;
+    position: relative;
+    z-index: 99;
   }
   .header__inner {
     display: flex;
@@ -2868,6 +2870,7 @@ img {
     border-radius: 21rem;
   }
   .section__start .hero__title {
+    width: 18rem;
     font-size: 1.3rem;
     font-weight: 500;
   }
