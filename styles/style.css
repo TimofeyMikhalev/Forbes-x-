@@ -2511,11 +2511,6 @@ img {
     justify-content: center;
     align-items: center;
     padding-top: 0.87rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
   }
   .header__inner {
     display: flex;
@@ -2857,7 +2852,7 @@ img {
     align-items: start;
     row-gap: 1rem;
     max-width: 22.4rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .section__start .hero__test {
     display: flex;
@@ -3259,7 +3254,7 @@ img {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .section__test .container__test .test__body {
     display: flex;
@@ -3808,7 +3803,7 @@ img {
     width: 22.6rem;
   }
   .section__result .container__result .section__body {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .section__result .container__result .section__body .result {
     display: none;
