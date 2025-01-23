@@ -8,18 +8,17 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
-    <!-- Мета-теги Open Graph -->
+    <!-- OG -->
+    <meta property="og:image" content="https://i.imgur.com/us0t7nx.png" />
     <meta property="og:title" content="Как игры во дворе подготовили вас к финансовому успеху" />
     <meta property="og:description" content="Пройдите тест и узнайте, как дворовые забавы подготовили вас к управлению финансами, а заодно — вспомните беззаботное детское время" />
-    <meta property="og:image" content="https://mastercard.forbes.ru/test/share.jpg" />
     <meta property="og:url" content="https://www.forbes.ru/special/sberbank-online/?erid=F7NfYUJCUneP5z5kSspq" />
-
-    <!-- Мета-теги Twitter Card -->
+    <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Как игры во дворе подготовили вас к финансовому успеху" />
     <meta name="twitter:description" content="Пройдите тест и узнайте, как дворовые забавы подготовили вас к управлению финансами, а заодно — вспомните беззаботное детское время" />
-    <meta name="twitter:image" content="https://mastercard.forbes.ru/test/share.jpgg" />
+    <meta name="twitter:image" content="https://i.imgur.com/us0t7nx.png" />
+    <!-- End OG -->
 
     <script>window.yaContextCb = window.yaContextCb || []</script>
     <script src="https://yandex.ru/ads/system/context.js" async></script>
@@ -61,7 +60,7 @@
     <header class="header">
         <div class="header__inner container">
             <a class="header__logo logo" href="https://www.forbes.ru/" target="_blank">
-                <img class="logo__image" src="./images/logo-Forbs.svg" alt="Forbs">
+                <img class="logo__image" src="./images/logo-Forbs.png" alt="Forbs">
             </a>
             <div class="header__sber">
                 <img class="sber__image" src="./images/Logo-Sberbank.png" alt="Sberbank">
@@ -91,7 +90,7 @@
                                     Пройдите тест и узнайте, как дворовые забавы могли подготовить вас к управлению финансами, а заодно вспомните беззаботное детское время.
                                 </p>
                             </div>
-                            <button class="hero__button button__grean" type="button" onclick="() => {ym(99543624,'reachGoal','start')}">
+                            <button class="hero__button button__grean" type="button" onclick="ym(99543624,'reachGoal','start')">
                                 Пройти тест
                             </button>
                         </div>
@@ -133,7 +132,7 @@
                             Вы играете в «Казаки-разбойники». Вы в команде «казаков», и ваша задача — поймать «разбойников» и узнать у них секретное слово-пароль. <span>Какую стратегию вы выберете для успешного выполнения задачи?</span>
                         </div>
                         <ul class="test__question">
-                            <li class="test__answer fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','1-1')}">
+                            <li class="test__answer fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '1-1')">
                                 <div class="num" data-correct="false">1</div>
                                 <button class="button">
                                     <div class="text">
@@ -142,7 +141,7 @@
                                     <p class="text-content hidden">Бегая без плана, вы тратите время и силы, снижая шансы на успешный поиск.</p>
                                 </button>
                             </li>
-                            <li class="test__answer fade-in" data-result="true" id="1" onclick="() => {ym(99543624,'reachGoal','1-2')}">
+                            <li class="test__answer fade-in" data-result="true" id="1" onclick="ym(99543624, 'reachGoal', '1-2')">
                                 <div class="num" data-correct="true">2</div>
                                 <button class="button">
                                     <div class="text">
@@ -153,7 +152,7 @@
                                         и налогов на состояние портфеля.</p>
                                 </button>
                             </li>
-                            <li class="test__answer fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','1-3')}">
+                            <li class="test__answer fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '1-3')">
                                 <div class="num" data-correct="false">3</div>
                                 <button class="button">
                                     <div class="text">
@@ -163,7 +162,7 @@
                                         и не способствует достижению цели.</p>
                                 </button>
                             </li>
-                            <li class="test__answer test__answer_katan fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','1-4')}">
+                            <li class="test__answer test__answer_katan fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '1-4')">
                                 <div class="num" data-correct="false">4</div>
                                 <button class="button">
                                     <div class="text">
@@ -173,7 +172,7 @@
                                 </button>
                             </li>
                         </ul>
-                        <button class="test__button button__grey btn test__button-action" disabled type="button" onclick="() => {ym(99543624,'reachGoal','next')}">
+                        <button class="test__button button__grey btn test__button-action" disabled type="button" onclick="ym(99543624,'reachGoal','next')">
                             Следующий вопрос
                         </button>
                     </div>
@@ -196,7 +195,7 @@
                             Во дворе готовится битва снежками между крепостями. <span>Как вы будете строить свою?</span>
                         </div>
                         <ul class="test__question">
-                            <li class="test__answer fade-in" data-result="true" id="2" onclick="() => {ym(99543624,'reachGoal','2-1')}">
+                            <li class="test__answer fade-in" data-result="true" id="2" onclick="ym(99543624, 'reachGoal', '2-1')">
                                 <div class="num" data-correct="true">1</div>
                                 <button class="button">
                                     <div class="text">
@@ -208,7 +207,7 @@
                                         а пенсионные продукты — фундамент будущей финансовой подушки безопасности. Новый сервис «Сбербанк Онлайн» отслеживает ситуацию со сберегательными продуктами, помогая повысить эффективность вашего портфеля.</p>
                                 </button>
                             </li>
-                            <li class="test__answer fade-in test__answer_katan" data-result="false" onclick="() => {ym(99543624,'reachGoal','2-2')}">
+                            <li class="test__answer fade-in test__answer_katan" data-result="false" onclick="ym(99543624, 'reachGoal', '2-2')">
                                 <div class="num" data-correct="false">2</div>
                                 <button class="button">
                                     <div class="text">
@@ -217,7 +216,7 @@
                                     <p class="text-content hidden">Каюк! Фокус на высоте стен, а не на прочности конструкции грозит обвалом крепости при первой мощной атаке.</p>
                                 </button>
                             </li>
-                            <li class="test__answer fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','2-3')}">
+                            <li class="test__answer fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '2-3')">
                                 <div class="num" data-correct="false">3</div>
                                 <button class="button">
                                     <div class="text">
@@ -226,7 +225,7 @@
                                     <p class="text-content hidden">Сосредоточение только на снарядах без надежного укрытия может привести к быстрому исчерпанию ресурсов и уязвимости перед атаками.</p>
                                 </button>
                             </li>
-                            <li class="test__answer fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','2-4')}">
+                            <li class="test__answer fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '2-4')">
                                 <div class="num" data-correct="false">4</div>
                                 <button class="button">
                                     <div class="text">
@@ -237,7 +236,7 @@
                                 </button>
                             </li>
                         </ul>
-                        <button class="test__button button__grey btn test__button-action" type="button"  onclick="() => {ym(99543624,'reachGoal','next')}">
+                        <button class="test__button button__grey btn test__button-action" type="button"  onclick="ym(99543624,'reachGoal','next')">
                             Следующий вопрос
                         </button>
                     </div>
@@ -260,7 +259,7 @@
                             Вы играете в «Выше ноги от земли». <span>Какую стратегию вы выберете, чтобы не быть пойманным?</span>
                         </div>
                         <ul class="test__question">
-                            <li class="test__answer fade-in" data-result="true" id="3" onclick="() => {ym(99543624,'reachGoal','3-1')}">
+                            <li class="test__answer fade-in" data-result="true" id="3" onclick="ym(99543624, 'reachGoal', '3-1')">
                                 <div class="num" data-correct="true">1</div>
                                 <button class="button">
                                     <div class="text">
@@ -269,7 +268,7 @@
                                     <p class="text-content hidden">Стопудово! <span class="getin">Вы получили</span> коллекционную фигурку. Постоянное движение и планирование в игре «Выше ноги от земли» помогают избежать поимки и достичь успеха. Аналогично в управлении финансами: важно регулярно отслеживать и корректировать свои активы в рамках финансового планирования. Это может обеспечить стабильность накоплений в долгосрочной перспективе. Новый сервис Сбербанка помогает управлять сбережениями и принимать обоснованные решения для достижения финансовых целей.</p>
                                 </button>
                             </li>
-                            <li class="test__answer fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','3-2')}">
+                            <li class="test__answer fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '3-2')">
                                 <div class="num" data-correct="false">2</div>
                                 <button class="button">
                                     <div class="text">
@@ -278,7 +277,7 @@
                                     <p class="text-content hidden">Несчитово! Вы нарушаете правила — оставаться на одном месте долгое время нельзя. Поэтому вас просто «осалят» в вашей безопасной высокой точке.</p>
                                 </button>
                             </li>
-                            <li class="test__answer test__answer_katan fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','3-3')}">
+                            <li class="test__answer test__answer_katan fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '3-3')">
                                 <div class="num" data-correct="false">3</div>
                                 <button class="button">
                                     <div class="text">
@@ -287,7 +286,7 @@
                                     <p class="text-content hidden">Не четко! Чужие решения могут быть неэффективными для вас.</p>
                                 </button>
                             </li>
-                            <li class="test__answer fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','3-4')}">
+                            <li class="test__answer fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '3-4')">
                                 <div class="num" data-correct="false">4</div>
                                 <button class="button">
                                     <div class="text">
@@ -319,7 +318,7 @@
                             Вы играете в «Жмурки» и хотите поймать кого-то из соперников. <span>Какой подход вы выберете?</span>
                         </div>
                         <ul class="test__question test__question_4">
-                            <li class="test__answer fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','4-1')}">
+                            <li class="test__answer fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '4-1')">
                                 <div class="num" data-correct="false">1</div>
                                 <button class="button">
                                     <div class="text">
@@ -329,7 +328,7 @@
                                         и упущенным возможностям, ведь всегда найдется кто-то быстрее.</p>
                                 </button>
                             </li>
-                            <li class="test__answer fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','4-2')}">
+                            <li class="test__answer fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '4-2')">
                                 <div class="num" data-correct="false">2</div>
                                 <button class="button">
                                     <div class="text">
@@ -338,7 +337,7 @@
                                     <p class="text-content hidden">Челы во дворе ловкие! Пассивное ожидание — ненадежная стратегия, которая редко приводит к победе.</p>
                                 </button>
                             </li>
-                            <li class="test__answer fade-in" data-result="true" id="4" onclick="() => {ym(99543624,'reachGoal','4-3')}">
+                            <li class="test__answer fade-in" data-result="true" id="4" onclick="ym(99543624, 'reachGoal', '4-3')">
                                 <div class="num" data-correct="true">3</div>
                                 <button class="button">
                                     <div class="text">
@@ -349,7 +348,7 @@
                                         с рыночными индексами, вы можете потенциально оценить эффективность своих инвестиций и скорректировать стратегию. Новый сервис приложения «Сбербанк Онлайн» предоставляет такую возможность, помогая принимать взвешенные решения и предоставляя возможность улучшать показатели вашего портфеля.</p>
                                 </button>
                             </li>
-                            <li class="test__answer test__answer_katan fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','4-4')}">
+                            <li class="test__answer test__answer_katan fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '4-4')">
                                 <div class="num" data-correct="false">4</div>
                                 <button class="button">
                                     <div class="text">
@@ -359,7 +358,7 @@
                                 </button>
                             </li>
                         </ul>
-                        <button class="test__button button__grey btn test__button-action test__button_four" type="button" onclick="() => {ym(99543624,'reachGoal','next')}">
+                        <button class="test__button button__grey btn test__button-action test__button_four" type="button" onclick="ym(99543624,'reachGoal','next')">
                             Следующий вопрос
                         </button>
                     </div>
@@ -382,7 +381,7 @@
                             Во дворе вы играете в «Классики». Асфальт расчерчен мелом на квадраты — дорожку из одиночных и двойных клеток. Вы прыгаете на одной ноге, толкая битку из банки из квадрата в квадрат, стараясь не наступить на линии и не вывести ее за пределы поля. <span> Какая у вас тактика игры?</span>
                         </div>
                         <ul class="test__question">
-                            <li class="test__answer test__answer_katan fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','5-1')}">
+                            <li class="test__answer test__answer_katan fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '5-1')">
                                 <div class="num" data-correct="false">1</div>
                                 <button class="button">
                                     <div class="text">
@@ -391,7 +390,7 @@
                                     <p class="text-content hidden">Уверенность рулит, но без тщательного расчета можно легко наступить на линию и начать все заново.</p>
                                 </button>
                             </li>
-                            <li class="test__answer fade-in" data-result="true" id="5" onclick="() => {ym(99543624,'reachGoal','5-2')}">
+                            <li class="test__answer fade-in" data-result="true" id="5" onclick="ym(99543624, 'reachGoal', '5-2')">
                                 <div class="num" data-correct="true">2</div>
                                 <button class="button">
                                     <div class="text">
@@ -402,7 +401,7 @@
                                         к финансовым потерям. Сервис «Сбербанк Онлайн» позволяет без труда проводить своевременную балансировку портфеля для поддержания стабильность инвестиций в долгосрочной перспективе.</p>
                                 </button>
                             </li>
-                            <li class="test__answer test__answer_katan fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','5-3')}">
+                            <li class="test__answer test__answer_katan fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '5-3')">
                                 <div class="num" data-correct="false">3</div>
                                 <button class="button">
                                     <div class="text">
@@ -411,7 +410,7 @@
                                     <p class="text-content hidden">Облом! Отказ от игры из-за мелких трудностей лишает вас удовольствия.</p>
                                 </button>
                             </li>
-                            <li class="test__answer fade-in" data-result="false" onclick="() => {ym(99543624,'reachGoal','5-4')}">
+                            <li class="test__answer fade-in" data-result="false" onclick="ym(99543624, 'reachGoal', '5-4')">
                                 <div class="num" data-correct="false">4</div>
                                 <button class="button">
                                     <div class="text">
@@ -497,9 +496,9 @@
                                 и достижении финансовых целей.
                             </div>
                             
-                            <a class="button__result hero__button fade-in-result"  href="http://sberbank.com/sms/profitability?utm_source=rbc&utm_medium=fix&utm_campaign=corporate_sp_sberpro&utm_content=vitrina&utm_term=1&utm_erid=F7NfYUJCUneP5z5kSspq" target="_blank"  onclick="() => {ym(99543624,'reachGoal','profitability')}">Проверить доходность</a>
+                            <a class="button__result hero__button fade-in-result"  href="http://sberbank.com/sms/profitability?utm_source=rbc&utm_medium=fix&utm_campaign=corporate_sp_sberpro&utm_content=vitrina&utm_term=1&utm_erid=F7NfYUJCUneP5z5kSspq" target="_blank"  onclick="ym(99543624,'reachGoal','profitability')">Проверить доходность</a>
                        
-                            <button class="button__return hero__button fade-in-result" type="button" onclick="() => {ym(99543624,'reachGoal','repeat')}">
+                            <button class="button__return hero__button fade-in-result" type="button" onclick="ym(99543624,'reachGoal','repeat')">
                                 Пройти тест заново
                             </button>
                             <div class="result__footer item_desktop">
@@ -556,9 +555,9 @@
                                 Респект! Вы обладаете хорошими навыками стратегического мышления и анализа, которые вырабатывались еще в детстве. В контексте управления финансами сервис интерактивного отчета доходности капитала в «Сбербанк Онлайн» поможет вам не упустить детали.
                             </div>
 
-                            <a class="button__result hero__button fade-in-result"  href="http://sberbank.com/sms/profitability?utm_source=rbc&utm_medium=fix&utm_campaign=corporate_sp_sberpro&utm_content=vitrina&utm_term=1&utm_erid=F7NfYUJCUneP5z5kSspq" target="_blank"  onclick="() => {ym(99543624,'reachGoal','profitability')}">Проверить доходность</a>
+                            <a class="button__result hero__button fade-in-result"  href="http://sberbank.com/sms/profitability?utm_source=rbc&utm_medium=fix&utm_campaign=corporate_sp_sberpro&utm_content=vitrina&utm_term=1&utm_erid=F7NfYUJCUneP5z5kSspq" target="_blank"  onclick="ym(99543624,'reachGoal','profitability')">Проверить доходность</a>
 
-                            <button class="button__return hero__button fade-in-result" type="button" onclick="() => {ym(99543624,'reachGoal','repeat')}">
+                            <button class="button__return hero__button fade-in-result" type="button" onclick="ym(99543624,'reachGoal','repeat')">
                                 Пройти тест заново
                             </button>
                             <div class="result__footer item_desktop">
@@ -614,9 +613,9 @@
                                 Респект! Вы обладаете хорошими навыками стратегического мышления и анализа, которые вырабатывались еще в детстве. В контексте управления финансами сервис интерактивного отчета доходности капитала в «Сбербанк Онлайн» поможет вам не упустить детали.
                             </div>
                             
-                            <a class="button__result hero__button fade-in-result"  href="http://sberbank.com/sms/profitability?utm_source=rbc&utm_medium=fix&utm_campaign=corporate_sp_sberpro&utm_content=vitrina&utm_term=1&utm_erid=F7NfYUJCUneP5z5kSspq" target="_blank"  onclick="() => {ym(99543624,'reachGoal','profitability')}">Проверить доходность</a>
+                            <a class="button__result hero__button fade-in-result"  href="http://sberbank.com/sms/profitability?utm_source=rbc&utm_medium=fix&utm_campaign=corporate_sp_sberpro&utm_content=vitrina&utm_term=1&utm_erid=F7NfYUJCUneP5z5kSspq" target="_blank"  onclick="ym(99543624,'reachGoal','profitability')">Проверить доходность</a>
 
-                            <button class="button__return hero__button fade-in-result" type="button" onclick="() => {ym(99543624,'reachGoal','repeat')}">
+                            <button class="button__return hero__button fade-in-result" type="button" onclick="ym(99543624,'reachGoal','repeat')">
                                 Пройти тест заново
                             </button>
                             <div class="result__footer item_desktop">
@@ -672,9 +671,9 @@
                                 Не грузись! Игры во дворе, возможно, были не в центре ваших интересов. Интерактивный отчет доходности капитала в «Сбербанк Онлайн» поможет вам освоить эффективное управление накоплениями, предоставляя инструменты для анализа и контроля ваших финансов, чтобы вы могли уверенно двигаться к своим финансовым целям.
                             </div>
 
-                            <a class="button__result hero__button fade-in-result"  href="http://sberbank.com/sms/profitability?utm_source=rbc&utm_medium=fix&utm_campaign=corporate_sp_sberpro&utm_content=vitrina&utm_term=1&utm_erid=F7NfYUJCUneP5z5kSspq" target="_blank"  onclick="() => {ym(99543624,'reachGoal','profitability')}">Проверить доходность</a>
+                            <a class="button__result hero__button fade-in-result"  href="http://sberbank.com/sms/profitability?utm_source=rbc&utm_medium=fix&utm_campaign=corporate_sp_sberpro&utm_content=vitrina&utm_term=1&utm_erid=F7NfYUJCUneP5z5kSspq" target="_blank"  onclick="ym(99543624,'reachGoal','profitability')">Проверить доходность</a>
 
-                            <button class="button__return hero__button fade-in-result" type="button" onclick="() => {ym(99543624,'reachGoal','repeat')}">
+                            <button class="button__return hero__button fade-in-result" type="button" onclick="ym(99543624,'reachGoal','repeat')">
                                 Пройти тест заново
                             </button>
                             <div class="result__footer item_desktop">
@@ -731,9 +730,9 @@
                                 Не грузись! Игры во дворе, возможно, были не в центре ваших интересов. Интерактивный отчет доходности капитала в «Сбербанк Онлайн» поможет вам освоить эффективное управление накоплениями, предоставляя инструменты для анализа и контроля ваших финансов, чтобы вы могли уверенно двигаться к своим финансовым целям.
                             </div>
 
-                             <a class="button__result hero__button fade-in-result"  href="http://sberbank.com/sms/profitability?utm_source=rbc&utm_medium=fix&utm_campaign=corporate_sp_sberpro&utm_content=vitrina&utm_term=1&utm_erid=F7NfYUJCUneP5z5kSspq" target="_blank"  onclick="() => {ym(99543624,'reachGoal','profitability')}">Проверить доходность</a>
+                             <a class="button__result hero__button fade-in-result"  href="http://sberbank.com/sms/profitability?utm_source=rbc&utm_medium=fix&utm_campaign=corporate_sp_sberpro&utm_content=vitrina&utm_term=1&utm_erid=F7NfYUJCUneP5z5kSspq" target="_blank"  onclick="ym(99543624,'reachGoal','profitability')">Проверить доходность</a>
 
-                            <button class="button__return hero__button fade-in-result" type="button" onclick="() => {ym(99543624,'reachGoal','repeat')}">
+                            <button class="button__return hero__button fade-in-result" type="button" onclick="ym(99543624,'reachGoal','repeat')">
                                 Пройти тест заново
                             </button>
                             <div class="result__footer item_desktop">
